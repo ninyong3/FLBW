@@ -16,9 +16,11 @@ public class DialogManager : MonoBehaviour
     {
         if(gotoNext)
         {
-            if(Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetMouseButton(0))
+            if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
             {
                 dialogCnt++;
+                gotoNext= false;
+                StartCoroutine(PrintText());
             }
         }
         
@@ -27,6 +29,7 @@ public class DialogManager : MonoBehaviour
     {
         dialog.text = DBManager.instance.dialogueDic[dialogCnt].line;
         name.text = DBManager.instance.dialogueDic[dialogCnt].name;
+        gotoNext= true;
         yield break;
     }
     public void ShowDialog()
