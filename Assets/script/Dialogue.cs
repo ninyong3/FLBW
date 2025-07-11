@@ -1,7 +1,7 @@
 using UnityEngine;
 [System.Serializable]
-public class Dialogue // ´ë»ç Å¬·¡½º
+public class Dialogue // ëŒ€ì‚¬ í´ë˜ìŠ¤
 {
-    public string name; // ÀÌ¸§
-    public string line; // ´ë»ç
+    public string name; // ì´ë¦„
+    public string line; // ëŒ€ì‚¬
 }

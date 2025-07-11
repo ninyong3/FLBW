@@ -4,10 +4,10 @@ using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
-    bool gotoNext=false; // ´ÙÀ½ ´ë»ç·Î ³Ñ¾î°¡¾ß ÇÏ´ÂÁö ÆÇ´ÜÇÏ´Â º¯¼ö
-    int dialogCnt=1; // ´ë»ç ¹øÈ£
-    [SerializeField] TextMeshProUGUI name; // ÀÌ¸§ text
-    [SerializeField] TextMeshProUGUI dialog; // ´ë»ç text
+    bool gotoNext=false; // ë‹¤ìŒ ëŒ€ì‚¬ë¡œ ë„˜ì–´ê°€ì•¼ í•˜ëŠ”ì§€ íŒë‹¨í•˜ëŠ” ë³€ìˆ˜
+    int dialogCnt=1; // ëŒ€ì‚¬ ë²ˆí˜¸
+    [SerializeField] TextMeshProUGUI name; // ì´ë¦„ text
+    [SerializeField] TextMeshProUGUI dialog; // ëŒ€ì‚¬ text
     void Start()
     {
         ShowDialog();
@@ -16,9 +16,9 @@ public class DialogManager : MonoBehaviour
     {
         if(gotoNext)
         {
-            if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) // ¿£ÅÍÅ° È¤Àº ÁÂÅ¬¸¯ ½Ã
+            if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) // ì—”í„°í‚¤ í˜¹ì€ ì¢Œí´ë¦­ ì‹œ
             {
-                dialogCnt++; // ´ÙÀ½ ¹øÈ£ÀÇ ´ë»ç·Î
+                dialogCnt++; // ë‹¤ìŒ ë²ˆí˜¸ì˜ ëŒ€ì‚¬ë¡œ
                 gotoNext= false;
                 StartCoroutine(PrintText());
             }
@@ -27,8 +27,8 @@ public class DialogManager : MonoBehaviour
     }
     IEnumerator PrintText()
     {
-        dialog.text = DBManager.instance.dialogueDic[dialogCnt].line; // µñ¼Å³Ê¸®¿¡¼­ ´ë»ç ¹øÈ£·Î ´ë»ç °¡Á®¿À±â
-        name.text = DBManager.instance.dialogueDic[dialogCnt].name; // µñ¼Å³Ê¸®¿¡¼­ ´ë»ç ¹øÈ£·Î ÀÌ¸§ °¡Á®¿À±â
+        dialog.text = DBManager.instance.dialogueDic[dialogCnt].line; // ë”•ì…”ë„ˆë¦¬ì—ì„œ ëŒ€ì‚¬ ë²ˆí˜¸ë¡œ ëŒ€ì‚¬ ê°€ì ¸ì˜¤ê¸°
+        name.text = DBManager.instance.dialogueDic[dialogCnt].name; // ë”•ì…”ë„ˆë¦¬ì—ì„œ ëŒ€ì‚¬ ë²ˆí˜¸ë¡œ ì´ë¦„ ê°€ì ¸ì˜¤ê¸°
         gotoNext= true;
         yield break;
     }
