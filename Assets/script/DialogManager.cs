@@ -4,10 +4,10 @@ using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
-    bool gotoNext=false;
-    int dialogCnt=1;
-    [SerializeField] TextMeshProUGUI name;
-    [SerializeField] TextMeshProUGUI dialog;
+    bool gotoNext=false; // 다음 대사로 넘어가야 하는지 판단하는 변수
+    int dialogCnt=1; // 대사 번호
+    [SerializeField] TextMeshProUGUI name; // 이름 text
+    [SerializeField] TextMeshProUGUI dialog; // 대사 text
     void Start()
     {
         ShowDialog();
@@ -16,17 +16,20 @@ public class DialogManager : MonoBehaviour
     {
         if(gotoNext)
         {
-            if(Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetMouseButton(0))
+            if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) // 엔터키 혹은 좌클릭 시
             {
-                dialogCnt++;
+                dialogCnt++; // 다음 번호의 대사로
+                gotoNext= false;
+                StartCoroutine(PrintText());
             }
         }
         
     }
     IEnumerator PrintText()
     {
-        dialog.text = DBManager.instance.dialogueDic[dialogCnt].line;
-        name.text = DBManager.instance.dialogueDic[dialogCnt].name;
+        dialog.text = DBManager.instance.dialogueDic[dialogCnt].line; // 딕셔너리에서 대사 번호로 대사 가져오기
+        name.text = DBManager.instance.dialogueDic[dialogCnt].name; // 딕셔너리에서 대사 번호로 이름 가져오기
+        gotoNext= true;
         yield break;
     }
     public void ShowDialog()
