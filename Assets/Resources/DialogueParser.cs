@@ -3,20 +3,20 @@ using System.Collections.Generic;
 
 public class DialogueParser : MonoBehaviour
 {
-    public Dialogue[] Parse(string dialogFileName) // ÆÄ½Ì ÇÔ¼ö
+    public Dialogue[] Parse(string dialogFileName) // íŒŒì‹± í•¨ìˆ˜
     {
-        List<Dialogue> dialoguelist=new List<Dialogue>(); // ´ë»ç¸¦ ÀúÀåÇÏ´Â ¸®½ºÆ®
-        TextAsset dialogueData=Resources.Load<TextAsset>(dialogFileName); // dialogFileName¿¡ µé¾îÀÖ´Â ÆÄÀÏ¸í¿¡¼­ ´ë»ç ·Îµå
-        string[] data = dialogueData.text.Split(new char[] { '\n' }); // ÁÙ ´ÜÀ§·Î data ¸®½ºÆ®¿¡ ²÷¾î¼­ ÀúÀå
+        List<Dialogue> dialoguelist=new List<Dialogue>(); // ëŒ€ì‚¬ë¥¼ ì €ì¥í•˜ëŠ” ë¦¬ìŠ¤íŠ¸
+        TextAsset dialogueData=Resources.Load<TextAsset>(dialogFileName); // dialogFileNameì— ë“¤ì–´ìˆëŠ” íŒŒì¼ëª…ì—ì„œ ëŒ€ì‚¬ ë¡œë“œ
+        string[] data = dialogueData.text.Split(new char[] { '\n' }); // ì¤„ ë‹¨ìœ„ë¡œ data ë¦¬ìŠ¤íŠ¸ì— ëŠì–´ì„œ ì €ì¥
         for(int i=1;i<data.Length;i++)
         {
-            string[] row = data[i].Split(new char[] {',' }); // ½°Ç¥ ´ÜÀ§·Î ²÷¾î¼­ ÀúÀå
+            string[] row = data[i].Split(new char[] {',' }); // ì‰¼í‘œ ë‹¨ìœ„ë¡œ ëŠì–´ì„œ ì €ì¥
             Dialogue dialogue= new Dialogue();
             dialogue.name = row[1]; 
             dialogue.line=row[2];
             dialoguelist.Add(dialogue);
         }
-        return dialoguelist.ToArray(); // ¹è¿­·Î º¯È¯ÇØ ¹İÈ¯
+        return dialoguelist.ToArray(); // ë°°ì—´ë¡œ ë³€í™˜í•´ ë°˜í™˜
     }
 
 }

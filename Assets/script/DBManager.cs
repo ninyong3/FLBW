@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public class DBManager : MonoBehaviour
 {
     public static DBManager instance;
-    [SerializeField] string dialogFileName; // ÆÄ½ÌÇÒ ÆÄÀÏ¸íÀ» ÀÛ¼ºÇÏ±â À§ÇÑ º¯¼ö
+    [SerializeField] string dialogFileName; // íŒŒì‹±í•  íŒŒì¼ëª…ì„ ì‘ì„±í•˜ê¸° ìœ„í•œ ë³€ìˆ˜
     public Dictionary<int, Dialogue> dialogueDic=new Dictionary<int, Dialogue>();
     public static bool isFinish = false;
     private void Start()
@@ -12,9 +12,9 @@ public class DBManager : MonoBehaviour
        {
             instance= this;
             DialogueParser parser=GetComponent<DialogueParser>();
-            Dialogue[] dialogues = parser.Parse(dialogFileName); // ÆÄ½ÌÇØ¼­ dialogues¿¡ ÀúÀå
+            Dialogue[] dialogues = parser.Parse(dialogFileName); // íŒŒì‹±í•´ì„œ dialoguesì— ì €ì¥
             for (int i = 0; i < dialogues.Length; i++)
-                dialogueDic.Add(i + 1, dialogues[i]);  //µñ¼Å³Ê¸®¿¡ ´ë»ç ¹øÈ£¸¦ key, ÀÌ¸§°ú ´ë»ç¸¦ value·Î ÇØ¼­ ÀúÀå  
+                dialogueDic.Add(i + 1, dialogues[i]);  //ë”•ì…”ë„ˆë¦¬ì— ëŒ€ì‚¬ ë²ˆí˜¸ë¥¼ key, ì´ë¦„ê³¼ ëŒ€ì‚¬ë¥¼ valueë¡œ í•´ì„œ ì €ì¥  
             isFinish= true;
        }
     }
