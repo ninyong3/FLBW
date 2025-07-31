@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
@@ -12,17 +13,21 @@ public class SystemManager : MonoBehaviour
     [SerializeField] GameObject Closeimage;
     [SerializeField] GameObject Titlewarningimage;
     [SerializeField] GameObject Skipwarningimage;
+    [SerializeField] TextMeshProUGUI day;
     void Update()
     {
         if (previousClickObject != Closeimage)
             check = 0;
         previousClickObject = currentClickObject;
         currentClickObject = EventSystem.current.currentSelectedGameObject;
+        day.text = "Day " + GameManager.instance.dayCount.ToString();
     }
     void Start()
     {
         Titlewarningimage.SetActive(false);
         Skipwarningimage.SetActive(false);
+        day.text = "Day 1";
+
     }
     public void CloseSystem()
     {
@@ -49,7 +54,8 @@ public class SystemManager : MonoBehaviour
     }
     public void ToTitleClickYes()
     {
-      SceneManager.LoadScene("title");
+        GameManager.instance.previousScene=SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("title");
     }
     public void ToTitleClickNo()
     {
@@ -67,5 +73,15 @@ public class SystemManager : MonoBehaviour
     public void SkipDayClickNo()
     {
         Skipwarningimage.SetActive(false);
+    }
+    public void ToConfigSystem()
+    {
+        GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("config");
+    }
+    public void OpenKeword()
+    {
+        GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("keword");
     }
 }
