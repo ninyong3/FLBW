@@ -28,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour
                         heldFoodType = food.foodType;
                         heldCookType = null;
                         Debug.Log("재료 획득: " + heldFoodType);
+                        FindObjectOfType<TextDisplay>().ShowLog("재료 획득 : " + heldFoodType);
                     }
                     break;
 
@@ -40,7 +41,8 @@ public class PlayerInteraction : MonoBehaviour
                         heldItemRenderer.enabled = true;
                         heldCookType = cooker.cookType;
                         heldFoodType = null;
-                        Debug.Log("조리방식 획득: " + heldCookType);
+                        Debug.Log("도구 획득: " + heldCookType);
+                        FindObjectOfType<TextDisplay>().ShowLog("도구 획득 : " + heldCookType);
                     }
                     break;
 
@@ -51,10 +53,12 @@ public class PlayerInteraction : MonoBehaviour
                         if (accepted)
                         {
                             Debug.Log("조리대에 올바르게 제출됨");
+                            FindObjectOfType<TextDisplay>().ShowPriorityLog("성공!");
                         }
                         else
                         {
-                            Debug.Log("틀린 재료 → 소멸됨");
+                            Debug.Log("틀린 재료");
+                            FindObjectOfType<TextDisplay>().ShowPriorityLog("이게 아닌거 같은데?");
                         }
 
                         heldSprite = null;
