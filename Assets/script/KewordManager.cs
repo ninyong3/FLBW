@@ -36,7 +36,8 @@ public class KewordManager : MonoBehaviour
         keword[3].text = "직업: 대학생(의학실습생)";
         keword[4].text = "상징색: 노랑";
         keword[5].text = "천재성: 의학에 대한 재능";
-        keword[6].text = "비밀: 독실한 신자다.";
+        // keword[6].text = "비밀: 독실한 신자다.";
+        keword[6].text = "???";
         characterImage.sprite = characterImageList[0]; //0번 캐릭터 이미지->진예인
     }
     public void FreyjaKewordSelect() // 프레이야 키워드 함수
@@ -50,7 +51,8 @@ public class KewordManager : MonoBehaviour
         keword[3].text = "직업: 바이올리니스트";
         keword[4].text = "상징색: 파랑";
         keword[5].text = "천재성: 바이올린 연주에 대한 재능";
-        keword[6].text = "비밀: 사실은 겁이 많다.";
+        //keword[6].text = "비밀: 사실은 겁이 많다.";
+        keword[6].text = "???";
         characterImage.sprite = characterImageList[1]; //1번 캐릭터 이미지->프레이야
     }
     public void RuKewordSelect() // 루 키워드 함수
@@ -64,7 +66,8 @@ public class KewordManager : MonoBehaviour
         keword[3].text = "직업: 편의점 알바생";
         keword[4].text = "상징색: 분홍";
         keword[5].text = "천재성: 타인의 천재성을 알아볼 수\n있는 재능";
-        keword[6].text = "비밀: 의외로 자존감이 낮은 타입";
+        // keword[6].text = "비밀: 의외로 자존감이 낮은 타입";
+        keword[6].text = "???";
         characterImage.sprite = characterImageList[2]; //2번 캐릭터 이미지->루
     }
     public void KewordReturnScene() // 이전씬으로 돌아가기 위한 함수
