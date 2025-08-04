@@ -113,6 +113,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -247,10 +248,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
--r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
--r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
--r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/Microsoft.Win32.Primitives.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll"
@@ -385,10 +382,10 @@
 -r:"Library/PackageCache/com.unity.ext.nunit@031a54704bff/net40/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit@031a54704bff/net40/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.dll"
--r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
--r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
--r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
--r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.ref.dll"
@@ -401,16 +398,17 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/EditorPreferencesProvider.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/EditorPreferencesProviderView.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/AssemblyOptionsSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/BackupSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/CustomPropertyProviderSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/LinkerPropertyProviderSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/ScriptReferenceResolverSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettings/TypeOptionsSettings.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettingsProvider.cs"
-"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/SettingsProvider/ProjectSettingsProviderView.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/EditorPreferencesProvider.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/EditorPreferencesProviderView.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/AssemblyOptionsSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/BackupSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/CoreProviderSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/CustomPropertyProviderSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/LinkerPropertyProviderSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/ScriptReferenceResolverSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettings/TypeOptionsSettings.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettingsProvider.cs"
+"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/SettingsProvider/ProjectSettingsProviderView.cs"
 -langversion:9.0
 /deterministic
 /optimize+
