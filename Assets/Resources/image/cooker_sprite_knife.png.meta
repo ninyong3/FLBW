@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cooker_sprite_knife_0: -5086348975371041648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

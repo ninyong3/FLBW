@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cooker_sprite_fryingpan_0: -2300322913228704716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

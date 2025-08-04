@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      food_sprite_bread_0: 2323951048674035993
+      food_sprite_bread_1: 1080042823718230541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

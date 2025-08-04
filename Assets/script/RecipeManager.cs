@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class RecipeManager : MonoBehaviour
 {
@@ -16,11 +16,14 @@ public class RecipeManager : MonoBehaviour
     public List<RecipeStep> currentRecipe;
     public List<(FoodItem.FoodType?, CookerItem.CookType?)> submissionHistory = new();
     private int completedRecipeCount = 0;
-    public List<List<RecipeStep>> allRecipes = new();
+
+    private List<List<RecipeStep>> allRecipes = new();
+    private List<List<RecipeStep>> remainingRecipes = new();
 
     void Start()
     {
         InitializeRecipes();
+        ResetRemainingRecipes();
         PickNewRecipe();
     }
 
@@ -31,7 +34,7 @@ public class RecipeManager : MonoBehaviour
         allRecipes.Add(new List<RecipeStep> {
             new RecipeStep { foodType = FoodItem.FoodType.Bread },
             new RecipeStep { foodType = FoodItem.FoodType.Meat, cookType = CookerItem.CookType.Grill },
-            new RecipeStep { foodType = FoodItem.FoodType.Cabbage, cookType = CookerItem.CookType.Boil },
+            new RecipeStep { foodType = FoodItem.FoodType.Meat, cookType = CookerItem.CookType.Boil },
             new RecipeStep { foodType = FoodItem.FoodType.Bread }
         });
 
@@ -85,18 +88,21 @@ public class RecipeManager : MonoBehaviour
         });
     }
 
+    void ResetRemainingRecipes()
+    {
+        remainingRecipes = new List<List<RecipeStep>>(allRecipes);
+    }
+
     void PickNewRecipe()
     {
-        if (allRecipes.Count == 0)
+        if (remainingRecipes.Count == 0)
         {
-            Debug.Log("모든 레시피 완료!");
-            FindObjectOfType<TextDisplay>()?.ShowLog("모든 레시피 완료!");
-            return;
+            ResetRemainingRecipes();
         }
 
-        int index = Random.Range(0, allRecipes.Count);
-        currentRecipe = allRecipes[index];
-        allRecipes.RemoveAt(index); // 중복 방지
+        int index = Random.Range(0, remainingRecipes.Count);
+        currentRecipe = remainingRecipes[index];
+        remainingRecipes.RemoveAt(index);
 
         submissionHistory.Clear();
 
@@ -106,8 +112,7 @@ public class RecipeManager : MonoBehaviour
             step.cookDelivered = false;
         }
 
-        Debug.Log("새 레시피 시작!");
-        FindObjectOfType<TextDisplay>()?.ShowLog("새 레시피 시작!");
+        FindObjectOfType<TextDisplay>()?.ShowPriorityLog("새 레시피 시작!");
         FindObjectOfType<RecipeUIManager>()?.DisplayRecipe(currentRecipe);
     }
 
@@ -115,9 +120,12 @@ public class RecipeManager : MonoBehaviour
     {
         submissionHistory.Add((foodType, cookType));
 
-        foreach (var step in currentRecipe)
+        for (int i = 0; i < currentRecipe.Count; i++)
         {
-            if (step.foodDelivered && step.cookDelivered) continue;
+            var step = currentRecipe[i];
+
+            if (step.foodDelivered && (step.cookType == null || step.cookDelivered))
+                continue;
 
             if (foodType.HasValue && !cookType.HasValue && !step.foodDelivered)
             {
@@ -138,13 +146,13 @@ public class RecipeManager : MonoBehaviour
                 }
             }
 
-            break; // 순서 강제
+            break;
         }
 
         return false;
     }
 
-    private void CheckRecipeCompletion()
+    void CheckRecipeCompletion()
     {
         foreach (var step in currentRecipe)
         {
@@ -152,15 +160,13 @@ public class RecipeManager : MonoBehaviour
                 return;
         }
 
-        Debug.Log("요리 완성!");
-        FindObjectOfType<TextDisplay>()?.ShowLog("요리 완성!");
+        FindObjectOfType<TextDisplay>()?.ShowPriorityLog("요리 완성!");
 
         completedRecipeCount++;
         if (completedRecipeCount >= 3)
         {
-            Debug.Log("게임 종료!");
-            FindObjectOfType<TextDisplay>()?.ShowLog("게임 종료!");
-            // 게임 종료 처리 로직
+            FindObjectOfType<TextDisplay>()?.ShowPriorityLog("게임 종료!");
+            // TODO: 게임 종료 처리
         }
         else
         {
@@ -170,6 +176,7 @@ public class RecipeManager : MonoBehaviour
 
     public void ResetRecipe()
     {
+        ResetRemainingRecipes();
         PickNewRecipe();
     }
 }
