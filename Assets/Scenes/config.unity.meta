@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/config.unity.meta
 guid: f6ce77a703eb014499edbe2a5518e5f2
+========
+guid: 6e1b69fb677bd95439f31bff8ca1c431
+>>>>>>>> parent of 9c91d20b (MainMinigame):Library/PackageCache/com.unity.render-pipelines.core@fe255bed7938/Editor/CustomRenderTexture/CustomRenderTextureShader.template.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

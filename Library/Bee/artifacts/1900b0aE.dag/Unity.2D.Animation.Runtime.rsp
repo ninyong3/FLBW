@@ -3,6 +3,7 @@
 -refout:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Runtime.ref.dll"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -define:UNITY_6000_0_45
 -define:UNITY_6000_0
 =======
@@ -13,6 +14,10 @@
 -define:UNITY_6000_1_4
 -define:UNITY_6000_1
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+-define:UNITY_6000_0_45
+-define:UNITY_6000_0
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -define:UNITY_6000
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
@@ -45,12 +50,15 @@
 -define:UNITY_6000_0_OR_NEWER
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 -define:UNITY_6000_1_OR_NEWER
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 -define:UNITY_6000_1_OR_NEWER
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
 -define:UNITY_INCLUDE_TESTS
@@ -165,6 +173,9 @@
 -define:CSHARP_7_3_OR_NEWER
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
@@ -404,6 +415,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+<<<<<<< HEAD
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 =======
 =======
@@ -653,6 +665,13 @@
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+-r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -r:"Library/PackageCache/com.unity.collab-proxy@c854d1f7d97f/Lib/Editor/log4netPlastic.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@c854d1f7d97f/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@c854d1f7d97f/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll"
@@ -687,6 +706,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
@@ -720,6 +742,7 @@
 "Library/PackageCache/com.unity.2d.animation@494a3b4e73a9/Runtime/SpriteSkinHelpers.cs"
 "Library/PackageCache/com.unity.2d.animation@494a3b4e73a9/Runtime/SpriteSkinUtility.cs"
 "Library/PackageCache/com.unity.2d.animation@494a3b4e73a9/Runtime/UpdateOrder.cs"
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
@@ -760,6 +783,8 @@
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+>>>>>>> parent of 9c91d20b (MainMinigame)
 -langversion:9.0
 /unsafe+
 /deterministic
