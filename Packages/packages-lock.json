@@ -3,6 +3,7 @@
     "com.unity.2d.animation": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "10.1.4",
       "depth": 1,
       "source": "registry",
@@ -20,6 +21,13 @@
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+      "version": "10.1.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "9.0.7",
+>>>>>>> parent of 9c91d20b (MainMinigame)
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.collections": "1.2.4",
         "com.unity.modules.animation": "1.0.0",
@@ -30,6 +38,7 @@
     "com.unity.2d.aseprite": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "1.1.8",
 =======
       "version": "1.2.4",
@@ -37,6 +46,9 @@
 =======
       "version": "1.2.4",
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+      "version": "1.1.8",
+>>>>>>> parent of 9c91d20b (MainMinigame)
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -44,18 +56,22 @@
         "com.unity.2d.sprite": "1.0.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "com.unity.2d.tilemap": "1.0.0",
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
         "com.unity.2d.tilemap": "1.0.0",
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+>>>>>>> parent of 9c91d20b (MainMinigame)
         "com.unity.mathematics": "1.2.6",
         "com.unity.modules.animation": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "version": "9.0.7",
@@ -65,6 +81,9 @@
 =======
       "version": "9.1.0",
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+      "version": "9.0.7",
+>>>>>>> parent of 9c91d20b (MainMinigame)
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -77,6 +96,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.pixel-perfect": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "version": "5.0.3",
@@ -96,18 +116,20 @@
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
       "version": "5.1.0",
+=======
+      "version": "5.0.3",
+>>>>>>> parent of 9c91d20b (MainMinigame)
       "depth": 1,
       "source": "registry",
-      "dependencies": {
-        "com.unity.modules.imgui": "1.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
-      "version": "10.1.0",
+      "version": "9.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
+<<<<<<< HEAD
         "com.unity.2d.common": "9.1.0",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.2d.tilemap": "1.0.0"
@@ -115,6 +137,10 @@
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+        "com.unity.2d.common": "9.0.4",
+        "com.unity.2d.sprite": "1.0.0"
+>>>>>>> parent of 9c91d20b (MainMinigame)
       },
       "url": "https://packages.unity.com"
     },
@@ -125,6 +151,7 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "version": "10.0.7",
@@ -144,6 +171,13 @@
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+      "version": "10.0.7",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "9.0.7",
+>>>>>>> parent of 9c91d20b (MainMinigame)
         "com.unity.mathematics": "1.1.0",
         "com.unity.modules.physics2d": "1.0.0"
       },
@@ -161,6 +195,7 @@
     "com.unity.2d.tilemap.extras": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "4.1.0",
 =======
       "version": "4.3.0",
@@ -168,6 +203,9 @@
 =======
       "version": "4.3.0",
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+      "version": "4.1.0",
+>>>>>>> parent of 9c91d20b (MainMinigame)
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -178,7 +216,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.21",
+      "version": "1.8.19",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -219,6 +257,7 @@
       "dependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "com.unity.2d.animation": "10.1.4",
         "com.unity.2d.pixel-perfect": "5.0.3",
         "com.unity.2d.psdimporter": "9.0.3",
@@ -233,15 +272,25 @@
         "com.unity.2d.animation": "10.2.0",
         "com.unity.2d.pixel-perfect": "5.1.0",
         "com.unity.2d.psdimporter": "10.1.0",
+=======
+        "com.unity.2d.animation": "10.1.4",
+        "com.unity.2d.pixel-perfect": "5.0.3",
+        "com.unity.2d.psdimporter": "9.0.3",
+>>>>>>> parent of 9c91d20b (MainMinigame)
         "com.unity.2d.sprite": "1.0.0",
-        "com.unity.2d.spriteshape": "10.1.0",
+        "com.unity.2d.spriteshape": "10.0.7",
         "com.unity.2d.tilemap": "1.0.0",
+<<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "4.3.0",
         "com.unity.2d.aseprite": "1.2.4"
 <<<<<<< HEAD
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+        "com.unity.2d.tilemap.extras": "4.1.0",
+        "com.unity.2d.aseprite": "1.1.8"
+>>>>>>> parent of 9c91d20b (MainMinigame)
       }
     },
     "com.unity.ide.rider": {
@@ -254,7 +303,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.23",
+      "version": "2.0.22",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -294,7 +343,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "17.1.0",
+      "version": "17.0.4",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
@@ -309,12 +358,12 @@
       }
     },
     "com.unity.render-pipelines.universal": {
-      "version": "17.1.0",
+      "version": "17.0.4",
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "17.1.0",
-        "com.unity.shadergraph": "17.1.0",
+        "com.unity.render-pipelines.core": "17.0.4",
+        "com.unity.shadergraph": "17.0.4",
         "com.unity.render-pipelines.universal-config": "17.0.3"
       }
     },
@@ -344,11 +393,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
-      "version": "17.1.0",
+      "version": "17.0.4",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "17.1.0",
+        "com.unity.render-pipelines.core": "17.0.4",
         "com.unity.searcher": "4.9.3"
       }
     },
@@ -363,11 +412,11 @@
       }
     },
     "com.unity.test-framework.performance": {
-      "version": "3.1.0",
+      "version": "3.0.3",
       "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.33",
+        "com.unity.test-framework": "1.1.31",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"

@@ -19,6 +19,7 @@ MonoBehaviour:
   m_PlatformBuildProfile:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     rid: 2683039436902760448
 =======
     rid: 3158291605094137862
@@ -26,6 +27,9 @@ MonoBehaviour:
 =======
     rid: 3158291605094137862
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+    rid: 2683039436902760448
+>>>>>>> parent of 9c91d20b (MainMinigame)
   m_OverrideGlobalSceneList: 0
   m_Scenes: []
   m_ScriptingDefines: []
@@ -36,6 +40,7 @@ MonoBehaviour:
     RefIds:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - rid: 2683039436902760448
 =======
     - rid: 3158291605094137862
@@ -43,6 +48,9 @@ MonoBehaviour:
 =======
     - rid: 3158291605094137862
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
+    - rid: 2683039436902760448
+>>>>>>> parent of 9c91d20b (MainMinigame)
       type: {class: WindowsPlatformSettings, ns: UnityEditor.WindowsStandalone, asm: UnityEditor.WindowsStandalone.Extensions}
       data:
         m_Development: 0
