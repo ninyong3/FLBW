@@ -160,12 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:Assets/Resources/image/configimage.png.meta
     nameFileIdTable:
       configimage_0: -4969396685344074447
-=======
-    nameFileIdTable: {}
->>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/cooker_sprite_knife.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

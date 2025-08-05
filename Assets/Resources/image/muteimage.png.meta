@@ -210,18 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:Assets/Resources/image/muteimage.png.meta
-<<<<<<< HEAD:Assets/Resources/image/muteimage.png.meta
     nameFileIdTable:
       muteimage_0: -5903860256382238607
       muteimage_1: -712406485735483215
       muteimage_2: 6629522377113479386
-=======
-    nameFileIdTable: {}
->>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_egg.png.meta
-=======
-    nameFileIdTable: {}
->>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_egg.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
