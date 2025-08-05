@@ -1,0 +1,9 @@
+sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Maps/beach.unity
+=======
+- path: Assets/Scenes/ep0.unity
+>>>>>>> parent of 9c91d20b (MainMinigame)
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
