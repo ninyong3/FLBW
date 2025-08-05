@@ -474,6 +474,9 @@ Global
 		{F8F7DCBC-C273-932F-4A3C-CE5DCAB4CF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F7DCBC-C273-932F-4A3C-CE5DCAB4CF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F7DCBC-C273-932F-4A3C-CE5DCAB4CF14}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 		{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU

@@ -236,11 +236,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
 <<<<<<< HEAD:Assets/Resources/image/soundimage.png.meta
+<<<<<<< HEAD:Assets/Resources/image/soundimage.png.meta
     nameFileIdTable:
       soundimage_0: -7033628482495084851
       soundimage_1: 8900474825347032939
       soundimage_2: 5881349796886544226
       soundimage_3: -1399488638318994642
+=======
+    nameFileIdTable: {}
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_bread.png.meta
 =======
     nameFileIdTable: {}
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_bread.png.meta

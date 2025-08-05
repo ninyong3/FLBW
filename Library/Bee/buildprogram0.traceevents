@@ -2,6 +2,7 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
 <<<<<<< HEAD
+<<<<<<< HEAD
 { "pid": 35942, "tid": 1, "ts": 1754291613418812, "dur": 799959, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1754291613420164, "dur": 141121, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1754291614057375, "dur": 4291, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -10,6 +11,8 @@
 { "pid": 35942, "tid": 1, "ts": 1754291614226094, "dur": 1071, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1754291614225608, "dur": 1771, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 =======
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 { "pid": 35942, "tid": 1, "ts": 1753898243450543, "dur": 976793, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1753898243452249, "dur": 126694, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1753898244243505, "dur": 5379, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -17,4 +20,7 @@
 { "pid": 35942, "tid": 1, "ts": 1753898244253321, "dur": 98944, "ph": "X", "name": "JsonToString", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1753898244438590, "dur": 2175, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1753898244437763, "dur": 3402, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< HEAD
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)

@@ -160,8 +160,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD:Assets/Resources/image/ru_default.png.meta
     nameFileIdTable:
       ru_default_0: 6468948614829922354
+=======
+    nameFileIdTable: {}
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_cabbage.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

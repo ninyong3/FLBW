@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\xv641\OneDrive\바탕 화면\FLBW Clone\FLBW
+=======
+C:\Users\민준호\Desktop\판도라큐브\FLBW
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 C:\Users\민준호\Desktop\판도라큐브\FLBW
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)

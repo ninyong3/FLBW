@@ -5,6 +5,7 @@ Library\Bee\artifacts\mvdfrm\UnityEditor.UI.ref.dll_4C98D3F7040CD4F5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.TestRunner.ref.dll_E55D0F7C63F01D9E.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.UI.ref.dll_08FEAA520A2EFD60.mvfrm
 <<<<<<< HEAD
+<<<<<<< HEAD
 Library\Bee\artifacts\mvdfrm\UnityEditor.Graphs.dll_DEDE610F0634501D.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.AccessibilityModule.dll_9737523EE8027D86.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.AdaptivePerformanceModule.dll_894192E4B4678A92.mvfrm
@@ -126,6 +127,8 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_0FA0BA928A905A7F.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_A32EBF5E7012A861.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_2D63AE230C632265.mvfrm
 =======
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 Library\Bee\artifacts\mvdfrm\UnityEditor.Graphs.dll_6CF2CA3274E9F669.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.AccessibilityModule.dll_C30C0962215BCA7A.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.AdaptivePerformanceModule.dll_3F34E9FBA0D9FB06.mvfrm
@@ -246,5 +249,9 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_0A14F3B3372DFBCF.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_2579C484A9A74CCB.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_3CD3B6B7C068492D.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WebGL.Extensions.dll_27CF58DDD9C0B869.mvfrm
+<<<<<<< HEAD
+Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_EC665686255940D9.mvfrm
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_EC665686255940D9.mvfrm
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)

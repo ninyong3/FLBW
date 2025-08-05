@@ -1,5 +1,6 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1754298662826615, "dur":60, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1754298662826709, "dur":8506, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1754298662835240, "dur":35558, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
@@ -4672,6 +4673,8 @@
 ,{ "pid":12345, "tid":16, "ts":1754298664393452, "dur":406, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1754298664407788, "dur":16555, "ph":"X", "name": "ProfilerWriteOutput" }
 =======
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 ,{ "pid":12345, "tid":0, "ts":1753935938449993, "dur":148, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1753935938450172, "dur":6483, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1753935938456670, "dur":1502, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
@@ -7127,5 +7130,8 @@
 ,{ "pid":12345, "tid":16, "ts":1753935938975507, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":16, "ts":1753935938975576, "dur":430578, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1753935939417528, "dur":4333, "ph":"X", "name": "ProfilerWriteOutput" }
+<<<<<<< HEAD
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 ,

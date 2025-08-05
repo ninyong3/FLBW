@@ -2,8 +2,13 @@
 -out:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEngineBridge.001.dll"
 -refout:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 <<<<<<< HEAD
+<<<<<<< HEAD
 -define:UNITY_6000_0_45
 -define:UNITY_6000_0
+=======
+-define:UNITY_6000_1_4
+-define:UNITY_6000_1
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 -define:UNITY_6000_1_4
 -define:UNITY_6000_1
@@ -39,6 +44,10 @@
 -define:UNITY_2023_3_OR_NEWER
 -define:UNITY_6000_0_OR_NEWER
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+-define:UNITY_6000_1_OR_NEWER
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 -define:UNITY_6000_1_OR_NEWER
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
@@ -126,7 +135,10 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 <<<<<<< HEAD
+<<<<<<< HEAD
 -define:UNITY_PRO_LICENSE
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 =======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
@@ -140,6 +152,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
+<<<<<<< HEAD
 <<<<<<< HEAD
 -define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
@@ -385,6 +398,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 =======
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -628,6 +643,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.4f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+<<<<<<< HEAD
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 -r:"Library/PackageCache/com.unity.collab-proxy@c854d1f7d97f/Lib/Editor/log4netPlastic.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@c854d1f7d97f/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll"
@@ -636,6 +654,7 @@
 -r:"Library/PackageCache/com.unity.collections@56bff8827a7e/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit@031a54704bff/net40/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.dll"
+<<<<<<< HEAD
 <<<<<<< HEAD
 -r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
@@ -650,6 +669,8 @@
 "Library/PackageCache/com.unity.2d.common@bb1fc9b3d81b/Runtime/InternalBridge/IAnimationPreviewable.cs"
 "Library/PackageCache/com.unity.2d.common@bb1fc9b3d81b/Runtime/InternalBridge/InternalEngineBridge.cs"
 =======
+=======
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 -r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@7dcdc439b230/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
@@ -662,6 +683,9 @@
 "Library/PackageCache/com.unity.2d.common@2df623fe8b00/Runtime/InternalBridge/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.2d.common@2df623fe8b00/Runtime/InternalBridge/IAnimationPreviewable.cs"
 "Library/PackageCache/com.unity.2d.common@2df623fe8b00/Runtime/InternalBridge/InternalEngineBridge.cs"
+<<<<<<< HEAD
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
+=======
 >>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
 -langversion:9.0
 /deterministic
