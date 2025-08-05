@@ -160,8 +160,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD:Assets/Resources/image/outarrow.png.meta
     nameFileIdTable:
       outarrow_0: 6823240410980143168
+=======
+    nameFileIdTable: {}
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/cooker_sprite_pot.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

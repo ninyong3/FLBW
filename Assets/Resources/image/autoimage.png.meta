@@ -160,8 +160,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
     nameFileIdTable:
       autoimage_0: 816184854023189506
+=======
+    nameFileIdTable: {}
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅):Assets/Resources/image/food_sprite_fish.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -17,7 +17,11 @@ MonoBehaviour:
   m_Subtarget: 0
   m_PlatformId: 00000000000000000000000000000000
   m_PlatformBuildProfile:
+<<<<<<< HEAD
     rid: 2683039436902760452
+=======
+    rid: 3158291605094137864
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
   m_OverrideGlobalSceneList: 0
   m_Scenes: []
   m_ScriptingDefines: []
@@ -26,7 +30,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+<<<<<<< HEAD
     - rid: 2683039436902760452
+=======
+    - rid: 3158291605094137864
+>>>>>>> parent of 7b2276c5 (메인미니게임레시피디버깅)
       type: {class: SharedPlatformSettings, ns: UnityEditor.Build.Profile, asm: UnityEditor.CoreModule}
       data:
         m_Development: 0
