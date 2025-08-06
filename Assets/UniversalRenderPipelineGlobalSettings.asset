@@ -55,12 +55,15 @@ MonoBehaviour:
       - rid: 7752762179098771475
       - rid: 7752762179098771476
       - rid: 3114554863623077888
+<<<<<<< HEAD
       - rid: -2
       - rid: 3158291605094137857
       - rid: 3158291605094137858
       - rid: -2
       - rid: 3158291605094137860
       - rid: 3158291605094137861
+=======
+>>>>>>> main
     m_RuntimeSettings:
       m_List:
       - rid: 7752762179098771456
@@ -102,6 +105,7 @@ MonoBehaviour:
       type: {class: UniversalRenderPipelineEditorAssets, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_DefaultSettingsVolumeProfile: {fileID: 11400000, guid: eda47df5b85f4f249abf7abd73db2cb2, type: 2}
+<<<<<<< HEAD
     - rid: 3158291605094137857
       type: {class: ScreenSpaceAmbientOcclusionPersistentResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
@@ -151,6 +155,8 @@ MonoBehaviour:
           - {r: 0.5, g: 0, b: 0.5, a: 1}
           - {r: 0.5, g: 0.5, b: 0.5, a: 1}
           - {r: 0, g: 0, b: 1, a: 1}
+=======
+>>>>>>> main
     - rid: 7752762179098771456
       type: {class: UniversalRenderPipelineRuntimeTextures, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:

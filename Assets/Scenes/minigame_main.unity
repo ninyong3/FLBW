@@ -801,7 +801,6 @@ GameObject:
   - component: {fileID: 639122978}
   - component: {fileID: 639122977}
   - component: {fileID: 639122979}
-  - component: {fileID: 639122980}
   m_Layer: 0
   m_Name: food_fish
   m_TagString: Food
@@ -926,20 +925,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &639122980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639122976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foodIcon: {fileID: -7698161800118610173, guid: 75ef01b2cb082264099f358ba4daf503, type: 3}
-  foodType: 0
 --- !u!1 &653900825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,11 +1738,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 863000168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd932dfa1f297648a3a1552e1581979, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca6c95343798ae46baab38fd85189cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 863000168}
-  speed: 5
 --- !u!114 &863000174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,11 +1750,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 863000168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b03175075a336a4ab7d0bc0a2a5e3fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0814fbbf0321766439c53c77e711029a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heldItemRenderer: {fileID: 336966867}
-  recipeManager: {fileID: 1863873927}
 --- !u!1 &913220103
 GameObject:
   m_ObjectHideFlags: 0
