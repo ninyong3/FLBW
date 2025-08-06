@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,17 +33,17 @@ public class RecipeManager : MonoBehaviour
         allRecipes.Clear();
 
         allRecipes.Add(new List<RecipeStep> {
-            new RecipeStep { foodType = FoodItem.FoodType.Bread },
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut },
             new RecipeStep { foodType = FoodItem.FoodType.Meat, cookType = CookerItem.CookType.Grill },
             new RecipeStep { foodType = FoodItem.FoodType.Meat, cookType = CookerItem.CookType.Boil },
-            new RecipeStep { foodType = FoodItem.FoodType.Bread }
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut  }
         });
 
         allRecipes.Add(new List<RecipeStep> {
-            new RecipeStep { foodType = FoodItem.FoodType.Bread },
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut },
             new RecipeStep { foodType = FoodItem.FoodType.Egg, cookType = CookerItem.CookType.Grill },
             new RecipeStep { foodType = FoodItem.FoodType.Egg, cookType = CookerItem.CookType.Grill },
-            new RecipeStep { foodType = FoodItem.FoodType.Bread }
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut}
         });
 
         allRecipes.Add(new List<RecipeStep> {
@@ -53,17 +54,17 @@ public class RecipeManager : MonoBehaviour
         });
 
         allRecipes.Add(new List<RecipeStep> {
-            new RecipeStep { foodType = FoodItem.FoodType.Bread },
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Grill },
             new RecipeStep { foodType = FoodItem.FoodType.Fish, cookType = CookerItem.CookType.Cut },
             new RecipeStep { foodType = FoodItem.FoodType.Fish, cookType = CookerItem.CookType.Cut },
-            new RecipeStep { foodType = FoodItem.FoodType.Bread }
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Grill }
         });
 
         allRecipes.Add(new List<RecipeStep> {
-            new RecipeStep { foodType = FoodItem.FoodType.Bread },
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut },
             new RecipeStep { foodType = FoodItem.FoodType.Egg, cookType = CookerItem.CookType.Grill },
             new RecipeStep { foodType = FoodItem.FoodType.Cabbage, cookType = CookerItem.CookType.Boil },
-            new RecipeStep { foodType = FoodItem.FoodType.Bread }
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut}
         });
 
         allRecipes.Add(new List<RecipeStep> {
@@ -81,10 +82,10 @@ public class RecipeManager : MonoBehaviour
         });
 
         allRecipes.Add(new List<RecipeStep> {
-            new RecipeStep { foodType = FoodItem.FoodType.Bread },
+            new RecipeStep { foodType = FoodItem.FoodType.Bread, cookType = CookerItem.CookType.Cut },
             new RecipeStep { foodType = FoodItem.FoodType.Meat, cookType = CookerItem.CookType.Grill },
             new RecipeStep { foodType = FoodItem.FoodType.Egg, cookType = CookerItem.CookType.Grill },
-            new RecipeStep { foodType = FoodItem.FoodType.Bread }
+            new RecipeStep { foodType = FoodItem.FoodType.Bread , cookType = CookerItem.CookType.Cut}
         });
     }
 
@@ -95,6 +96,8 @@ public class RecipeManager : MonoBehaviour
 
     void PickNewRecipe()
     {
+        StartCoroutine(TimeDelay(3.0f));
+        ShowRecipeUI();
         if (remainingRecipes.Count == 0)
         {
             ResetRemainingRecipes();
@@ -151,7 +154,7 @@ public class RecipeManager : MonoBehaviour
 
         return false;
     }
-
+    
     void CheckRecipeCompletion()
     {
         foreach (var step in currentRecipe)
@@ -159,21 +162,50 @@ public class RecipeManager : MonoBehaviour
             if (!step.foodDelivered || (step.cookType != null && !step.cookDelivered))
                 return;
         }
-
-        FindObjectOfType<TextDisplay>()?.ShowPriorityLog("요리 완성!");
+        StartCoroutine(TimeDelay(0.01f));
+        Debug.Log("요리 완성!");
+        FindObjectOfType<TextDisplay>()?.ShowLog("요리 완성!");
+        RemoverecipeUI();
 
         completedRecipeCount++;
         if (completedRecipeCount >= 3)
         {
-            FindObjectOfType<TextDisplay>()?.ShowPriorityLog("게임 종료!");
-            // TODO: 게임 종료 처리
+            StartCoroutine(TimeDelay(0.1f));
+            Debug.Log("게임 종료");
+            FindObjectOfType<TextDisplay>()?.ShowLog("게임 종료!");
+
+            RemoverecipeUI();
+            StartCoroutine(TimeDelay(10.0f));
+            // 게임 종료 처리
+            UnityEditor.EditorApplication.isPlaying = false;
+            // 씬 이동으로 추후 변경
         }
         else
         {
             PickNewRecipe();
         }
-    }
 
+    }
+    IEnumerator TimeDelay(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+    }
+    void RemoverecipeUI()
+    {
+        RecipeUIManager recipeUI = FindObjectOfType<RecipeUIManager>();
+        if (recipeUI != null && recipeUI.recipeText != null)
+        {
+            recipeUI.recipeText.enabled = false;
+        }
+    }
+    public void ShowRecipeUI()
+    {
+        RecipeUIManager recipeUI = FindObjectOfType<RecipeUIManager>();
+        if (recipeUI != null && recipeUI.recipeText != null)
+        {
+            recipeUI.recipeText.enabled = true;  
+        }
+    }
     public void ResetRecipe()
     {
         ResetRemainingRecipes();
