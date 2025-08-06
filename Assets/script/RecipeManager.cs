@@ -135,6 +135,7 @@ public class RecipeManager : MonoBehaviour
                 if (step.foodType == foodType.Value)
                 {
                     step.foodDelivered = true;
+                    UpdateRecipeUI();
                     return true;
                 }
             }
@@ -144,6 +145,7 @@ public class RecipeManager : MonoBehaviour
                 if (step.cookType != null && step.cookType == cookType.Value)
                 {
                     step.cookDelivered = true;
+                    UpdateRecipeUI(); 
                     CheckRecipeCompletion();
                     return true;
                 }
@@ -168,7 +170,7 @@ public class RecipeManager : MonoBehaviour
         RemoverecipeUI();
 
         completedRecipeCount++;
-        if (completedRecipeCount >= 3)
+        if (completedRecipeCount >= 2)
         {
             StartCoroutine(TimeDelay(0.1f));
             Debug.Log("게임 종료");
@@ -206,6 +208,15 @@ public class RecipeManager : MonoBehaviour
             recipeUI.recipeText.enabled = true;
         }
     }
+    void UpdateRecipeUI()
+    {
+        RecipeUIManager recipeUI = FindObjectOfType<RecipeUIManager>();
+        if (recipeUI != null)
+        {
+            recipeUI.DisplayRecipe(currentRecipe);
+        }
+    }
+
     public void ResetRecipe()
     {
         ResetRemainingRecipes();

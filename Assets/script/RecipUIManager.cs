@@ -18,14 +18,27 @@ public class RecipeUIManager : MonoBehaviour
 
         foreach (var step in recipe)
         {
-            string line = "- " + step.foodType.ToString();
+            string foodText = step.foodType.ToString();
+            string cookText = step.cookType.HasValue ? step.cookType.Value.ToString() : null;
 
+            // ✅ 음식 제출 여부에 따라 취소선
+            if (step.foodDelivered)
+                foodText = $"<s>{foodText}</s>";
+
+            // ✅ 도구 제출 여부에 따라 취소선
             if (step.cookType.HasValue)
             {
-                line += " + " + step.cookType.Value.ToString();
-            }
+                if (step.cookDelivered)
+                    cookText = $"<s>{cookText}</s>";
 
-            recipeText.text += line + "\n";
+                recipeText.text += $"- {foodText} + {cookText}\n";
+            }
+            else
+            {
+                recipeText.text += $"- {foodText}\n";
+            }
         }
     }
+
+
 }
