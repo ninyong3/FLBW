@@ -119,6 +119,93 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32506031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 32506033}
+  - component: {fileID: 32506032}
+  m_Layer: 0
+  m_Name: MinigameBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &32506032
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32506031}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.24528301, g: 0.1422256, b: 0.12842648, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &32506033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32506031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.024, y: -0.0379, z: 0}
+  m_LocalScale: {x: 17.7279, y: 10.0359, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117831154
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,10 +351,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 117831154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b26090299d43a043be73fde9cf77dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodIcon: {fileID: 5058981057973393059, guid: c59bc1ad2ff5d8e448b5b3af77565115, type: 3}
+  foodIcon: {fileID: 21300000, guid: 63570082fc32718419d347920759e5ff, type: 3}
   foodType: 2
 --- !u!1 &137128732
 GameObject:
@@ -785,10 +872,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 580692187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a2b3c200fd584468ddcb764ff53ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: d6e210c377c2ff240a7dde78b57bd2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookerIcon: {fileID: -5086348975371041648, guid: a6eb212e7955ecc47a3dda71cd4eef2f, type: 3}
+  cookerIcon: {fileID: -5086348975371041648, guid: 514f693208d6ec846803b3fe98c14939, type: 3}
   cookType: 2
 --- !u!1 &639122976
 GameObject:
@@ -935,10 +1022,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 639122976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b26090299d43a043be73fde9cf77dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodIcon: {fileID: -7698161800118610173, guid: 75ef01b2cb082264099f358ba4daf503, type: 3}
+  foodIcon: {fileID: -7698161800118610173, guid: 30ee268b55cedd049bff1e0944c32aaf, type: 3}
   foodType: 0
 --- !u!1 &653900825
 GameObject:
@@ -1164,10 +1251,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 752821747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b26090299d43a043be73fde9cf77dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodIcon: {fileID: 6252182416446713949, guid: 0e3ac7ebd2b8a6c428438dc2c0d20c62, type: 3}
+  foodIcon: {fileID: 21300000, guid: af38a8a6908f2a0498702bd1d559d282, type: 3}
   foodType: 3
 --- !u!1 &760267822
 GameObject:
@@ -1305,10 +1392,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 760267822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a2b3c200fd584468ddcb764ff53ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: d6e210c377c2ff240a7dde78b57bd2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookerIcon: {fileID: 801309025527937878, guid: 34f163ebc3d017041902eff23fbb0900, type: 3}
+  cookerIcon: {fileID: 801309025527937878, guid: f87fafaeccec79a4a958b0d083e4a862, type: 3}
   cookType: 1
 --- !u!1 &815310652
 GameObject:
@@ -1515,10 +1602,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 857583176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a2b3c200fd584468ddcb764ff53ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: d6e210c377c2ff240a7dde78b57bd2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookerIcon: {fileID: -2300322913228704716, guid: f9c8ee48624e88c4591954c552704d45, type: 3}
+  cookerIcon: {fileID: -2300322913228704716, guid: a0f120adce4513841b48c48232d82673, type: 3}
   cookType: 0
 --- !u!1 &859990374
 GameObject:
@@ -1753,7 +1840,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 863000168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd932dfa1f297648a3a1552e1581979, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca6c95343798ae46baab38fd85189cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 863000168}
@@ -1767,7 +1854,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 863000168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b03175075a336a4ab7d0bc0a2a5e3fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0814fbbf0321766439c53c77e711029a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   heldItemRenderer: {fileID: 336966867}
@@ -1901,11 +1988,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 954907654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e482f4ed0379b4cb70bd684d537a34, type: 3}
+  m_Script: {fileID: 11500000, guid: 62a26a1189f028f4ea30a25881a9a0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 1202512098}
-  messageDuration: 1
+  messageDuration: 1.5
 --- !u!4 &954907656
 Transform:
   m_ObjectHideFlags: 0
@@ -2465,8 +2552,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae745033d2d56bf4a8a1c3a3e0cf86f7, type: 2}
-  m_sharedMaterial: {fileID: -5692078790093480289, guid: ae745033d2d56bf4a8a1c3a3e0cf86f7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c5107762fc6b764e80bea68fa59c17e, type: 2}
+  m_sharedMaterial: {fileID: 2977814636759170414, guid: 7c5107762fc6b764e80bea68fa59c17e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2775,10 +2862,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504998580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b26090299d43a043be73fde9cf77dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodIcon: {fileID: -56739342646145655, guid: da1bf13c3a8d01947850fc3ecb151c5b, type: 3}
+  foodIcon: {fileID: -56739342646145655, guid: 8fa5a887f2f280f44962bb8d5f39184b, type: 3}
   foodType: 1
 --- !u!1 &1595177831
 GameObject:
@@ -2884,7 +2971,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613219415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf331e3af210d694898821010f985548, type: 3}
+  m_Script: {fileID: 11500000, guid: 8195e28ac911a554aa12f22941155320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   recipeText: {fileID: 2117770779}
@@ -3048,10 +3135,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1807909408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f89b43ef356cb4f81aa5e974fcdfd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b26090299d43a043be73fde9cf77dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodIcon: {fileID: 2323951048674035993, guid: 5b1134af87bd1134a810ff72b5c97f0c, type: 3}
+  foodIcon: {fileID: 21300000, guid: ee5637d7d50ef7d408bd97106720d898, type: 3}
   foodType: 4
 --- !u!1 &1863873926
 GameObject:
@@ -3079,7 +3166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863873926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa92217518a9e54daee6bd718a683cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 711c7dc3e8ee7744d8215814d5b620a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentRecipe: []
@@ -3216,8 +3303,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae745033d2d56bf4a8a1c3a3e0cf86f7, type: 2}
-  m_sharedMaterial: {fileID: -5692078790093480289, guid: ae745033d2d56bf4a8a1c3a3e0cf86f7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c5107762fc6b764e80bea68fa59c17e, type: 2}
+  m_sharedMaterial: {fileID: 2977814636759170414, guid: 7c5107762fc6b764e80bea68fa59c17e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3317,6 +3404,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 32506033}
   - {fileID: 913220107}
   - {fileID: 653900828}
   - {fileID: 863000172}
