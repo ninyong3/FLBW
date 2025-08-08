@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\flbw\\flbw\\assets\\script\\textdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\textdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\recipuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\recipuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\cookeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cookeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MiniGameEscapeManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeToolTip": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:18:45.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TextDisplay.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TextDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\TextDisplay.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TextDisplay.cs",
+              "RelativeToolTip": "Assets\\script\\TextDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:41:56.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecipUIManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\RecipUIManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipUIManager.cs",
+              "RelativeToolTip": "Assets\\script\\RecipUIManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T17:57:36.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecipeManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\RecipeManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
+              "RelativeToolTip": "Assets\\script\\RecipeManager.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAcwJIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T07:11:59.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\PlayerInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\PlayerInteraction.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\PlayerInteraction.cs",
+              "RelativeToolTip": "Assets\\script\\PlayerInteraction.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwDUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:39:16.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CookerItem.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\CookerItem.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\CookerItem.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\CookerItem.cs",
+              "RelativeToolTip": "Assets\\script\\CookerItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:28:53.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\FoodItem.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\FoodItem.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\FoodItem.cs",
+              "RelativeToolTip": "Assets\\script\\FoodItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:11:15.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\Player.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\Player.cs",
+              "RelativeToolTip": "Assets\\script\\Player.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwAsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T03:42:07.737Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
