@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
 guid: 52babaf5d8a7cde42a13b6b91523f8d1
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 816184854023189506
-    second: autoimage_0
-========
-guid: 1880cdd2113bb8448ac5492a2eda8569
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 117101579656503219
     second: worktop_0
->>>>>>>> mjh:Assets/Resources/image/worktop.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,48 +96,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-========
->>>>>>>> mjh:Assets/Resources/image/worktop.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
-      name: autoimage_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 240
-        height: 240
-========
       name: worktop_0
       rect:
         serializedVersion: 2
@@ -154,7 +107,6 @@ TextureImporter:
         y: 24
         width: 830
         height: 965
->>>>>>>> mjh:Assets/Resources/image/worktop.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,13 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
-      spriteID: 2043b17eccba35b00800000000000000
-      internalID: 816184854023189506
-========
       spriteID: 3bf101a244700a100800000000000000
       internalID: 117101579656503219
->>>>>>>> mjh:Assets/Resources/image/worktop.png.meta
       vertices: []
       indices: 
       edges: []
@@ -188,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Resources/image/autoimage.png.meta
-      autoimage_0: 816184854023189506
-========
       worktop_0: 117101579656503219
->>>>>>>> mjh:Assets/Resources/image/worktop.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
