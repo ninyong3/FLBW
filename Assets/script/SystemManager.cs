@@ -3,6 +3,9 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
+using UnityEngine.UI;
+using UnityEditor.Experimental.GraphView;
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
@@ -14,6 +17,7 @@ public class SystemManager : MonoBehaviour
     [SerializeField] GameObject Titlewarningimage;
     [SerializeField] GameObject Skipwarningimage;
     [SerializeField] TextMeshProUGUI day;
+    [SerializeField] Image Testimage;
     void Update()
     {
         if (previousClickObject != Closeimage) // 이전에 클릭 된 것이 클로즈 버튼이 아닌지 확인
@@ -27,7 +31,6 @@ public class SystemManager : MonoBehaviour
         Titlewarningimage.SetActive(false); // 타이틀 경고창 숨김
         Skipwarningimage.SetActive(false); // 스킵 경고창 숨김
         day.text = "Day 1";
-
     }
     public void CloseSystem() // 클로즈 구현을 위한 함수
     {
@@ -83,5 +86,32 @@ public class SystemManager : MonoBehaviour
     {
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("keword");
+    }
+    public void SaveSystem()
+    {
+       StartCoroutine(CaptureSaveImage());
+    }
+    IEnumerator CaptureSaveImage()
+    {
+        yield return new WaitForEndOfFrame();
+        Texture2D saveScreenshot = ScreenCapture.CaptureScreenshotAsTexture();
+        byte[] bytes = saveScreenshot.EncodeToPNG();
+        Destroy(saveScreenshot);
+        string saveScreenshotFolderPath = Path.Combine(Application.persistentDataPath, "saveScreenshot");
+        if (!Directory.Exists(saveScreenshotFolderPath))
+        {
+            Directory.CreateDirectory(saveScreenshotFolderPath);
+        }
+        string saveScreenshotFileName = $"SaveScreenshot_{System.DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
+        string saveScreenshotPath = Path.Combine(saveScreenshotFolderPath, saveScreenshotFileName);
+        File.WriteAllBytes(saveScreenshotPath, bytes);
+        byte[] bytes1 = File.ReadAllBytes(saveScreenshotPath);
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(bytes1);
+        Rect rect = new Rect(0, 0, texture.width, texture.height);
+        Sprite sprite = Sprite.Create(texture, rect, new Vector2(0.5f, 0.5f));
+        Testimage.sprite = sprite;
+        Testimage.color = Color.white;
+        Debug.Log(saveScreenshotPath);
     }
 }
