@@ -19,6 +19,7 @@ public class TitleManager : MonoBehaviour
     public void OpenLoad()
     {
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
+        GameManager.instance.saveLoadCheck = false;
         SceneManager.LoadScene("saveload"); // 세이브 로드 씬 불러오기
     }
     public void OpenExtra()

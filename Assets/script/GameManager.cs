@@ -1,5 +1,9 @@
-using UnityEngine;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
+using UnityEditor.Rendering;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int dayCount = 1; // 현재 day 수
@@ -11,6 +15,12 @@ public class GameManager : MonoBehaviour
     public double effectSoundvolume = 50f; // 효과음 음량
     public double textPrintSpeed = 50f; // 텍스트 출력 속도
     public int selectedHeroine; // 선택된 여주인공 인덱스 1->진예인, 2->프레이야 레가토, 3->루
+    public bool saveLoadCheck;
+    public string saveImagePath;
+    public string saveDataPath;
+    public string saveJsonPath;
+    public bool quickCheck;
+    public string slotImagePath;
     void Start()
     {
        
@@ -34,5 +44,30 @@ public class GameManager : MonoBehaviour
             instance= this;
             DontDestroyOnLoad(gameObject); // 씬 간 Gamemanager 오브젝트 공유 가능하게 하기 위한 파괴 금지
         }
+    }
+    public void DataSaving(string saveJsonFileName, string saveTime)
+    {
+        SaveData saveData = new SaveData();
+        saveData.day = dayCount;
+        saveData.relationship_level = relationship_level;
+        if (quickCheck == false)
+            saveData.presentSceneName = previousScene;
+        else
+            saveData.presentSceneName = SceneManager.GetActiveScene().name;
+        saveData.slotImagePath = slotImagePath;
+        saveData.printSetting = printSetting;
+        saveData.bgmSoundvolume = bgmSoundvolume;
+        saveData.SoundEffectvolume = effectSoundvolume;
+        saveData.textPrintSpeed = textPrintSpeed;
+        saveData.selectedHeroine=selectedHeroine;
+        saveData.saveTime = saveTime;
+        string saveToJsonData = JsonUtility.ToJson(saveData, true);
+        string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
+        if (!Directory.Exists(saveJsonFolderPath))
+        {
+            Directory.CreateDirectory(saveJsonFolderPath);
+        }
+        saveJsonPath = Path.Combine(saveJsonFolderPath, saveJsonFileName);
+        File.WriteAllText(saveJsonPath, saveToJsonData);
     }
 }
