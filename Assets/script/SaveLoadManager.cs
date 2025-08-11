@@ -18,6 +18,9 @@ public class SaveLoadManager : MonoBehaviour
     [SerializeField] List<GameObject> slotList;
     public List<SaveData> saveData;
     public List<TextMeshProUGUI> slotTextList;
+    [SerializeField] GameObject Rewritewarningimage;
+    GameObject selectedSlot;
+    int slotIndex;
     void Start()
     {
         if(GameManager.instance.saveLoadCheck)
@@ -37,6 +40,7 @@ public class SaveLoadManager : MonoBehaviour
         pageText.text = "Page 1";
         pageIndex = 1;
         previousPageButton.SetActive(false);
+        Rewritewarningimage.SetActive(false);
         LoadData();
     }
     void Update()
@@ -93,8 +97,7 @@ public class SaveLoadManager : MonoBehaviour
     }
     public void SlotSelect()
     { 
-        GameObject selectedSlot = EventSystem.current.currentSelectedGameObject;
-        int slotIndex;
+        selectedSlot = EventSystem.current.currentSelectedGameObject;
         if (selectedSlot.name == "Quicksaveslot")
             slotIndex = 0;
         else
@@ -104,27 +107,16 @@ public class SaveLoadManager : MonoBehaviour
         }
         if (GameManager.instance.saveLoadCheck)
         {
-            byte[] saveImageBytes = File.ReadAllBytes(GameManager.instance.saveImagePath);
-            Texture2D saveImageTexture = new Texture2D(2, 2);
-            saveImageTexture.LoadImage(saveImageBytes);
-            Rect saveImageRect = new Rect(0, 0, saveImageTexture.width, saveImageTexture.height);
-            Sprite saveImageSprite = Sprite.Create(saveImageTexture, saveImageRect, new Vector2(0.5f, 0.5f));
-            selectedSlot.GetComponent<Image>().sprite=saveImageSprite;
-            selectedSlot.GetComponent<Image>().color = Color.white;
-            byte[] slotImageBytes = saveImageTexture.EncodeToPNG();
-            string saveSlotImageFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveSlot");
-            if (!Directory.Exists(saveSlotImageFolderPath))
+            if (saveData[slotIndex].saveCheck == false)
             {
-                Directory.CreateDirectory(saveSlotImageFolderPath);
+                SaveData();
             }
-            string saveSlotImagetFileName = selectedSlot.name+".png";
-            string saveSlotImagePath = Path.Combine(saveSlotImageFolderPath, saveSlotImagetFileName);
-            GameManager.instance.slotImagePath = saveSlotImagePath;
-            File.WriteAllBytes(saveSlotImagePath, slotImageBytes);
-            slotTextList[slotIndex].text=$"{System.DateTime.Now:MM월 dd일, HH:mm}";
-            GameManager.instance.DataSaving(selectedSlot.name + ".json", $"{System.DateTime.Now:MM월 dd일, HH:mm}");
+            else
+            {
+                Rewritewarningimage.SetActive(true);
+            }
         }
-        else if (saveData[slotIndex].day != 0)
+        else if(saveData[slotIndex].saveCheck == true)
         {
             GameManager.instance.dayCount = saveData[slotIndex].day;
             GameManager.instance.relationship_level=saveData[slotIndex].relationship_level;
@@ -158,5 +150,36 @@ public class SaveLoadManager : MonoBehaviour
                 slotTextList[i].text = saveData[i].saveTime;
             }
         }
+    }
+    void SaveData()
+    {
+        byte[] saveImageBytes = File.ReadAllBytes(GameManager.instance.saveImagePath);
+        Texture2D saveImageTexture = new Texture2D(2, 2);
+        saveImageTexture.LoadImage(saveImageBytes);
+        Rect saveImageRect = new Rect(0, 0, saveImageTexture.width, saveImageTexture.height);
+        Sprite saveImageSprite = Sprite.Create(saveImageTexture, saveImageRect, new Vector2(0.5f, 0.5f));
+        selectedSlot.GetComponent<Image>().sprite = saveImageSprite;
+        selectedSlot.GetComponent<Image>().color = Color.white;
+        byte[] slotImageBytes = saveImageTexture.EncodeToPNG();
+        string saveSlotImageFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveSlot");
+        if (!Directory.Exists(saveSlotImageFolderPath))
+        {
+            Directory.CreateDirectory(saveSlotImageFolderPath);
+        }
+        string saveSlotImagetFileName = selectedSlot.name + ".png";
+        string saveSlotImagePath = Path.Combine(saveSlotImageFolderPath, saveSlotImagetFileName);
+        GameManager.instance.slotImagePath = saveSlotImagePath;
+        File.WriteAllBytes(saveSlotImagePath, slotImageBytes);
+        slotTextList[slotIndex].text = $"{System.DateTime.Now:MM월 dd일, HH:mm}";
+        GameManager.instance.DataSaving(selectedSlot.name + ".json", $"{System.DateTime.Now:MM월 dd일, HH:mm}");
+    }
+    public void RewriteClickYes()
+    {
+        SaveData();
+        Rewritewarningimage.SetActive(false);
+    }
+    public void RewriteClickNo()
+    {
+        Rewritewarningimage.SetActive(false);
     }
 }

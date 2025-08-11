@@ -3,7 +3,7 @@ using System;
 [Serializable]
 public class SaveData
 {
-    public int day=0;
+    public int day;
     public int relationship_level;
     public string presentSceneName;
     public int printSetting;
@@ -13,4 +13,5 @@ public class SaveData
     public int selectedHeroine;
     public string slotImagePath;
     public string saveTime;
+    public bool saveCheck=false;
 }

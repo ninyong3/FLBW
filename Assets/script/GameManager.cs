@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
         saveData.textPrintSpeed = textPrintSpeed;
         saveData.selectedHeroine=selectedHeroine;
         saveData.saveTime = saveTime;
+        saveData.saveCheck = true;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))
