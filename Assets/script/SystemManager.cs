@@ -5,9 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.IO;
 using UnityEngine.UI;
-using UnityEditor.Experimental.GraphView;
-using Unity.Android.Gradle.Manifest;
-using UnityEngine.Rendering;
+
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
