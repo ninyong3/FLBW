@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.IO;
 using UnityEngine.UI;
-using UnityEditor.Experimental.GraphView;
-using Unity.Android.Gradle.Manifest;
-using UnityEngine.Rendering;
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
@@ -20,6 +17,8 @@ public class SystemManager : MonoBehaviour
     [SerializeField] GameObject Skipwarningimage;
     [SerializeField] GameObject Quickloadwarningimage;
     [SerializeField] TextMeshProUGUI day;
+    [SerializeField] GameObject Autoimage;
+    [SerializeField] GameObject Log;
     Coroutine saveCoroutine;
     void Update()
     {
@@ -27,14 +26,22 @@ public class SystemManager : MonoBehaviour
             check = 0; // 초기화
         previousClickObject = currentClickObject; // 이전에 클릭된 것 갱신
         currentClickObject = EventSystem.current.currentSelectedGameObject; //현재 클릭된 것 갱신
-        day.text = "Day " + GameManager.instance.dayCount.ToString(); // 일자 수 갱신
+        if(SceneManager.GetActiveScene().name == "main")
+            day.text = "Day " + GameManager.instance.dayCount.ToString(); // 일자 수 갱신
+        if (GameManager.instance.printSetting == 0)
+        {
+            Autoimage.transform.Rotate(new Vector3(0, 0, -400f * Time.deltaTime));
+        }
+        else
+            Autoimage.transform.rotation =Quaternion.Euler(0, 0, 0);
     }
     void Start()
     {
         Titlewarningimage.SetActive(false); // 타이틀 경고창 숨김
         Skipwarningimage.SetActive(false); // 스킵 경고창 숨김
         Quickloadwarningimage.SetActive(false);
-        day.text = "Day 1";
+        if (SceneManager.GetActiveScene().name == "main") 
+             day.text = "Day 1";
     }
     public void CloseSystem() // 클로즈 구현을 위한 함수
     {
@@ -74,7 +81,10 @@ public class SystemManager : MonoBehaviour
     }
     public void SkipDayClickYes() // 스킵 경고창에서 네를 눌렀을 시 작동하는 함수
     {
-        GameManager.instance.dayCount++; // 다음 일자로 넘기기
+        if (SceneManager.GetActiveScene().name == "main")
+            GameManager.instance.dayCount++; // 다음 일자로 넘기기
+        else
+            SceneManager.LoadScene("main");
         Skipwarningimage.SetActive(false); // 스킵 경고창 닫기
     }
     public void SkipDayClickNo() // 스킵 경고창에서 아니오를 눌렀을 시 작동하는 함수
@@ -187,5 +197,20 @@ public class SystemManager : MonoBehaviour
     public void QuickLoadClickNo()
     {
         Quickloadwarningimage.SetActive(false);
+    }
+    public void AutoSystem()
+    {
+        if (GameManager.instance.printSetting == 0)
+            GameManager.instance.printSetting = 1;
+        else
+            GameManager.instance.printSetting = 0;
+    }
+    public void LogOpenSystem()
+    {
+        Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(3.1199e-08f, -4.4107e-06f);
+    }
+    public void LogCloseSystem()
+    {
+        Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(1920f, -4.4107e-06f);
     }
 }

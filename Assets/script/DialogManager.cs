@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class DialogManager : MonoBehaviour
 {
@@ -8,13 +9,14 @@ public class DialogManager : MonoBehaviour
     int dialogCnt=1; // 대사 번호
     [SerializeField] TextMeshProUGUI name; // 이름 text
     [SerializeField] TextMeshProUGUI dialog; // 대사 text
+    [SerializeField] GameObject Clickarea;
     void Start()
     {
         ShowDialog();
     }
     void Update()
     {
-        if(gotoNext)
+        if(gotoNext && EventSystem.current.currentSelectedGameObject == Clickarea)
         {
             if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) // 엔터키 혹은 좌클릭 시
             {
@@ -23,6 +25,8 @@ public class DialogManager : MonoBehaviour
                 StartCoroutine(PrintText());
             }
         }
+        if(EventSystem.current.currentSelectedGameObject != null)
+            Debug.Log(EventSystem.current.currentSelectedGameObject.name);
         
     }
     IEnumerator PrintText()

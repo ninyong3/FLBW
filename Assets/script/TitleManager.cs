@@ -14,7 +14,7 @@ public class TitleManager : MonoBehaviour
     {
         GameManager.instance.dayCount = 1; // day를 1로 초기화
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name; // 현재 활성화 된 씬 이름 저장
-        SceneManager.LoadScene("main"); // 메인 씬 불러오기(차후 ep0로 연결 예정)
+        SceneManager.LoadScene("ep0"); // ep0 씬 불러오기
     }
     public void OpenLoad()
     {
