@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\blockx_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\blockx_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\blockx_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\exitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\exitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\exitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Assets\\script\\Ru_minigame_manager.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAIwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T01:27:55.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T01:27:55.045Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Assets\\script\\ExitZone.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T01:25:27.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T01:25:27.779Z"
             },
             {
               "$type": "Document",
@@ -106,7 +104,7 @@
               "RelativeDocumentMoniker": "Assets\\script\\BlockX_controller.cs",
               "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\BlockX_controller.cs",
               "RelativeToolTip": "Assets\\script\\BlockX_controller.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDQAAAABAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAQwDQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T17:47:22.668Z",
               "EditorCaption": ""
