@@ -3,6 +3,11 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
+using UnityEngine.UI;
+using UnityEditor.Experimental.GraphView;
+using Unity.Android.Gradle.Manifest;
+using UnityEngine.Rendering;
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
@@ -13,7 +18,9 @@ public class SystemManager : MonoBehaviour
     [SerializeField] GameObject Closeimage;
     [SerializeField] GameObject Titlewarningimage;
     [SerializeField] GameObject Skipwarningimage;
+    [SerializeField] GameObject Quickloadwarningimage;
     [SerializeField] TextMeshProUGUI day;
+    Coroutine saveCoroutine;
     void Update()
     {
         if (previousClickObject != Closeimage) // 이전에 클릭 된 것이 클로즈 버튼이 아닌지 확인
@@ -26,8 +33,8 @@ public class SystemManager : MonoBehaviour
     {
         Titlewarningimage.SetActive(false); // 타이틀 경고창 숨김
         Skipwarningimage.SetActive(false); // 스킵 경고창 숨김
+        Quickloadwarningimage.SetActive(false);
         day.text = "Day 1";
-
     }
     public void CloseSystem() // 클로즈 구현을 위한 함수
     {
@@ -83,5 +90,102 @@ public class SystemManager : MonoBehaviour
     {
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("keword");
+    }
+    public void SaveSystem()
+    {
+        saveCoroutine = null;
+        saveCoroutine=StartCoroutine(CaptureSaveImage());
+        StartCoroutine(WaitForSave());
+    }
+    IEnumerator CaptureSaveImage()
+    {
+        yield return new WaitForEndOfFrame();
+        Texture2D saveScreenshot = ScreenCapture.CaptureScreenshotAsTexture();
+        byte[] saveImagetobytes = saveScreenshot.EncodeToPNG();
+        Destroy(saveScreenshot);
+        string saveScreenshotFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveScreenshot");
+        if (!Directory.Exists(saveScreenshotFolderPath))
+        {
+            Directory.CreateDirectory(saveScreenshotFolderPath);
+        }
+        string saveScreenshotFileName = $"SaveScreenshot_{System.DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
+        string saveScreenshotPath = Path.Combine(saveScreenshotFolderPath, saveScreenshotFileName);
+        GameManager.instance.saveImagePath = saveScreenshotPath;
+        File.WriteAllBytes(saveScreenshotPath, saveImagetobytes);
+        saveCoroutine = null;
+    }
+    IEnumerator WaitForSave()
+    {
+        while (saveCoroutine != null)
+        {
+            yield return null;
+        }
+        GameManager.instance.previousScene= SceneManager.GetActiveScene().name;
+        GameManager.instance.saveLoadCheck = true;
+        GameManager.instance.quickCheck = false;
+        SceneManager.LoadScene("saveload");
+    }
+    public void LoadSystem()
+    {
+        GameManager.instance.previousScene=SceneManager.GetActiveScene().name;
+        GameManager.instance.saveLoadCheck = false;
+        SceneManager.LoadScene("saveload");
+    }
+    public void QuickSaveSystem()
+    {
+        saveCoroutine = null;
+        saveCoroutine = StartCoroutine(CaptureSaveImage());
+        StartCoroutine(WaitForQuickSave());
+    }
+    IEnumerator WaitForQuickSave()
+    {
+        while (saveCoroutine != null)
+        {
+            yield return null;
+        }
+        byte[] saveImageBytes = File.ReadAllBytes(GameManager.instance.saveImagePath);
+        Texture2D saveImageTexture = new Texture2D(2, 2);
+        saveImageTexture.LoadImage(saveImageBytes);
+        byte[] slotImageBytes = saveImageTexture.EncodeToPNG();
+        string saveSlotImageFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveSlot");
+        if (!Directory.Exists(saveSlotImageFolderPath))
+        {
+            Directory.CreateDirectory(saveSlotImageFolderPath);
+        }
+        string saveSlotImagetFileName = "QuickSaveSlot.png";
+        string saveSlotImagePath = Path.Combine(saveSlotImageFolderPath, saveSlotImagetFileName);
+        GameManager.instance.slotImagePath = saveSlotImagePath;
+        File.WriteAllBytes(saveSlotImagePath, slotImageBytes);
+        GameManager.instance.quickCheck = true;
+        GameManager.instance.DataSaving("QuickSaveSlot.json", $"{System.DateTime.Now:MM월 dd일, HH:mm}");
+    }
+    public void QuickLoadSystem()
+    {
+        Quickloadwarningimage.SetActive(true);
+    }
+    public void QuickLoadClickYes()
+    {
+        string jsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
+        string jsonFileName = "QuickSaveSlot.json";
+        string jsonPath = Path.Combine(jsonFolderPath, jsonFileName);
+        SaveData quickSaveData = new SaveData();
+        if (File.Exists(jsonPath))
+        {
+            string jsonString = File.ReadAllText(jsonPath);
+            quickSaveData = JsonUtility.FromJson<SaveData>(jsonString);
+        }
+        GameManager.instance.dayCount = quickSaveData.day;
+        GameManager.instance.relationship_level = quickSaveData.relationship_level;
+        GameManager.instance.previousScene = "";
+        GameManager.instance.printSetting = quickSaveData.printSetting;
+        GameManager.instance.bgmSoundvolume = quickSaveData.bgmSoundvolume;
+        GameManager.instance.effectSoundvolume = quickSaveData.SoundEffectvolume;
+        GameManager.instance.textPrintSpeed = quickSaveData.textPrintSpeed;
+        GameManager.instance.selectedHeroine = quickSaveData.selectedHeroine;
+        SceneManager.LoadScene(quickSaveData.presentSceneName);
+    }
+    public void QuickLoadClickNo()
+    {
+        Quickloadwarningimage.SetActive(false);
     }
 }

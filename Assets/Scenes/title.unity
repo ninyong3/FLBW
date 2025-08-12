@@ -564,6 +564,7 @@ MonoBehaviour:
   effectSoundvolume: 50
   textPrintSpeed: 50
   selectedHeroine: 0
+  saveLoadCheck: 0
 --- !u!4 &296032984
 Transform:
   m_ObjectHideFlags: 0
@@ -2790,16 +2791,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145192267}
-  m_LocalRotation: {x: 0.1401425, y: -0.17330799, z: 0.15178625, w: -0.9629566}
+  m_LocalRotation: {x: 0.117616765, y: -0.18931958, z: 0.26979372, w: -0.93676883}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.83749, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 237594269}
-  m_LocalEulerAnglesHint: {x: -12.55, y: 22.677, z: 1779.559}
+  m_LocalEulerAnglesHint: {x: -6.789, y: 24.905, z: 1766.366}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -89.25864, y: -419.56982}
+  m_AnchoredPosition: {x: -247, y: -443}
   m_SizeDelta: {x: 2322.3083, y: 668.2264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2145192269
