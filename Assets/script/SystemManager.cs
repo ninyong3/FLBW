@@ -192,6 +192,8 @@ public class SystemManager : MonoBehaviour
         GameManager.instance.effectSoundvolume = quickSaveData.SoundEffectvolume;
         GameManager.instance.textPrintSpeed = quickSaveData.textPrintSpeed;
         GameManager.instance.selectedHeroine = quickSaveData.selectedHeroine;
+        GameManager.instance.dialogCount = quickSaveData.dialogCount;
+        GameManager.instance.playerName = quickSaveData.playerName;
         SceneManager.LoadScene(quickSaveData.presentSceneName);
     }
     public void QuickLoadClickNo()

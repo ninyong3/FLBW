@@ -126,6 +126,8 @@ public class SaveLoadManager : MonoBehaviour
             GameManager.instance.effectSoundvolume = saveData[slotIndex].SoundEffectvolume;
             GameManager.instance.textPrintSpeed= saveData[slotIndex].textPrintSpeed;
             GameManager.instance.selectedHeroine=saveData[slotIndex].selectedHeroine;
+            GameManager.instance.dialogCount= saveData[slotIndex].dialogCount;
+            GameManager.instance.playerName= saveData[slotIndex].playerName;
             SceneManager.LoadScene(saveData[slotIndex].presentSceneName);
         }
     }

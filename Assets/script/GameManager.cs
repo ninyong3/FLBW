@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public string saveJsonPath;
     public bool quickCheck;
     public string slotImagePath;
+    public int dialogCount=1;
+    public string playerName;
     void Start()
     {
        
@@ -62,6 +64,8 @@ public class GameManager : MonoBehaviour
         saveData.selectedHeroine=selectedHeroine;
         saveData.saveTime = saveTime;
         saveData.saveCheck = true;
+        saveData.dialogCount = dialogCount;
+        saveData.playerName = playerName;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))

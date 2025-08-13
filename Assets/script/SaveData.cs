@@ -14,4 +14,6 @@ public class SaveData
     public string slotImagePath;
     public string saveTime;
     public bool saveCheck=false;
+    public int dialogCount;
+    public string playerName;
 }
