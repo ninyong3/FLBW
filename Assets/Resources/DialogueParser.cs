@@ -25,10 +25,30 @@ public class DialogueParser : MonoBehaviour
                 row[3]=row[3].Substring(1, row[3].Length - 2);
             dialogue.line=row[3];
             string[] characterIndexTemp = row[4].Split("_");
-            dialogue.characterIndex[0] = int.Parse(characterIndexTemp[0]);
-            dialogue.characterIndex[1] = int.Parse(characterIndexTemp[1]);
-            dialogue.BGMIndex = int.Parse(row[5]);
-            dialogue.SFXIndex = int.Parse(row[6]);
+            if (characterIndexTemp.Length == 2)
+            {
+                dialogue.characterIndex[0] = int.Parse(characterIndexTemp[0]);
+                dialogue.characterIndex[1] = int.Parse(characterIndexTemp[1]);
+            }
+            else
+                dialogue.characterIndex[0] = -1;
+            if (int.TryParse(row[5], out dialogue.backgroundIndex))
+            { 
+            }
+            else
+                dialogue.backgroundIndex = -1;
+            if (int.TryParse(row[6], out dialogue.BGMIndex))
+            {
+
+            }
+            else
+                dialogue.BGMIndex = -1;
+            if (int.TryParse(row[7], out dialogue.SFXIndex))
+            {
+
+            }
+            else
+                dialogue.SFXIndex = -1;
             dialoguelist.Add(dialogue);
         }
         return dialoguelist.ToArray(); // 배열로 변환해 반환

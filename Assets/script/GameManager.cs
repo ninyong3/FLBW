@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public string slotImagePath;
     public int dialogCount=1;
     public string playerName;
+    public int backgroundIndex;
     void Start()
     {
        
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         saveData.saveCheck = true;
         saveData.dialogCount = dialogCount;
         saveData.playerName = playerName;
+        saveData.backgroundIndex = backgroundIndex;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))

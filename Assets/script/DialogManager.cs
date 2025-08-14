@@ -21,11 +21,17 @@ public class DialogManager : MonoBehaviour
     [SerializeField] List<Sprite> FreyjaImageList;
     [SerializeField] List<Sprite> RuImageList;
     [SerializeField] List<Sprite> backgroundList;
-    [SerializeField] InputField playerNameInputField;
+    [SerializeField] TMP_InputField playerNameInputField;
     [SerializeField] GameObject Writeplayername;
     bool playerNameSelect=true;
     void Start()
     {
+        if (GameManager.instance.playerName != "")
+        {
+            Writeplayername.SetActive(false);
+            if (SceneManager.GetActiveScene().name == "ep0")
+                ShowDialog();
+        }
         if(SceneManager.GetActiveScene().name != "ep0")
             ShowDialog();
     }
@@ -50,30 +56,64 @@ public class DialogManager : MonoBehaviour
     }
     IEnumerator PrintText()
     {
-        if (GameManager.instance.printSetting == 0 && dialogCnt != 1)
-            yield return new WaitForSeconds(3f);
         Dialogue tempDialog;
         if (DBManager.instance.dialogueDic.TryGetValue(dialogCnt, out tempDialog))
         {
-            GameManager.instance.dialogCount=dialogCnt;
+            GameManager.instance.dialogCount = dialogCnt;
             dialog.text = tempDialog.line; // 딕셔너리에서 대사 번호로 대사 가져오기
             if (tempDialog.name == "Narration")
                 name.text = "";
-            else if(tempDialog.name == "Player")
+            else if (tempDialog.name == "Player")
                 name.text = GameManager.instance.playerName;
-            else
-                name.text = tempDialog.name; // 딕셔너리에서 대사 번호로 이름 가져오기
+            else if (tempDialog.name == "Jin Yein")
+                name.text = "진예인";
+            else if (tempDialog.name == "Freyja")
+                name.text = "프레이야";
+            else if (tempDialog.name == "Ru")
+                name.text = "루";
             if (tempDialog.characterIndex[0] == 1)
+            {
                 character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
+                Color tempColor = character.color;
+                tempColor.a = 255f;
+                character.color = tempColor;
+            }
             else if (tempDialog.characterIndex[0] == 2)
+            {
                 character.sprite = FreyjaImageList[tempDialog.characterIndex[1]];
+                Color tempColor = character.color;
+                tempColor.a = 255f;
+                character.color = tempColor;
+            }
             else if (tempDialog.characterIndex[0] == 3)
+            {
                 character.sprite = RuImageList[tempDialog.characterIndex[1]];
-            background.sprite = backgroundList[tempDialog.backgroundIndex];
+                Color tempColor = character.color;
+                tempColor.a = 255f;
+                character.color = tempColor;
+            }
+            else if (tempDialog.characterIndex[0] == -1)
+            {
+                character.sprite = null;
+                Color tempColor = character.color;
+                tempColor.a = 0f;
+                character.color = tempColor;
+            }
+            if (tempDialog.backgroundIndex != -1)
+            {
+                background.sprite = backgroundList[tempDialog.backgroundIndex];
+                GameManager.instance.backgroundIndex = tempDialog.backgroundIndex;
+            }
+            else if (GameManager.instance.backgroundIndex != 0)
+                background.sprite = backgroundList[GameManager.instance.backgroundIndex];
         }
         else
+        {
             SceneManager.LoadScene("main");
-            gotoNext = true;
+        }  
+        if (GameManager.instance.printSetting == 0)
+            yield return new WaitForSeconds(3f);
+        gotoNext = true;
         yield break;
     }
     public void ShowDialog()
@@ -81,12 +121,11 @@ public class DialogManager : MonoBehaviour
         dialog.text = "";
         name.text = "";
         dialogCnt= GameManager.instance.dialogCount;
-        Debug.Log(dialogCnt);
         StartCoroutine(PrintText());
     }
     public void PlayerNameDecide()
     {
-        GameManager.instance.playerName = playerNameInputField.GetComponent<InputField>().text;
+        GameManager.instance.playerName = playerNameInputField.GetComponent<TMP_InputField>().text;
         Writeplayername.SetActive(false);
         ShowDialog();
     }

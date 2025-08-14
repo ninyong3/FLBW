@@ -128,6 +128,7 @@ public class SaveLoadManager : MonoBehaviour
             GameManager.instance.selectedHeroine=saveData[slotIndex].selectedHeroine;
             GameManager.instance.dialogCount= saveData[slotIndex].dialogCount;
             GameManager.instance.playerName= saveData[slotIndex].playerName;
+            GameManager.instance.backgroundIndex= saveData[slotIndex].backgroundIndex;
             SceneManager.LoadScene(saveData[slotIndex].presentSceneName);
         }
     }

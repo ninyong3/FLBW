@@ -16,4 +16,5 @@ public class SaveData
     public bool saveCheck=false;
     public int dialogCount;
     public string playerName;
+    public int backgroundIndex;
 }

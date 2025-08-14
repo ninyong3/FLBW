@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/map.unity
     guid: 7dc41b219e64386468cca434609ca17e
   - enabled: 1
+    path: Assets/Scenes/minigame_main.unity
+    guid: 660d3ed0a92e47b48a4097a6a3e44fa6
+  - enabled: 1
     path: Assets/Scenes/Maps/amusement_park.unity
     guid: d2125bff734b46c47a712fc1da79475b
   - enabled: 1

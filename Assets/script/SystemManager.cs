@@ -19,6 +19,7 @@ public class SystemManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI day;
     [SerializeField] GameObject Autoimage;
     [SerializeField] GameObject Log;
+    [SerializeField] GameObject Allsystem;
     Coroutine saveCoroutine;
     void Update()
     {
@@ -45,14 +46,9 @@ public class SystemManager : MonoBehaviour
     }
     public void CloseSystem() // 클로즈 구현을 위한 함수
     {
-        if (check == 0) // 현재 대화창이 보이고 있을 경우
-        {
-            dialog.SetActive(false); // 대화창 숨김
-            check = 1;
-            StartCoroutine(ReshowDialog());
-        }
-        else // 두번 연속으로 클로즈를 클릭했을 시 대화창을 숨기지 않고 보이기
-            check= 0;
+        dialog.SetActive(false); // 대화창 숨기기
+        Allsystem.SetActive(false);
+        StartCoroutine(ReshowDialog());
     }
     IEnumerator ReshowDialog()  // 대화창 보이기를 위한 함수
     { 
@@ -60,6 +56,7 @@ public class SystemManager : MonoBehaviour
         {
             yield return null;
         }
+        Allsystem.SetActive(true);
         dialog.SetActive(true); //대화창 보이기
     }
     public void ToTitleSystem() // 타이틀로 이동하기 위한 함수
@@ -194,6 +191,7 @@ public class SystemManager : MonoBehaviour
         GameManager.instance.selectedHeroine = quickSaveData.selectedHeroine;
         GameManager.instance.dialogCount = quickSaveData.dialogCount;
         GameManager.instance.playerName = quickSaveData.playerName;
+        GameManager.instance.backgroundIndex = quickSaveData.backgroundIndex;
         SceneManager.LoadScene(quickSaveData.presentSceneName);
     }
     public void QuickLoadClickNo()
@@ -209,6 +207,7 @@ public class SystemManager : MonoBehaviour
     }
     public void LogOpenSystem()
     {
+        GameManager.instance.printSetting = 1;
         Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(3.1199e-08f, -4.4107e-06f);
     }
     public void LogCloseSystem()

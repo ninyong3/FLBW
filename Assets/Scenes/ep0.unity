@@ -356,7 +356,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: ToTitleClickYes
         m_Mode: 1
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: SkipDayClickNo
         m_Mode: 1
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: ToConfigSystem
         m_Mode: 1
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: LoadSystem
         m_Mode: 1
@@ -1585,9 +1585,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943340287}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: PlayerNameDecide
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: ToTitleClickNo
         m_Mode: 1
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: OpenKeword
         m_Mode: 1
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: AutoSystem
         m_Mode: 1
@@ -3143,7 +3143,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: LogCloseSystem
         m_Mode: 1
@@ -3275,7 +3275,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438622479}
   m_HandleRect: {fileID: 438622478}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3403,7 +3403,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1022866234}
-  - component: {fileID: 1022866235}
   m_Layer: 5
   m_Name: Allsystem
   m_TagString: Untagged
@@ -3442,26 +3441,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1022866235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022866233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d41d9cfbb380434ab066a23ee9d4e4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 1943340285}
-  Closeimage: {fileID: 2079136806}
-  Titlewarningimage: {fileID: 489243816}
-  Skipwarningimage: {fileID: 356370271}
-  Quickloadwarningimage: {fileID: 1092898647}
-  day: {fileID: 0}
-  Autoimage: {fileID: 844044330}
-  Log: {fileID: 646013969}
 --- !u!1 &1029404504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,7 +3660,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: QuickSaveSystem
         m_Mode: 1
@@ -3814,7 +3793,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: SkipDaySystem
         m_Mode: 1
@@ -4061,7 +4040,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: ToTitleSystem
         m_Mode: 1
@@ -4887,7 +4866,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: QuickLoadClickNo
         m_Mode: 1
@@ -5380,7 +5359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 5}
+  m_AnchoredPosition: {x: 40, y: -1}
   m_SizeDelta: {x: 1220.1917, y: 126.2514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472795149
@@ -5516,8 +5495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.618878}
-  m_AnchoredPosition: {x: -521, y: 95}
-  m_SizeDelta: {x: 181.5945, y: 38.1715}
+  m_AnchoredPosition: {x: -393.51294, y: 95}
+  m_SizeDelta: {x: 436.5687, y: 38.1715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478461239
 MonoBehaviour:
@@ -5573,7 +5552,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5837,7 +5816,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: LogOpenSystem
         m_Mode: 1
@@ -6214,7 +6193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0009958326, y: 0.0006101491}
+  m_AnchoredPosition: {x: 0.0009958326, y: -0.00007752426}
   m_SizeDelta: {x: -0.00097656, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1636309586
@@ -6300,7 +6279,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: QuickLoadClickYes
         m_Mode: 1
@@ -6779,7 +6758,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: SkipDayClickYes
         m_Mode: 1
@@ -6863,7 +6842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.48958334, y: 0.5}
   m_AnchorMax: {x: 0.48958334, y: 0.5}
-  m_AnchoredPosition: {x: 58, y: -154}
+  m_AnchoredPosition: {x: 58, y: -226}
   m_SizeDelta: {x: 2400, y: 4000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813187016
@@ -6886,7 +6865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e9550cb93d423df4bbc670286fa05775, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 950f213025c88dd4db87fbf8292be9cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7099,16 +7078,19 @@ MonoBehaviour:
   character: {fileID: 1813187016}
   Clickarea: {fileID: 1708798277}
   JinYeinImageList:
-  - {fileID: 0}
-  FreyjaImageList: []
-  RuImageList: []
+  - {fileID: 21300000, guid: 950f213025c88dd4db87fbf8292be9cc, type: 3}
+  FreyjaImageList:
+  - {fileID: 21300000, guid: f36eb7f73aa3da846aeda746d04505d3, type: 3}
+  RuImageList:
+  - {fileID: 21300000, guid: 55ef8d3b77f8e944dbce0e09f8366055, type: 3}
   backgroundList:
+  - {fileID: 0}
   - {fileID: 21300000, guid: 88c85077437d5b84b8dcd0ade3a3b28a, type: 3}
   - {fileID: 21300000, guid: 91f87dff74fb184429d2f476c0a0b227, type: 3}
   - {fileID: 21300000, guid: fbf95910ea43e6f478d9f1b50ff97ae9, type: 3}
   - {fileID: 21300000, guid: 88e86515c008a174697c4a3929af698d, type: 3}
-  playerNameInputField: {fileID: 0}
-  Writeplayername: {fileID: 0}
+  playerNameInputField: {fileID: 1146961659}
+  Writeplayername: {fileID: 1282897123}
 --- !u!114 &1943340288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7366,7 +7348,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: SaveSystem
         m_Mode: 1
@@ -7499,7 +7481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: QuickLoadSystem
         m_Mode: 1
@@ -8040,7 +8022,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022866235}
+      - m_Target: {fileID: 2097732746}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
         m_MethodName: CloseSystem
         m_Mode: 1
@@ -8090,6 +8072,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079136806}
   m_CullTransparentMesh: 1
+--- !u!1 &2097732745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097732747}
+  - component: {fileID: 2097732746}
+  m_Layer: 0
+  m_Name: Systemmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097732746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097732745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d41d9cfbb380434ab066a23ee9d4e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 1943340285}
+  Closeimage: {fileID: 2079136806}
+  Titlewarningimage: {fileID: 489243816}
+  Skipwarningimage: {fileID: 356370271}
+  Quickloadwarningimage: {fileID: 1092898647}
+  day: {fileID: 0}
+  Autoimage: {fileID: 844044330}
+  Log: {fileID: 646013969}
+  Allsystem: {fileID: 1022866233}
+--- !u!4 &2097732747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097732745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 983.5, y: 290.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110613359
 GameObject:
   m_ObjectHideFlags: 0
@@ -8371,3 +8406,4 @@ SceneRoots:
   - {fileID: 1244020770}
   - {fileID: 67234153}
   - {fileID: 427825277}
+  - {fileID: 2097732747}
