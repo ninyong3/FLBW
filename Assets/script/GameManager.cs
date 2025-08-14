@@ -1,7 +1,5 @@
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour

@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\flbw\\flbw\\assets\\script\\logline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\logline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\flbw\\flbw\\assets\\script\\backlogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\backlogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\flbw\\flbw\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\messengermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\messengermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\saveloadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\saveloadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +63,8 @@
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\titlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\kewordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\kewordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\textdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\assets\\script\\recipuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +98,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "DBManager.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\DBManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\DBManager.cs",
@@ -99,60 +111,69 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T08:07:29.092Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DialogManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\DialogManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\DialogManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\DialogManager.cs",
-              "RelativeToolTip": "Assets\\script\\DialogManager.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAQwHMAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LogLine.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\LogLine.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\LogLine.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\LogLine.cs",
+              "RelativeToolTip": "Assets\\script\\LogLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T16:36:36.107Z",
+              "WhenOpened": "2025-08-14T16:22:59.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConfigManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\ConfigManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\ConfigManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\ConfigManager.cs",
-              "RelativeToolTip": "Assets\\script\\ConfigManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwB8AAABBAAAAAAAAAA==",
+              "Title": "BackLogManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\BackLogManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\BackLogManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\BackLogManager.cs",
+              "RelativeToolTip": "Assets\\script\\BackLogManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T07:46:12.47Z",
+              "WhenOpened": "2025-08-14T16:13:49.284Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessengerManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MessengerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\MessengerManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MessengerManager.cs",
+              "RelativeToolTip": "Assets\\script\\MessengerManager.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwDYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T15:07:31.73Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\GameManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\GameManager.cs",
-              "RelativeToolTip": "Assets\\script\\GameManager.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAUwEUAAAAzAAAAAAAAAA==",
+              "Title": "DialogManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\DialogManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\DialogManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\DialogManager.cs",
+              "RelativeToolTip": "Assets\\script\\DialogManager.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwIQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T04:43:06.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T16:36:36.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SaveData.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\SaveData.cs",
               "RelativeDocumentMoniker": "Assets\\script\\SaveData.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\SaveData.cs",
               "RelativeToolTip": "Assets\\script\\SaveData.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T08:29:20.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T08:29:20.437Z"
             },
             {
               "$type": "Document",
@@ -162,14 +183,73 @@
               "RelativeDocumentMoniker": "Assets\\script\\SaveLoadManager.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\SaveLoadManager.cs",
               "RelativeToolTip": "Assets\\script\\SaveLoadManager.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAcwIIAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T05:57:44.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T05:57:44.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "RecipeManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\RecipeManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
+              "RelativeToolTip": "Assets\\script\\RecipeManager.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAgwLMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T07:11:59.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TitleManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TitleManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\TitleManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TitleManager.cs",
+              "RelativeToolTip": "Assets\\script\\TitleManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T04:34:57.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialogueParser.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\Resources\\DialogueParser.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\DialogueParser.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\Resources\\DialogueParser.cs",
+              "RelativeToolTip": "Assets\\Resources\\DialogueParser.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T08:08:08.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MiniGameEscapeManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeToolTip": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwC4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:18:45.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\GameManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\script\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T04:43:06.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SystemManager.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\SystemManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\SystemManager.cs",
@@ -177,25 +257,23 @@
               "RelativeToolTip": "Assets\\script\\SystemManager.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAwDIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T15:16:36.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T15:16:36.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DialogueParser.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\Resources\\DialogueParser.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\DialogueParser.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\Resources\\DialogueParser.cs",
-              "RelativeToolTip": "Assets\\Resources\\DialogueParser.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwCcAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "ConfigManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\ConfigManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\ConfigManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\ConfigManager.cs",
+              "RelativeToolTip": "Assets\\script\\ConfigManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwB8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T08:08:08.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T07:46:12.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Dialogue.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\Dialogue.cs",
               "RelativeDocumentMoniker": "Assets\\script\\Dialogue.cs",
@@ -203,12 +281,11 @@
               "RelativeToolTip": "Assets\\script\\Dialogue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T13:40:42.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T13:40:42.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "KewordManager.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\KewordManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\KewordManager.cs",
@@ -220,31 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TitleManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TitleManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\TitleManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TitleManager.cs",
-              "RelativeToolTip": "Assets\\script\\TitleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T04:34:57.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MiniGameEscapeManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\MiniGameEscapeManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
-              "RelativeToolTip": "Assets\\script\\MiniGameEscapeManager.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwCgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T14:18:45.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "TextDisplay.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\TextDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\script\\TextDisplay.cs",
@@ -256,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RecipUIManager.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\RecipUIManager.cs",
@@ -268,19 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RecipeManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\RecipeManager.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\RecipeManager.cs",
-              "RelativeToolTip": "Assets\\script\\RecipeManager.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAcwJIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T07:11:59.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "PlayerInteraction.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\PlayerInteraction.cs",
               "RelativeDocumentMoniker": "Assets\\script\\PlayerInteraction.cs",
@@ -292,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CookerItem.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\CookerItem.cs",
               "RelativeDocumentMoniker": "Assets\\script\\CookerItem.cs",
@@ -304,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "FoodItem.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\FoodItem.cs",
               "RelativeDocumentMoniker": "Assets\\script\\FoodItem.cs",
@@ -316,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Desktop\\FLBW\\FLBW\\Assets\\script\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\script\\Player.cs",

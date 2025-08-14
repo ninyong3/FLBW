@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using TMPro;
 [Serializable]
 public class SaveData
 {

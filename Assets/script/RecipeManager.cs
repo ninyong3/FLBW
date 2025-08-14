@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class RecipeManager : MonoBehaviour
 {
     [System.Serializable]
@@ -178,9 +178,7 @@ public class RecipeManager : MonoBehaviour
 
             RemoverecipeUI();
             StartCoroutine(TimeDelay(10.0f));
-            // 게임 종료 처리
-            UnityEditor.EditorApplication.isPlaying = false;
-            // 씬 이동으로 추후 변경
+            SceneManager.LoadScene("main");
         }
         else
         {

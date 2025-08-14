@@ -20,6 +20,7 @@ public class SaveLoadManager : MonoBehaviour
     public List<TextMeshProUGUI> slotTextList;
     [SerializeField] GameObject Rewritewarningimage;
     GameObject selectedSlot;
+    
     int slotIndex;
     void Start()
     {

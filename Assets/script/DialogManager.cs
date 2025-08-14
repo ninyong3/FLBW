@@ -23,6 +23,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] List<Sprite> backgroundList;
     [SerializeField] TMP_InputField playerNameInputField;
     [SerializeField] GameObject Writeplayername;
+    [SerializeField] RectTransform logContentRect;
     bool playerNameSelect=true;
     void Start()
     {
@@ -61,16 +62,36 @@ public class DialogManager : MonoBehaviour
         {
             GameManager.instance.dialogCount = dialogCnt;
             dialog.text = tempDialog.line; // 딕셔너리에서 대사 번호로 대사 가져오기
+            GameObject logLinePrefab = Resources.Load<GameObject>("Logline"); // 프리펩 받아옴
+            GameObject logLineGo = GameObject.Instantiate(logLinePrefab, logContentRect); // 자식으로 만들기&클론 생성
+            Transform logLineText = logLineGo.transform.Find("Loglinetext"); // 프리펩의 텍스트 찾기
+            Transform logNameText = logLineGo.transform.Find("Lognametext");
+            logLineText.GetComponent<TextMeshProUGUI>().text = tempDialog.line; // 텍스트 내용 변환
             if (tempDialog.name == "Narration")
+            {
                 name.text = "";
+                logNameText.GetComponent<TextMeshProUGUI>().text = "";
+            }
             else if (tempDialog.name == "Player")
+            {
                 name.text = GameManager.instance.playerName;
+                logNameText.GetComponent<TextMeshProUGUI>().text = GameManager.instance.playerName;
+            }
             else if (tempDialog.name == "Jin Yein")
+            {
                 name.text = "진예인";
+                logNameText.GetComponent<TextMeshProUGUI>().text = "진예인";
+            }
             else if (tempDialog.name == "Freyja")
+            {
                 name.text = "프레이야";
+                logNameText.GetComponent<TextMeshProUGUI>().text = "프레이야";
+            }
             else if (tempDialog.name == "Ru")
+            {
                 name.text = "루";
+                logNameText.GetComponent<TextMeshProUGUI>().text = "루";
+            }
             if (tempDialog.characterIndex[0] == 1)
             {
                 character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
@@ -106,6 +127,7 @@ public class DialogManager : MonoBehaviour
             }
             else if (GameManager.instance.backgroundIndex != 0)
                 background.sprite = backgroundList[GameManager.instance.backgroundIndex];
+            yield return new WaitForSeconds(0.1f);
         }
         else
         {
@@ -121,6 +143,7 @@ public class DialogManager : MonoBehaviour
         dialog.text = "";
         name.text = "";
         dialogCnt= GameManager.instance.dialogCount;
+        LogUpdate();
         StartCoroutine(PrintText());
     }
     public void PlayerNameDecide()
@@ -128,5 +151,31 @@ public class DialogManager : MonoBehaviour
         GameManager.instance.playerName = playerNameInputField.GetComponent<TMP_InputField>().text;
         Writeplayername.SetActive(false);
         ShowDialog();
+
+    }
+    void LogUpdate()
+    {
+        for (int i = 1; i < dialogCnt; i++)
+        {
+            GameObject logLinePrefab = Resources.Load<GameObject>("Logline"); // 프리펩 받아옴
+            GameObject logLineGo = GameObject.Instantiate(logLinePrefab, logContentRect); // 자식으로 만들기&클론 생성
+            Transform logLineText = logLineGo.transform.Find("Loglinetext"); // 프리펩의 텍스트 찾기
+            Transform logNameText = logLineGo.transform.Find("Lognametext"); // 프리펩의 텍스트 찾기
+            Dialogue tempDialog;
+            if (DBManager.instance.dialogueDic.TryGetValue(i, out tempDialog))
+            {
+                logLineText.GetComponent<TextMeshProUGUI>().text = tempDialog.line; // 텍스트 내용 변환
+                if (tempDialog.name == "Narration")
+                    logNameText.GetComponent<TextMeshProUGUI>().text = "";
+                else if (tempDialog.name == "Player")
+                    logNameText.GetComponent<TextMeshProUGUI>().text = GameManager.instance.playerName;
+                else if (tempDialog.name == "Jin Yein")
+                    logNameText.GetComponent<TextMeshProUGUI>().text = "진예인";
+                else if (tempDialog.name == "Freyja")
+                    logNameText.GetComponent<TextMeshProUGUI>().text = "프레이야";
+                else if (tempDialog.name == "Ru")
+                    logNameText.GetComponent<TextMeshProUGUI>().text = "루";
+            }
+        }
     }
 }

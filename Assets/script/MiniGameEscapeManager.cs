@@ -44,8 +44,6 @@ public class MiniGameEscapeManager : MonoBehaviour
 
     public void quit()
     {
-        //메인화면으로 나가기 현재는 게임종료로 구현
-        UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();
+        SceneManager.LoadScene("main");
     }
 }
