@@ -17,6 +17,7 @@ public class TitleManager : MonoBehaviour
         GameManager.instance.dialogCount = 1;
         GameManager.instance.playerName = "";
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name; // 현재 활성화 된 씬 이름 저장
+        GameManager.instance.messageCount = 1;
         SceneManager.LoadScene("ep0"); // ep0 씬 불러오기
     }
     public void OpenLoad()

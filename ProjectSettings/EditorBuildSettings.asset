@@ -56,6 +56,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maps/village.unity
     guid: 0f3f1e87107117c48ba6a8c0b9fff881
+  - enabled: 0
+    path: Assets/Scenes/ep1.unity
+    guid: 2b031c2a195103b488812f25feb88ede
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
