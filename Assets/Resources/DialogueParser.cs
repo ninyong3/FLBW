@@ -20,10 +20,12 @@ public class DialogueParser : MonoBehaviour
             if (row[2].StartsWith("\"") && row[2].EndsWith("\""))
                 row[2] = row[2].Substring(1, row[2].Length - 2);
             dialogue.choiceline = row[2].Replace("…", "...");
+            dialogue.choiceline = dialogue.choiceline.Replace("\\n", "\n");
             row[3]=row[3].Trim();
             if (row[3].StartsWith("\"") && row[3].EndsWith("\""))
                 row[3]=row[3].Substring(1, row[3].Length - 2);
             dialogue.line = row[3].Replace("…", "...");
+            dialogue.line = dialogue.line.Replace("\\n", "\n");
             string[] characterIndexTemp = row[4].Split("_");
             if (characterIndexTemp.Length == 2)
             {

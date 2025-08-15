@@ -18,4 +18,5 @@ public class SaveData
     public int dialogCount;
     public string playerName;
     public int backgroundIndex;
+    public int messageCount;
 }

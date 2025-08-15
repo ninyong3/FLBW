@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public int dialogCount=1;
     public string playerName;
     public int backgroundIndex;
+    public int messageCount=1;
     void Start()
     {
        
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         saveData.dialogCount = dialogCount;
         saveData.playerName = playerName;
         saveData.backgroundIndex = backgroundIndex;
+        saveData.messageCount=messageCount;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))

@@ -63,7 +63,6 @@ public class DialogManager : MonoBehaviour
         if (DBManager.instance.dialogueDic.TryGetValue(dialogCnt, out tempDialog))
         {
             GameManager.instance.dialogCount = dialogCnt;
-            dialog.text = tempDialog.line; // 딕셔너리에서 대사 번호로 대사 가져오기
             GameObject logLinePrefab = Resources.Load<GameObject>("Logline"); // 프리펩 받아옴
             GameObject logLineGo = GameObject.Instantiate(logLinePrefab, logContentRect); // 자식으로 만들기&클론 생성
             logLineList.Add(logLineGo);
@@ -129,7 +128,20 @@ public class DialogManager : MonoBehaviour
                 background.sprite = backgroundList[tempDialog.backgroundIndex];
                 GameManager.instance.backgroundIndex = tempDialog.backgroundIndex;
             }
-            yield return new WaitForSeconds(0.1f);
+            dialog.text = "";
+            for(int i=0;i<tempDialog.line.Length;i++)
+            {
+                dialog.text += tempDialog.line[i]; // 딕셔너리에서 대사 번호로 대사 가져오기
+                if (GameManager.instance.textPrintSpeed != 0)
+                    yield return new WaitForSeconds(0.5f / (float)GameManager.instance.textPrintSpeed);
+                else
+                    yield return new WaitForSeconds(0.02f);
+                if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+                {
+                    dialog.text = tempDialog.line;
+                    break;
+                }
+            }
         }
         else
         {
@@ -192,6 +204,7 @@ public class DialogManager : MonoBehaviour
             Destroy(delete);
         }
         dialogCnt = selectedLogIndex;
+        gotoNext=false;
         StartCoroutine(PrintText());
     }
 }

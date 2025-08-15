@@ -8,9 +8,9 @@ public class ConfigManager : MonoBehaviour
     [SerializeField] Slider printSpeedSlider;
     void Start()
     {
-        bgmSoundSlider.value = 50f;
-        effectSoundSlider.value = 50f;
-        printSpeedSlider.value = 50f;
+        bgmSoundSlider.value = (float)GameManager.instance.bgmSoundvolume;
+        effectSoundSlider.value = (float)GameManager.instance.effectSoundvolume;
+        printSpeedSlider.value = (float)GameManager.instance.textPrintSpeed;
     }
 
     void Update()
