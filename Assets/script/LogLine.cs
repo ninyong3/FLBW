@@ -9,11 +9,10 @@ public class LogLine : MonoBehaviour
     }
     public void ClickMe()
     {
-        BackLogManager manager = FindFirstObjectByType < BackLogManager >();
-        if(manager != null)
-        {
-
+        DialogManager manager = FindFirstObjectByType<DialogManager>();
+        if (manager != null)
+        { 
+            manager.BackLog(myIndex);
         }
-
     }
 }

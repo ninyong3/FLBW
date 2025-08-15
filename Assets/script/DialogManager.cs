@@ -24,7 +24,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TMP_InputField playerNameInputField;
     [SerializeField] GameObject Writeplayername;
     [SerializeField] RectTransform logContentRect;
+    [SerializeField] GameObject Log;
     bool playerNameSelect=true;
+    List<GameObject> logLineList=new List<GameObject>();
     void Start()
     {
         if (GameManager.instance.playerName != "")
@@ -64,6 +66,8 @@ public class DialogManager : MonoBehaviour
             dialog.text = tempDialog.line; // 딕셔너리에서 대사 번호로 대사 가져오기
             GameObject logLinePrefab = Resources.Load<GameObject>("Logline"); // 프리펩 받아옴
             GameObject logLineGo = GameObject.Instantiate(logLinePrefab, logContentRect); // 자식으로 만들기&클론 생성
+            logLineList.Add(logLineGo);
+            logLineGo.GetComponent<LogLine>().Count(logLineList.Count);
             Transform logLineText = logLineGo.transform.Find("Loglinetext"); // 프리펩의 텍스트 찾기
             Transform logNameText = logLineGo.transform.Find("Lognametext");
             logLineText.GetComponent<TextMeshProUGUI>().text = tempDialog.line; // 텍스트 내용 변환
@@ -125,8 +129,6 @@ public class DialogManager : MonoBehaviour
                 background.sprite = backgroundList[tempDialog.backgroundIndex];
                 GameManager.instance.backgroundIndex = tempDialog.backgroundIndex;
             }
-            else if (GameManager.instance.backgroundIndex != 0)
-                background.sprite = backgroundList[GameManager.instance.backgroundIndex];
             yield return new WaitForSeconds(0.1f);
         }
         else
@@ -159,6 +161,8 @@ public class DialogManager : MonoBehaviour
         {
             GameObject logLinePrefab = Resources.Load<GameObject>("Logline"); // 프리펩 받아옴
             GameObject logLineGo = GameObject.Instantiate(logLinePrefab, logContentRect); // 자식으로 만들기&클론 생성
+            logLineList.Add(logLineGo);
+            logLineGo.GetComponent<LogLine>().Count(logLineList.Count);
             Transform logLineText = logLineGo.transform.Find("Loglinetext"); // 프리펩의 텍스트 찾기
             Transform logNameText = logLineGo.transform.Find("Lognametext"); // 프리펩의 텍스트 찾기
             Dialogue tempDialog;
@@ -177,5 +181,17 @@ public class DialogManager : MonoBehaviour
                     logNameText.GetComponent<TextMeshProUGUI>().text = "루";
             }
         }
+    }
+    public void BackLog(int selectedLogIndex)
+    {
+        Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(1920f, -4.4107e-06f);
+        for (int i = logLineList.Count - 1; i >= selectedLogIndex-1; i--)
+        {
+            GameObject delete = logLineList[i];
+            logLineList.RemoveAt(i);
+            Destroy(delete);
+        }
+        dialogCnt = selectedLogIndex;
+        StartCoroutine(PrintText());
     }
 }

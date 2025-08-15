@@ -3129,7 +3129,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 438622478}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6987,6 +6987,7 @@ MonoBehaviour:
   playerNameInputField: {fileID: 1146961659}
   Writeplayername: {fileID: 1282897123}
   logContentRect: {fileID: 1609315382}
+  Log: {fileID: 646013969}
 --- !u!114 &1943340288
 MonoBehaviour:
   m_ObjectHideFlags: 0
