@@ -27,7 +27,7 @@ public class SystemManager : MonoBehaviour
             check = 0; // 초기화
         previousClickObject = currentClickObject; // 이전에 클릭된 것 갱신
         currentClickObject = EventSystem.current.currentSelectedGameObject; //현재 클릭된 것 갱신
-        if(SceneManager.GetActiveScene().name == "main")
+        if(SceneManager.GetActiveScene().name == "main" || SceneManager.GetActiveScene().name == "map")
             day.text = "Day " + GameManager.instance.dayCount.ToString(); // 일자 수 갱신
         if (GameManager.instance.printSetting == 0)
         {
