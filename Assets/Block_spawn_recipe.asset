@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843ca0d2b4d09946ad0c1d2f19f213a, type: 3}
+  m_Name: Block_spawn_recipe
+  m_EditorClassIdentifier: 
+  recipes:
+  - rows:
+    - .AA..C
+    - ..B..C
+    - RRB...
+    - DDF.EE
+    - ..F..G
+    - .....G
+  - rows:
+    - ..AABB
+    - C..D..
+    - CRRD..
+    - C..D..
+    - EE..GG
+    - ..FF..
+  - rows:
+    - AABB..
+    - ...D..
+    - CRRD..
+    - CGGG.E
+    - .....E
+    - ..FF..
+  - rows:
+    - ..AA..
+    - B..C..
+    - BRRC..
+    - B..C..
+    - DD....
+    - ..EE..
+  - rows:
+    - AA....
+    - ..B..C
+    - RRB..C
+    - ..B..C
+    - DD.EE.
+    - ......
+  - rows:
+    - .AA...
+    - ....C.
+    - RRD.C.
+    - BBD.C.
+    - ..D.FF
+    - .EE...
+  - rows:
+    - A..BB.
+    - A..CC.
+    - RR.D..
+    - E..D..
+    - E..D..
+    - ...FFF
+  - rows:
+    - ..A..B
+    - ..A..B
+    - CRR..B
+    - C.....
+    - CDDEEE
+    - ......

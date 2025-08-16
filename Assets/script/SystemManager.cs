@@ -10,7 +10,7 @@ public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
     Coroutine waitClick;
-    int check=0;
+    int check = 0;
     GameObject currentClickObject;
     GameObject previousClickObject;
     [SerializeField] GameObject Closeimage;
@@ -43,11 +43,11 @@ public class SystemManager : MonoBehaviour
             StartCoroutine(ReshowDialog());
         }
         else // 두번 연속으로 클로즈를 클릭했을 시 대화창을 숨기지 않고 보이기
-            check= 0;
+            check = 0;
     }
     IEnumerator ReshowDialog()  // 대화창 보이기를 위한 함수
-    { 
-        while(!Input.GetMouseButtonDown(0)) // 좌클릭을 할 때까지 반복
+    {
+        while (!Input.GetMouseButtonDown(0)) // 좌클릭을 할 때까지 반복
         {
             yield return null;
         }
@@ -59,7 +59,7 @@ public class SystemManager : MonoBehaviour
     }
     public void ToTitleClickYes() // 타이틀 경고창에서 네를 눌렀을 때 작동하는 함수
     {
-        GameManager.instance.previousScene=SceneManager.GetActiveScene().name; // 현재 씬을 이전 씬으로 등록
+        GameManager.instance.previousScene = SceneManager.GetActiveScene().name; // 현재 씬을 이전 씬으로 등록
         SceneManager.LoadScene("title"); // 타이틀 씬으로 이동
     }
     public void ToTitleClickNo() // 타이틀 경고창에서 아니오를 눌렀을 때 작동하는 함수
@@ -92,7 +92,7 @@ public class SystemManager : MonoBehaviour
     public void SaveSystem()
     {
         saveCoroutine = null;
-        saveCoroutine=StartCoroutine(CaptureSaveImage());
+        saveCoroutine = StartCoroutine(CaptureSaveImage());
         StartCoroutine(WaitForSave());
     }
     IEnumerator CaptureSaveImage()
@@ -118,14 +118,14 @@ public class SystemManager : MonoBehaviour
         {
             yield return null;
         }
-        GameManager.instance.previousScene= SceneManager.GetActiveScene().name;
+        GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
         GameManager.instance.saveLoadCheck = true;
         GameManager.instance.quickCheck = false;
         SceneManager.LoadScene("saveload");
     }
     public void LoadSystem()
     {
-        GameManager.instance.previousScene=SceneManager.GetActiveScene().name;
+        GameManager.instance.previousScene = SceneManager.GetActiveScene().name;
         GameManager.instance.saveLoadCheck = false;
         SceneManager.LoadScene("saveload");
     }
