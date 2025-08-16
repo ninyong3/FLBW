@@ -18,6 +18,11 @@ public class TitleManager : MonoBehaviour
         GameManager.instance.playerName = "";
         GameManager.instance.previousScene = SceneManager.GetActiveScene().name; // 현재 활성화 된 씬 이름 저장
         GameManager.instance.messageCount = 1;
+        for(int i=0;i<6;i++)
+        {
+            GameManager.instance.messageCountCheckList[i] = false;
+        }
+        GameManager.instance.leftMessageCount = 0;
         SceneManager.LoadScene("ep0"); // ep0 씬 불러오기
     }
     public void OpenLoad()

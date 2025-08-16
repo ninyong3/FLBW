@@ -13,6 +13,7 @@ public class MessengerManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI characterName; // 현재 선택한 캐릭터의 이름
     int selectedHeroineIndex=0;
     [SerializeField] List<Sprite> characterProfileImageList;
+    [SerializeField] TextMeshProUGUI leftMessageText;
     int messagecnt;
     bool clickFlag = false;
     void Start()
@@ -22,7 +23,7 @@ public class MessengerManager : MonoBehaviour
 
     void Update()
     {
-       
+        leftMessageText.text = GameManager.instance.leftMessageCount.ToString();
     }
     public void MessengerShow() // 메신저 보이기를 위한 함수
     {
@@ -62,6 +63,7 @@ public class MessengerManager : MonoBehaviour
             {
                 if(tempMessage.index != "-")
                 {
+                    GameManager.instance.leftMessageCount--;
                     SceneManager.LoadScene(tempMessage.index);
                 }
             }    
@@ -108,6 +110,7 @@ public class MessengerManager : MonoBehaviour
                 {
                     GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
                     GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                    PlayerChatGo.GetComponentInChildren<Message>().clickCheck=true;
                     Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
                     chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변경
                     clickFlag = false;
@@ -136,47 +139,50 @@ public class MessengerManager : MonoBehaviour
     }
     IEnumerator SpawnMessage()
     {
-        MessageParser messageParser = FindFirstObjectByType<MessageParser>();
-        MessageData tempMessage;
-        if (selectedHeroineIndex == 1)
+        if (GameManager.instance.leftMessageCount != 0)
         {
-            while (messageParser.jinyeinMessageDic.TryGetValue(messagecnt, out tempMessage))
+            MessageParser messageParser = FindFirstObjectByType<MessageParser>();
+            MessageData tempMessage;
+            if (selectedHeroineIndex == 1)
             {
-                GameManager.instance.messageCount = messagecnt;
-                if (tempMessage.name != "Player")
+                while (messageParser.jinyeinMessageDic.TryGetValue(messagecnt, out tempMessage))
                 {
-                    GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
-                    GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
-                    Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
-                    chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
-                    Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
-                    characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
-                    if (tempMessage.index != "s")
+                    GameManager.instance.messageCount = messagecnt;
+                    if (tempMessage.name != "Player")
                     {
-                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
-                        color.a = 0;
-                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                        GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
+                        GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
+                        Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                        Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
+                        characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
+                        if (tempMessage.index != "s")
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 0;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                        }
+                        else
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 255;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                        }
                     }
                     else
                     {
-                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
-                        color.a = 255;
-                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                        GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                        GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                        Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                        yield return new WaitUntil(() => clickFlag);
+                        clickFlag = false;
                     }
-                    }
-                else
-                {
-                    GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
-                    GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
-                    Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
-                    chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
-                    yield return new WaitUntil(() => clickFlag);
-                    clickFlag = false;
+                    yield return new WaitForSeconds(1f);
+                    messagecnt++;
                 }
-                yield return new WaitForSeconds(1f);
-                messagecnt++;
             }
+            yield return null;
         }
-        yield return null;  
     }
 }

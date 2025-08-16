@@ -131,6 +131,7 @@ public class SaveLoadManager : MonoBehaviour
             GameManager.instance.playerName= saveData[slotIndex].playerName;
             GameManager.instance.backgroundIndex= saveData[slotIndex].backgroundIndex;
             GameManager.instance.messageCount= saveData[slotIndex].messageCount;
+            GameManager.instance.leftMessageCount= saveData[slotIndex].leftMessageCount;
             SceneManager.LoadScene(saveData[slotIndex].presentSceneName);
         }
     }
