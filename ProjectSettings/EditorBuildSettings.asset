@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/concert_hall.unity
     guid: 8ad1b34cb3e6c9b48bb50fd0f6725720
   - enabled: 1
-    path: Assets/Scenes/Maps/convinience_store.unity
+    path: Assets/Scenes/Maps/convenience_store.unity
     guid: 63cdc40dcb9400c4bb0d600d1934bf52
   - enabled: 1
     path: Assets/Scenes/Maps/forest_road.unity
@@ -56,6 +56,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maps/village.unity
     guid: 0f3f1e87107117c48ba6a8c0b9fff881
+  - enabled: 1
+    path: Assets/Scenes/Maps/church.unity
+    guid: 150f131c7f653a042896314734c2d833
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

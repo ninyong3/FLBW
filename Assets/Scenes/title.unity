@@ -418,6 +418,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &117226056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117226058}
+  - component: {fileID: 117226057}
+  m_Layer: 0
+  m_Name: SimpleBubbleRegistry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &117226057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117226056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7021eba139d2c504bb2cadf0873af557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowedPairs:
+  - bubbleId: bubble_Jin
+    sceneKey: church
+  - bubbleId: bubble_Jin
+    sceneKey: hospital
+  - bubbleId: bubble_Jin
+    sceneKey: village
+  - bubbleId: bubble_Jin
+    sceneKey: convenience_store
+  - bubbleId: bubble_Jin
+    sceneKey: concert_hall
+  - bubbleId: bubble_Freyja
+    sceneKey: forest_road
+  - bubbleId: bubble_Freyja
+    sceneKey: concert_hall
+  - bubbleId: bubble_Freyja
+    sceneKey: village
+  - bubbleId: bubble_Freyja
+    sceneKey: convenience_store
+  - bubbleId: bubble_Freyja
+    sceneKey: concert_hall
+  - bubbleId: bubble_Ru
+    sceneKey: beach
+  - bubbleId: bubble_Ru
+    sceneKey: convenience_store
+  - bubbleId: bubble_Ru
+    sceneKey: village
+  - bubbleId: bubble_Ru
+    sceneKey: hospital
+  - bubbleId: bubble_Ru
+    sceneKey: concert_hall
+--- !u!4 &117226058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117226056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1316.4857, y: 1228.2913, z: -32.647095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237594265
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +640,14 @@ MonoBehaviour:
   textPrintSpeed: 50
   selectedHeroine: 0
   saveLoadCheck: 0
+  saveImagePath: 
+  saveDataPath: 
+  saveJsonPath: 
+  quickCheck: 0
+  slotImagePath: 
+  dialogCount: 1
+  playerName: 
+  backgroundIndex: 0
 --- !u!4 &296032984
 Transform:
   m_ObjectHideFlags: 0
@@ -1878,6 +1961,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200909902}
   m_CullTransparentMesh: 1
+--- !u!1 &1294280204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294280206}
+  - component: {fileID: 1294280205}
+  m_Layer: 0
+  m_Name: MapGateAsync
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1294280205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294280204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ee190d6f04a9843ae59c5f90429828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapSceneName: Map
+  currentHeroineBubbleId: bubble_Freyja
+--- !u!4 &1294280206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294280204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1316.4857, y: 1228.2913, z: -32.647095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405291350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2276,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691582119}
   m_CullTransparentMesh: 1
+--- !u!1 &1778429109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1778429111}
+  - component: {fileID: 1778429110}
+  m_Layer: 0
+  m_Name: TravelLimitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1778429110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778429109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6858ee6c63fc787459de08d8a847c9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapSceneName: map
+  homeSceneName: main
+  minigameSceneNames:
+  - minigame_main
+  maxNonMinigameMoves: 2
+  verboseLogs: 1
+--- !u!4 &1778429111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778429109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1316.4857, y: 1228.2913, z: -32.647095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850543296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,3 +3031,6 @@ SceneRoots:
   - {fileID: 1099982016}
   - {fileID: 97477372}
   - {fileID: 373672436}
+  - {fileID: 1778429111}
+  - {fileID: 1294280206}
+  - {fileID: 117226058}
