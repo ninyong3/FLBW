@@ -1,7 +1,9 @@
+using NUnit.Framework;
 using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {
     public int dayCount = 1; // 현재 day 수
@@ -23,13 +25,19 @@ public class GameManager : MonoBehaviour
     public string playerName;
     public int backgroundIndex;
     public int messageCount=1;
+    public int leftMessageCount = 0;
+    public List<bool> messageCountCheckList=new List<bool>();
     void Start()
     {
        
     }
     void Update()
     {
-        
+        if(dayCount%5 == 0 && messageCountCheckList[dayCount/5-1] == false)
+        {
+            leftMessageCount++;
+            messageCountCheckList[dayCount/5-1]=true;
+        }
     }
     void Awake()
     {
@@ -68,6 +76,7 @@ public class GameManager : MonoBehaviour
         saveData.playerName = playerName;
         saveData.backgroundIndex = backgroundIndex;
         saveData.messageCount=messageCount;
+        saveData.leftMessageCount=leftMessageCount;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))

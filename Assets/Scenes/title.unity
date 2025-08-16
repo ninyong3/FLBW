@@ -565,6 +565,17 @@ MonoBehaviour:
   textPrintSpeed: 50
   selectedHeroine: 0
   saveLoadCheck: 0
+  saveImagePath: 
+  saveDataPath: 
+  saveJsonPath: 
+  quickCheck: 0
+  slotImagePath: 
+  dialogCount: 1
+  playerName: 
+  backgroundIndex: 0
+  messageCount: 1
+  leftMessageCount: 0
+  messageCountCheckList: 000000000000
 --- !u!4 &296032984
 Transform:
   m_ObjectHideFlags: 0

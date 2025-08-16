@@ -19,4 +19,5 @@ public class SaveData
     public string playerName;
     public int backgroundIndex;
     public int messageCount;
+    public int leftMessageCount;
 }
