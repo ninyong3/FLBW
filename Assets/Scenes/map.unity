@@ -1436,11 +1436,17 @@ MonoBehaviour:
     rect: {fileID: 1125643221}
   - sceneKey: church
     rect: {fileID: 1267734225}
+  explicitButtons:
+  - button: {fileID: 1375885228}
+    sceneKey: restaurant
   baseOffset: {x: 100, y: 70}
   offsetRu: {x: 0, y: 0}
   offsetFreyja: {x: 0, y: 0}
   offsetJin: {x: 0, y: 0}
   fallbackFindByName: 1
+  restaurantKey: restaurant
+  outlineDisabled: {r: 0.6, g: 0.6, b: 0.6, a: 0.8}
+  restaurantLoadsScene: minigame_main
 --- !u!1 &764178056
 GameObject:
   m_ObjectHideFlags: 0

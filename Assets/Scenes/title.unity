@@ -2247,7 +2247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapSceneName: Map
-  currentHeroineBubbleId: bubble_Jin
+  currentHeroineBubbleId: bubble_Ru
 --- !u!1 &1691582119
 GameObject:
   m_ObjectHideFlags: 0
