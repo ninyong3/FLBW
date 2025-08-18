@@ -220,6 +220,6 @@ public class SystemManager : MonoBehaviour
     }
     public void test()
     {
-        SceneManager.LoadScene("ep2_jinyein");
+        SceneManager.LoadScene("ep4_jinyein");
     }
 }

@@ -110,7 +110,7 @@ public class DialogManager : MonoBehaviour
                 }
                 if (tempDialog.characterIndex[0] == 1)
                 {
-                    if (tempDialog.choiceIndex == "t")
+                    if (tempDialog.choiceIndex == "t" && SceneManager.GetActiveScene().name != "ep4_jinyein" || tempDialog.choiceIndex != "t" && SceneManager.GetActiveScene().name == "ep4_jinyein")
                     {
                         character.sprite = null;
                         Color tempColor = character.color;
@@ -263,10 +263,28 @@ public class DialogManager : MonoBehaviour
                     }
                     if (tempDialog.characterIndex[0] == 1)
                     {
-                        character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
-                        Color tempColor = character.color;
-                        tempColor.a = 255f;
-                        character.color = tempColor;
+                        if (tempDialog.choiceIndex == "t" && SceneManager.GetActiveScene().name != "ep4_jinyein" || tempDialog.choiceIndex != "t" && SceneManager.GetActiveScene().name == "ep4_jinyein")
+                        {
+                            character.sprite = null;
+                            Color tempColor = character.color;
+                            tempColor.a = 0f;
+                            character.color = tempColor;
+                            character2.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
+                            tempColor = character2.color;
+                            tempColor.a = 255f;
+                            character2.color = tempColor;
+                        }
+                        else
+                        {
+                            character2.sprite = null;
+                            Color tempColor = character2.color;
+                            tempColor.a = 0f;
+                            character2.color = tempColor;
+                            character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
+                            tempColor = character.color;
+                            tempColor.a = 255f;
+                            character.color = tempColor;
+                        }
                     }
                     else if (tempDialog.characterIndex[0] == 2)
                     {
@@ -516,10 +534,28 @@ public class DialogManager : MonoBehaviour
         }
         if (tempDialog.characterIndex[0] == 1)
         {
-            character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
-            Color tempColor = character.color;
-            tempColor.a = 255f;
-            character.color = tempColor;
+            if (tempDialog.choiceIndex == "t" && SceneManager.GetActiveScene().name != "ep4_jinyein" || tempDialog.choiceIndex != "t" && SceneManager.GetActiveScene().name == "ep4_jinyein")
+            {
+                character.sprite = null;
+                Color tempColor = character.color;
+                tempColor.a = 0f;
+                character.color = tempColor;
+                character2.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
+                tempColor = character2.color;
+                tempColor.a = 255f;
+                character2.color = tempColor;
+            }
+            else
+            {
+                character2.sprite = null;
+                Color tempColor = character2.color;
+                tempColor.a = 0f;
+                character2.color = tempColor;
+                character.sprite = JinYeinImageList[tempDialog.characterIndex[1]];
+                tempColor = character.color;
+                tempColor.a = 255f;
+                character.color = tempColor;
+            }
         }
         else if (tempDialog.characterIndex[0] == 2)
         {
