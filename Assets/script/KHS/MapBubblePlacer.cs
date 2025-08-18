@@ -44,6 +44,10 @@ public class MapBubblePlacer : MonoBehaviour
     [Tooltip("레스토랑 버튼/씬 키")]
     public string restaurantKey = "restaurant";
 
+    [Header("예외 키")]
+    [Tooltip("메인 버튼/씬 키(방문 카운트 및 차단 로직에서 제외)")]
+    public string mainKey = "main";
+
     [Header("Outline 색상")]
     [Tooltip("차단 시 outline에 적용할 색상")]
     public Color outlineDisabled = new Color(0.6f, 0.6f, 0.6f, 0.8f);
@@ -52,6 +56,12 @@ public class MapBubblePlacer : MonoBehaviour
     [Tooltip("레스토랑 버튼 클릭 시 실제 로드할 씬 이름")]
     public string restaurantLoadsScene = "minigame_main";
 
+    // 버튼 원래 스타일(Transition/ColorBlock) 캐시
+    private readonly Dictionary<Button, Selectable.Transition> _origTransition =
+        new Dictionary<Button, Selectable.Transition>();
+    private readonly Dictionary<Button, ColorBlock> _origColors =
+        new Dictionary<Button, ColorBlock>();
+
     // outline 원래 색상 캐시(버튼별)
     readonly Dictionary<GameObject, Color> _originalOutlineColor = new Dictionary<GameObject, Color>();
 
@@ -59,6 +69,7 @@ public class MapBubblePlacer : MonoBehaviour
     {
         if (string.IsNullOrEmpty(restaurantKey)) restaurantKey = "restaurant";
         if (string.IsNullOrEmpty(restaurantLoadsScene)) restaurantLoadsScene = "minigame_main";
+        if (string.IsNullOrEmpty(mainKey)) mainKey = "main";
     }
 
     void OnEnable()
@@ -113,6 +124,13 @@ public class MapBubblePlacer : MonoBehaviour
 
     // ---------- 버튼 와이어링/갱신 ----------
 
+    void CacheBtnStyle(Button btn)
+    {
+        if (btn == null) return;
+        if (!_origTransition.ContainsKey(btn)) _origTransition[btn] = btn.transition;
+        if (!_origColors.ContainsKey(btn))     _origColors[btn]     = btn.colors;
+    }
+
     void WireButtonsOnce()
     {
         foreach (var b in buttons)
@@ -136,6 +154,9 @@ public class MapBubblePlacer : MonoBehaviour
             btn.onClick.RemoveAllListeners();
 
         btn.onClick.AddListener(() => OnClickSceneButton(sceneKey));
+
+        // 원래 스타일 캐시
+        CacheBtnStyle(btn);
 
         RefreshButtonState(btn, sceneKey);
         Debug.Log($"[MBP] Wire '{btn.name}' key='{sceneKey}' pers={btn.onClick.GetPersistentEventCount()}");
@@ -176,16 +197,35 @@ public class MapBubblePlacer : MonoBehaviour
     {
         if (btn == null || !btn) return;
 
+        // Wire 이전 호출 대비
+        CacheBtnStyle(btn);
+
         var reg = SimpleBubbleRegistry.Instance;
         if (reg == null) return;
 
+        var k0 = NormalizeKey(sceneKey);
+
+        // --- main 예외: 항상 활성/원래 스타일/원래 outline 유지 ---
+        if (IsMain(k0))
+        {
+            btn.interactable = true;
+            if (_origTransition.TryGetValue(btn, out var t)) btn.transition = t;
+            if (_origColors.TryGetValue(btn, out var c))     btn.colors = c;
+
+            var outlineGO = FindOutlineGOForButton(btn, sceneKey);
+            if (outlineGO != null && _originalOutlineColor.TryGetValue(outlineGO, out var orig2))
+                TrySetOutlineColor(outlineGO, orig2);
+
+            Debug.Log($"[MBP] Refresh '{sceneKey}' => ENABLED (main-exception)");
+            return; // 더 이상 차단 로직 적용하지 않음
+        }
+
         bool disabled = false;
         string reason = "enabled";
-        string k = (sceneKey ?? "").Trim().ToLowerInvariant();
 
-        // 레스토랑: 오늘 이미 다른 맵을 1회 이상 방문했으면 차단
+        // 레스토랑: 오늘 이미 다른 맵 1회 이상 방문했으면 차단
         if (!string.IsNullOrEmpty(restaurantKey) &&
-            string.Equals(k, restaurantKey.Trim().ToLowerInvariant(), StringComparison.OrdinalIgnoreCase) &&
+            string.Equals(k0, NormalizeKey(restaurantKey), StringComparison.OrdinalIgnoreCase) &&
             reg.GetTotalVisitsToday() > 0)
         {
             disabled = true;
@@ -202,19 +242,30 @@ public class MapBubblePlacer : MonoBehaviour
             }
         }
 
-        btn.interactable = !disabled;
+        // 버튼 색은 유지하고 클릭만 막기 위해 Transition을 None으로 전환/복구
+        if (disabled)
+        {
+            btn.interactable = false;
+            btn.transition = Selectable.Transition.None;
+        }
+        else
+        {
+            btn.interactable = true;
+            if (_origTransition.TryGetValue(btn, out var t2)) btn.transition = t2;
+            if (_origColors.TryGetValue(btn, out var c2))     btn.colors = c2;
+        }
 
         // outline 색상 처리
-        var outlineGO = FindOutlineGOForButton(btn, sceneKey);
-        if (outlineGO != null)
+        var outGO = FindOutlineGOForButton(btn, sceneKey);
+        if (outGO != null)
         {
-            if (!_originalOutlineColor.ContainsKey(outlineGO) && TryGetOutlineColor(outlineGO, out var orig))
-                _originalOutlineColor[outlineGO] = orig;
+            if (!_originalOutlineColor.ContainsKey(outGO) && TryGetOutlineColor(outGO, out var orig))
+                _originalOutlineColor[outGO] = orig;
 
             if (disabled)
-                TrySetOutlineColor(outlineGO, outlineDisabled);
-            else if (_originalOutlineColor.TryGetValue(outlineGO, out var orig2))
-                TrySetOutlineColor(outlineGO, orig2);
+                TrySetOutlineColor(outGO, outlineDisabled);
+            else if (_originalOutlineColor.TryGetValue(outGO, out var origOk))
+                TrySetOutlineColor(outGO, origOk);
         }
 
         Debug.Log($"[MBP] Refresh '{sceneKey}' => {(disabled ? "DISABLED" : "ENABLED")} ({reason}), " +
@@ -231,13 +282,22 @@ public class MapBubblePlacer : MonoBehaviour
     System.Collections.IEnumerator OnClickSceneButtonRoutine(string sceneKey)
     {
         var reg = SimpleBubbleRegistry.Instance;
-        if (reg == null) yield break;
+        string k = NormalizeKey(sceneKey);
 
-        string k = (sceneKey ?? "").Trim().ToLowerInvariant();
+        // main 예외: 방문 카운트/차단 미적용, 바로 로드
+        if (IsMain(k))
+        {
+            var es0 = EventSystem.current; if (es0) es0.SetSelectedGameObject(null);
+            yield return null;
+            SceneManager.LoadScene(sceneKey);
+            yield break;
+        }
+
+        if (reg == null) yield break;
 
         // 레스토랑 차단
         if (!string.IsNullOrEmpty(restaurantKey) &&
-            string.Equals(k, restaurantKey.Trim().ToLowerInvariant(), StringComparison.OrdinalIgnoreCase) &&
+            string.Equals(k, NormalizeKey(restaurantKey), StringComparison.OrdinalIgnoreCase) &&
             reg.GetTotalVisitsToday() > 0)
             yield break;
 
@@ -248,7 +308,7 @@ public class MapBubblePlacer : MonoBehaviour
         // 로드 대상 결정(restaurant → minigame_main)
         string loadScene = sceneKey;
         if (!string.IsNullOrEmpty(restaurantKey) &&
-            string.Equals(k, restaurantKey.Trim().ToLowerInvariant(), StringComparison.OrdinalIgnoreCase))
+            string.Equals(k, NormalizeKey(restaurantKey), StringComparison.OrdinalIgnoreCase))
             loadScene = string.IsNullOrEmpty(restaurantLoadsScene) ? sceneKey : restaurantLoadsScene;
 
         // UI 클릭 이벤트 종료 보장
@@ -261,6 +321,13 @@ public class MapBubblePlacer : MonoBehaviour
     }
 
     // ---------- 보조 ----------
+
+    bool IsMain(string keyLower)
+    {
+        var k = (keyLower ?? "").Trim().ToLowerInvariant();
+        var m = (mainKey   ?? "").Trim().ToLowerInvariant();
+        return !string.IsNullOrEmpty(m) && k == m;
+    }
 
     void PlaceBubbleAtButton(RectTransform bubble, RectTransform button, string bubbleIdLower)
     {

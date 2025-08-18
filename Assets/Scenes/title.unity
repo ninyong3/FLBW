@@ -418,6 +418,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &124267379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4349351330226913721, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_Name
+      value: SimpleBubbleRegistry
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1234.8943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 401.68848
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.4759789
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776753625542509791, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
 --- !u!1 &219575565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,75 +1486,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847761173}
   m_CullTransparentMesh: 1
---- !u!1 &1073630186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1073630187}
-  - component: {fileID: 1073630188}
-  m_Layer: 0
-  m_Name: SimpleBubbleRegistry
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1073630187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073630186}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1234.8943, y: 401.68848, z: -3.4759789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1073630188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073630186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7021eba139d2c504bb2cadf0873af557, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allowedPairs:
-  - bubbleId: bubble_Jin
-    sceneKey: hospital
-  - bubbleId: bubble_Jin
-    sceneKey: forest_road
-  - bubbleId: bubble_Jin
-    sceneKey: village
-  - bubbleId: bubble_Jin
-    sceneKey: church
-  - bubbleId: bubble_Ru
-    sceneKey: beach
-  - bubbleId: bubble_Ru
-    sceneKey: forest_road
-  - bubbleId: bubble_Ru
-    sceneKey: convenience_store
-  - bubbleId: bubble_Ru
-    sceneKey: village
-  - bubbleId: bubble_Freyja
-    sceneKey: forest_road
-  - bubbleId: bubble_Freyja
-    sceneKey: village
-  - bubbleId: bubble_Freyja
-    sceneKey: concert_hall
-  - bubbleId: bubble_Freyja
-    sceneKey: beach
 --- !u!1 &1094275440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,4 +3018,4 @@ SceneRoots:
   - {fileID: 373672436}
   - {fileID: 219575566}
   - {fileID: 1442663453}
-  - {fileID: 1073630187}
+  - {fileID: 124267379}
