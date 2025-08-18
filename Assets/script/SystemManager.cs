@@ -74,13 +74,14 @@ public class SystemManager : MonoBehaviour
     }
     public void SkipDaySystem() // 일자를 넘기기 위한 함수
     {
-        Skipwarningimage.SetActive(true); // 스킵 경고창 보이기
+        if(SceneManager.GetActiveScene().name != "ep0")
+            Skipwarningimage.SetActive(true); // 스킵 경고창 보이기
     }
     public void SkipDayClickYes() // 스킵 경고창에서 네를 눌렀을 시 작동하는 함수
     {
-        if (SceneManager.GetActiveScene().name == "main")
-            GameManager.instance.dayCount++; // 다음 일자로 넘기기
-        else
+        GameManager.instance.dayCount++; // 다음 일자로 넘기기
+        GameManager.instance.dialogCount = 1;
+        if (SceneManager.GetActiveScene().name != "main")
             SceneManager.LoadScene("main");
         Skipwarningimage.SetActive(false); // 스킵 경고창 닫기
     }
@@ -216,5 +217,9 @@ public class SystemManager : MonoBehaviour
     public void LogCloseSystem()
     {
         Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(1920f, -4.4107e-06f);
+    }
+    public void test()
+    {
+        SceneManager.LoadScene("ep2_jinyein");
     }
 }

@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public int leftMessageCount = 0;
     public List<bool> messageCountCheckList=new List<bool>();
     public string userChoice;
+    public bool IsLoading;
+    PersistentData persistentData;
     void Start()
     {
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "persistentSaveData");
@@ -42,7 +44,11 @@ public class GameManager : MonoBehaviour
             PersistentData persistentData = new PersistentData();
             string saveToJsonData=JsonConvert.SerializeObject(persistentData, Formatting.Indented);
             File.WriteAllText(persistentSaveJsonPath, saveToJsonData);
-
+        }
+        else
+        {
+            string jsonString=File.ReadAllText(persistentSaveJsonPath);
+            persistentData=JsonConvert.DeserializeObject<PersistentData>(jsonString);
         }
     }
     void Update()
@@ -106,12 +112,11 @@ public class GameManager : MonoBehaviour
     }
     public void ClearCheck(int checkIndex, int index1, int index2)
     {
-        PersistentData persistentData = new PersistentData();
         if (checkIndex == 1)
             persistentData.episodeClearCheck[index1, index2] = true;
         else
             persistentData.endingClearCheck[index1] = true;
-        string saveToJsonData = JsonUtility.ToJson(persistentData, true);
+        string saveToJsonData = JsonConvert.SerializeObject(persistentData, Formatting.Indented);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "persistentSaveData");
         if (!Directory.Exists(saveJsonFolderPath))
         {
@@ -119,5 +124,16 @@ public class GameManager : MonoBehaviour
         }
         string persistentSaveJsonPath = Path.Combine(saveJsonFolderPath, "persistentData.json");
         File.WriteAllText(persistentSaveJsonPath, saveToJsonData);
+    }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+            }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        IsLoading = false;
     }
 }
