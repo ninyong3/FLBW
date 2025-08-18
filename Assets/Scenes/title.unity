@@ -683,6 +683,7 @@ MonoBehaviour:
   messageCount: 1
   leftMessageCount: 0
   messageCountCheckList: 000000000000
+  userChoice: 
 --- !u!4 &296032984
 Transform:
   m_ObjectHideFlags: 0

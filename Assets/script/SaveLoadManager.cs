@@ -132,6 +132,7 @@ public class SaveLoadManager : MonoBehaviour
             GameManager.instance.backgroundIndex= saveData[slotIndex].backgroundIndex;
             GameManager.instance.messageCount= saveData[slotIndex].messageCount;
             GameManager.instance.leftMessageCount= saveData[slotIndex].leftMessageCount;
+            GameManager.instance.userChoice= saveData[slotIndex].userChoice;
             SceneManager.LoadScene(saveData[slotIndex].presentSceneName);
         }
     }
