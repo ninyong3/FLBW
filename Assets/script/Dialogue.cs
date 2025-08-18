@@ -10,4 +10,5 @@ public class Dialogue // 대사 클래스
     public int backgroundIndex;
     public int BGMIndex;
     public int SFXIndex;
+    public int relationship_level;
 }

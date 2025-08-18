@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class DialogueParser : MonoBehaviour
 {
@@ -51,6 +52,12 @@ public class DialogueParser : MonoBehaviour
             }
             else
                 dialogue.SFXIndex = -1;
+            if (int.TryParse(row[8], out dialogue.relationship_level))
+            {
+
+            }
+            else
+                dialogue.relationship_level = 0;
             dialoguelist.Add(dialogue);
         }
         return dialoguelist.ToArray(); // 배열로 변환해 반환

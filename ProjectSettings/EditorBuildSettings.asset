@@ -15,6 +15,24 @@ EditorBuildSettings:
     path: Assets/Scenes/ep0.unity
     guid: a945f75d4d778904f9cd878fa2c6e65e
   - enabled: 1
+    path: Assets/Scenes/ep0_jinyein.unity
+    guid: 24fd00660d2284e4886730c529e90023
+  - enabled: 1
+    path: Assets/Scenes/ep1_jinyein.unity
+    guid: b9d2ebbbfd600d741a1b9dd2ba897bf9
+  - enabled: 1
+    path: Assets/Scenes/ep2_jinyein.unity
+    guid: 7175a15011b327e40bfce0fb2cb7f287
+  - enabled: 1
+    path: Assets/Scenes/ep3_jinyein.unity
+    guid: d733b19c2badfc645a4f6f4f536441ac
+  - enabled: 1
+    path: Assets/Scenes/ep4_jinyein.unity
+    guid: df42a192ded98334e964765f9e4f8f48
+  - enabled: 0
+    path: Assets/Scenes/ep0_freyja.unity
+    guid: ac5f0bb1edbf74f458326404d5a84354
+  - enabled: 1
     path: Assets/Scenes/config.unity
     guid: f6ce77a703eb014499edbe2a5518e5f2
   - enabled: 1
@@ -28,7 +46,7 @@ EditorBuildSettings:
     guid: 172fa5d330fe03440852ce3450054e32
   - enabled: 1
     path: Assets/Scenes/map.unity
-    guid: 7dc41b219e64386468cca434609ca17e
+    guid: 79ca53a39c6f2f54d82fc28f80922447
   - enabled: 1
     path: Assets/Scenes/minigame_main.unity
     guid: 660d3ed0a92e47b48a4097a6a3e44fa6
@@ -42,7 +60,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/concert_hall.unity
     guid: 8ad1b34cb3e6c9b48bb50fd0f6725720
   - enabled: 1
-    path: Assets/Scenes/Maps/convinience_store.unity
+    path: Assets/Scenes/Maps/convenience_store.unity
     guid: 63cdc40dcb9400c4bb0d600d1934bf52
   - enabled: 1
     path: Assets/Scenes/Maps/forest_road.unity
