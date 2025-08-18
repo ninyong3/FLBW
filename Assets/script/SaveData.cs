@@ -20,4 +20,5 @@ public class SaveData
     public int backgroundIndex;
     public int messageCount;
     public int leftMessageCount;
+    public string userChoice;
 }

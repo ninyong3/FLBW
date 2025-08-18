@@ -12,7 +12,7 @@ public class TitleManager : MonoBehaviour
     }
     public void StartGame() // 시작하기 함수
     {
-        GameManager.instance.dayCount = 1; // day를 1로 초기화
+        GameManager.instance.dayCount = 0; // day를 1로 초기화
         GameManager.instance.relationship_level = 0;
         GameManager.instance.dialogCount = 1;
         GameManager.instance.playerName = "";
@@ -23,6 +23,7 @@ public class TitleManager : MonoBehaviour
             GameManager.instance.messageCountCheckList[i] = false;
         }
         GameManager.instance.leftMessageCount = 0;
+        GameManager.instance.userChoice = null;
         SceneManager.LoadScene("ep0"); // ep0 씬 불러오기
     }
     public void OpenLoad()
