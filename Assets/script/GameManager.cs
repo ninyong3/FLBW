@@ -4,9 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 public class GameManager : MonoBehaviour
 {
-    public int dayCount = 1; // 현재 day 수
+    public int dayCount = 0; // 현재 day 수
     public static GameManager instance; 
     public int relationship_level=0; // 호감도
     public string previousScene; // 이전 씬
@@ -27,16 +28,32 @@ public class GameManager : MonoBehaviour
     public int messageCount=1;
     public int leftMessageCount = 0;
     public List<bool> messageCountCheckList=new List<bool>();
+    public string userChoice;
     void Start()
     {
-       
+        string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "persistentSaveData");
+        string persistentSaveJsonPath = Path.Combine(saveJsonFolderPath, "persistentData.json");
+        if (!Directory.Exists(saveJsonFolderPath))
+        {
+            Directory.CreateDirectory(saveJsonFolderPath);
+        }
+        if (!File.Exists(persistentSaveJsonPath))
+        {
+            PersistentData persistentData = new PersistentData();
+            string saveToJsonData=JsonConvert.SerializeObject(persistentData, Formatting.Indented);
+            File.WriteAllText(persistentSaveJsonPath, saveToJsonData);
+
+        }
     }
     void Update()
     {
-        if(dayCount%5 == 0 && messageCountCheckList[dayCount/5-1] == false)
+        if (dayCount != 0)
         {
-            leftMessageCount++;
-            messageCountCheckList[dayCount/5-1]=true;
+            if (dayCount % 5 == 0 && messageCountCheckList[dayCount / 5 - 1] == false)
+            {
+                leftMessageCount++;
+                messageCountCheckList[dayCount / 5 - 1] = true;
+            }
         }
     }
     void Awake()
@@ -77,6 +94,7 @@ public class GameManager : MonoBehaviour
         saveData.backgroundIndex = backgroundIndex;
         saveData.messageCount=messageCount;
         saveData.leftMessageCount=leftMessageCount;
+        saveData.userChoice=userChoice;
         string saveToJsonData = JsonUtility.ToJson(saveData, true);
         string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "saveData");
         if (!Directory.Exists(saveJsonFolderPath))
@@ -85,5 +103,21 @@ public class GameManager : MonoBehaviour
         }
         saveJsonPath = Path.Combine(saveJsonFolderPath, saveJsonFileName);
         File.WriteAllText(saveJsonPath, saveToJsonData);
+    }
+    public void ClearCheck(int checkIndex, int index1, int index2)
+    {
+        PersistentData persistentData = new PersistentData();
+        if (checkIndex == 1)
+            persistentData.episodeClearCheck[index1, index2] = true;
+        else
+            persistentData.endingClearCheck[index1] = true;
+        string saveToJsonData = JsonUtility.ToJson(persistentData, true);
+        string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "persistentSaveData");
+        if (!Directory.Exists(saveJsonFolderPath))
+        {
+            Directory.CreateDirectory(saveJsonFolderPath);
+        }
+        string persistentSaveJsonPath = Path.Combine(saveJsonFolderPath, "persistentData.json");
+        File.WriteAllText(persistentSaveJsonPath, saveToJsonData);
     }
 }

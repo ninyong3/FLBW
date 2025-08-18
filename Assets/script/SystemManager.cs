@@ -194,6 +194,7 @@ public class SystemManager : MonoBehaviour
         GameManager.instance.backgroundIndex = quickSaveData.backgroundIndex;
         GameManager.instance.messageCount = quickSaveData.messageCount;
         GameManager.instance.leftMessageCount = quickSaveData.leftMessageCount;
+        GameManager.instance.userChoice = quickSaveData.userChoice;
         SceneManager.LoadScene(quickSaveData.presentSceneName);
     }
     public void QuickLoadClickNo()
