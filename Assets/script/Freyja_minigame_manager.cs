@@ -59,6 +59,9 @@ public class Freyja_minigame_manager : MonoBehaviour
                 {
                     Debug.Log("[Manager] All rounds completed!");
 
+                    GameManager.instance.dayCount++;
+                    GameManager.instance.relationship_level++;
+
                     SceneManager.LoadScene("main");
                 }
                 else
