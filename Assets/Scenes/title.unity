@@ -611,6 +611,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 147f16fd201e66547bf97d5f03b9731a, type: 3}
   - {fileID: 8300000, guid: 5447d12c58d8e5946a6947ad2fcc6e5e, type: 3}
   - {fileID: 8300000, guid: 284208c924fe773479f731f4d8fac5c4, type: 3}
+  - {fileID: 8300000, guid: 51ca9bc1d5cd93e4d8f321e24b33a90f, type: 3}
+  - {fileID: 8300000, guid: d30048d2b56108444ba083150df548f7, type: 3}
+  - {fileID: 8300000, guid: bbc5e779123b641458209785dd40aad9, type: 3}
   debugLog: 1
 --- !u!4 &218084400
 Transform:
@@ -2911,6 +2914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapSceneName: Map
   currentHeroineBubbleId: 
+  verbose: 1
 --- !u!1 &1691582119
 GameObject:
   m_ObjectHideFlags: 0
