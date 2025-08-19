@@ -220,6 +220,6 @@ public class SystemManager : MonoBehaviour
     }
     public void test()
     {
-        SceneManager.LoadScene("happyending_freyja");
+        SceneManager.LoadScene("ep2_ru");
     }
 }

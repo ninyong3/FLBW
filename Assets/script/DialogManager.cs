@@ -384,6 +384,7 @@ public class DialogManager : MonoBehaviour
             {
                GameManager.instance.IsLoading= true;
                 GameManager.instance.userChoice = null;
+                GameManager.instance.dialogCount = 1;
                 if (GameManager.instance.selectedHeroine == 1)
                     SceneManager.LoadScene("ep0_jinyein");
                 else if (GameManager.instance.selectedHeroine == 2)

@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f10c26bd04d464469fe397bbf5012b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogFileName: Jin_Main00_revised
+  dialogFileName: Ru_Main00_revised
 --- !u!114 &427825276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,7 +3585,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 438622478}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8014,6 +8014,7 @@ MonoBehaviour:
   backgroundList:
   - {fileID: 0}
   - {fileID: 21300000, guid: aa1fafd0272165c4ca44a25e3f2af476, type: 3}
+  - {fileID: 21300000, guid: ceaeef19197c6324990d650b98bed61d, type: 3}
   playerNameInputField: {fileID: 1146961659}
   Writeplayername: {fileID: 1282897123}
   logContentRect: {fileID: 1609315382}
