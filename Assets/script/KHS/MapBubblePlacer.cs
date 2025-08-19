@@ -75,7 +75,7 @@ public class MapBubblePlacer : MonoBehaviour
         var today = reg.GetTodaySnapshot();
         Debug.Log("[MBP] snapshot = " + (today==null ? "null" : string.Join(", ", today.Select(kv => $"[{kv.Key}, {kv.Value}]"))));
 
-        // ★ 스냅샷이 비었으면 기존 배치 유지 (증발 방지)
+        // ★ 스냅샷이 비었으면 기존 배치 유지
         if (today == null || today.Count == 0)
         {
             Debug.LogWarning("[MBP] Today map is empty → keep previous bubbles (no reset)");
@@ -183,18 +183,18 @@ public class MapBubblePlacer : MonoBehaviour
         if (!disabled && reg.TryGetBubbleIdByScene(sceneKey, out var _) && !reg.CanEnterToday(sceneKey))
             disabled = true;
 
-        // ★ 버튼을 비활성화해야 한다면: 먼저 재배치 시도
+                // ✅ NO-REASSIGN: 같은 Day에는 자리 고정
         if (disabled)
         {
-            if (reg.TryReassignFromDisabledScene(sceneKey, "MapBubblePlacer.RefreshButtonState"))
-            {
-                // 재배치에 성공했으면 화면을 즉시 갱신
-                ApplyToday();
-            }
+            // 참고 로그: 왜 비활성인지 보려면 남겨두세요
+            if (reg.TryGetBubbleIdByScene(sceneKey, out var bid))
+                Debug.Log($"[MBP] NO-REASSIGN (same day). scene='{sceneKey}', bubble='{bid}' (disabled reason)"); 
 
             btn.interactable = false;
             btn.transition = Selectable.Transition.None;
+            // (중요) 재배치 시도/ApplyToday() 호출 제거
         }
+
         else
         {
             btn.interactable = true;
