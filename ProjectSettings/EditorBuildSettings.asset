@@ -51,6 +51,15 @@ EditorBuildSettings:
     path: Assets/Scenes/happyending_freyja.unity
     guid: 25d6538ac193d6f4fa4bd457422d53d8
   - enabled: 1
+    path: Assets/Scenes/ep0_ru.unity
+    guid: 23489bc05a046434c98caadff36b5eea
+  - enabled: 1
+    path: Assets/Scenes/ep1_ru.unity
+    guid: 243ebb5b6a3a793458ab655d615dc6f7
+  - enabled: 1
+    path: Assets/Scenes/ep2_ru.unity
+    guid: f7bf2e4fbf9fb00419e12c7f0549a3e0
+  - enabled: 1
     path: Assets/Scenes/config.unity
     guid: f6ce77a703eb014499edbe2a5518e5f2
   - enabled: 1
