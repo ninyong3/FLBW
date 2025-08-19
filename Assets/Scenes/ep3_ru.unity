@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f10c26bd04d464469fe397bbf5012b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogFileName: Ru_Main02_revised
+  dialogFileName: Ru_Main03_revised
 --- !u!114 &427825276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8013,10 +8013,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb43a409523516647b5e7a17ae83fca7, type: 3}
   backgroundList:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 465557736c8d81748929d1ef796d8380, type: 3}
-  - {fileID: 21300000, guid: c01efe5f51ff57545982737b8eb1f03b, type: 3}
-  - {fileID: 21300000, guid: b4eae830a0a366040970ced9cf8d11a8, type: 3}
-  - {fileID: 21300000, guid: 807cd3df05a9a794a9b17e6064527b4b, type: 3}
+  - {fileID: 21300000, guid: 3ebee1df5f2ba1841b2ca424d3e2f177, type: 3}
+  - {fileID: 21300000, guid: 232ae4a2e59f6f141883f7d634a3d30f, type: 3}
+  - {fileID: 21300000, guid: c7449a9135cd709429d849f99fcaeebc, type: 3}
+  - {fileID: 21300000, guid: e670465b3f465894089308b423dac66a, type: 3}
   - {fileID: 21300000, guid: fbf95910ea43e6f478d9f1b50ff97ae9, type: 3}
   - {fileID: 21300000, guid: 651a632d68611274f9f8d798357ad86f, type: 3}
   - {fileID: 21300000, guid: e670465b3f465894089308b423dac66a, type: 3}
