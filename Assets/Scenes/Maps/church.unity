@@ -1670,6 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d644ade13ac514a9b1d1c7dc78b746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapSceneName: map
 --- !u!1001 &1502117616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1678,6 +1679,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: ruCsvSequence.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: jinCsvSequence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: freyjaCsvSequence.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'jinCsvSequence.Array.data[0]'
+      value: church_Jin_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'jinCsvSequence.Array.data[1]'
+      value: church_Jin_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'jinCsvSequence.Array.data[2]'
+      value: church_Jin_2
+      objectReference: {fileID: 0}
     - target: {fileID: 1119709004444970068, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
