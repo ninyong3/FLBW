@@ -113,6 +113,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ep1.unity
     guid: 2b031c2a195103b488812f25feb88ede
+  - enabled: 1
+    path: Assets/Scenes/Maps/church.unity
+    guid: 150f131c7f653a042896314734c2d833
+  - enabled: 1
+    path: Assets/Scenes/minigame_freyja.unity
+    guid: 1760a87c0038ae64c945841acd3924b5
+  - enabled: 1
+    path: Assets/Scenes/minigame_Ru.unity
+    guid: 0868a9fb06585aa47851ebc170e46200
+  - enabled: 1
+    path: Assets/Scenes/minigame_Jinyein.unity
+    guid: b5f4d1702240a3f4f9dc6620d3e918ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
