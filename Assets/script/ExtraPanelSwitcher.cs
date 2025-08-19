@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ExtraPanelSwitcher : MonoBehaviour
@@ -33,7 +34,14 @@ public class ExtraPanelSwitcher : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            ShowMain();
+            if(mainPanel != null && mainPanel.activeInHierarchy) 
+            {
+                SceneManager.LoadScene("title");
+            }
+            else
+            {
+                ShowMain();
+            }
         }
     }
     public void ShowMain()
