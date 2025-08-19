@@ -29,9 +29,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ep4_jinyein.unity
     guid: df42a192ded98334e964765f9e4f8f48
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/happyending_jinyein.unity
+    guid: 1d6bc10c412c8c74c977b66008c9a9ae
+  - enabled: 1
     path: Assets/Scenes/ep0_freyja.unity
-    guid: ac5f0bb1edbf74f458326404d5a84354
+    guid: b0493c721417dde4fab2c2224c1a4de6
+  - enabled: 1
+    path: Assets/Scenes/ep1_freyja.unity
+    guid: 5db6d5fb0eb0ac549931f765091f1442
+  - enabled: 1
+    path: Assets/Scenes/ep2_freyja.unity
+    guid: c55af53f6cc316e43b1c658f80148224
+  - enabled: 1
+    path: Assets/Scenes/ep3_freyja.unity
+    guid: f15a8bcb521dcfe418027e56a3f31514
+  - enabled: 1
+    path: Assets/Scenes/ep4_freyja.unity
+    guid: 5987a5f9b7177a44dbb9dc974c2f0b6f
+  - enabled: 1
+    path: Assets/Scenes/happyending_freyja.unity
+    guid: 25d6538ac193d6f4fa4bd457422d53d8
+  - enabled: 1
+    path: Assets/Scenes/ep0_ru.unity
+    guid: 23489bc05a046434c98caadff36b5eea
+  - enabled: 1
+    path: Assets/Scenes/ep1_ru.unity
+    guid: 243ebb5b6a3a793458ab655d615dc6f7
+  - enabled: 1
+    path: Assets/Scenes/ep2_ru.unity
+    guid: f7bf2e4fbf9fb00419e12c7f0549a3e0
+  - enabled: 1
+    path: Assets/Scenes/ep3_ru.unity
+    guid: fcb6fcc92108d5e4898dc492cb11c23c
+  - enabled: 1
+    path: Assets/Scenes/ep4_ru.unity
+    guid: 77c2c7f1d1cc9f747b6bf0a4e4fd7e0e
+  - enabled: 1
+    path: Assets/Scenes/happyending_ru.unity
+    guid: 4584b25654bc76e428cea1641f067f32
   - enabled: 1
     path: Assets/Scenes/config.unity
     guid: f6ce77a703eb014499edbe2a5518e5f2
@@ -77,6 +113,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ep1.unity
     guid: 2b031c2a195103b488812f25feb88ede
+  - enabled: 1
+    path: Assets/Scenes/Maps/church.unity
+    guid: 150f131c7f653a042896314734c2d833
+  - enabled: 1
+    path: Assets/Scenes/minigame_freyja.unity
+    guid: 1760a87c0038ae64c945841acd3924b5
+  - enabled: 1
+    path: Assets/Scenes/minigame_Ru.unity
+    guid: 0868a9fb06585aa47851ebc170e46200
+  - enabled: 1
+    path: Assets/Scenes/minigame_Jinyein.unity
+    guid: b5f4d1702240a3f4f9dc6620d3e918ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

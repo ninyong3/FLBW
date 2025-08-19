@@ -54,7 +54,7 @@ public class TravelLimitManager : MonoBehaviour
 
         if (verboseLogs)
         {
-            Debug.Log($"[TLM] Awake | map='{mapSceneName}', home='{homeSceneName}', start='{lastSceneName}', max={maxNonMinigameMoves}");
+            // Debug.Log($"[TLM] Awake | map='{mapSceneName}', home='{homeSceneName}', start='{lastSceneName}', max={maxNonMinigameMoves}");
             DumpScenesInBuild();
         }
     }
@@ -94,7 +94,7 @@ public class TravelLimitManager : MonoBehaviour
                 !prevIsMap && !prevIsHome && !prevIsMini;
 
             if (verboseLogs)
-                Debug.Log($"[TLM] return→map? prevIsMap={prevIsMap}, prevIsHome={prevIsHome}, prevIsMini={prevIsMini}, shouldCount={shouldCount}");
+                // Debug.Log($"[TLM] return→map? prevIsMap={prevIsMap}, prevIsHome={prevIsHome}, prevIsMini={prevIsMini}, shouldCount={shouldCount}");
 
             if (shouldCount)
             {
@@ -159,6 +159,6 @@ public class TravelLimitManager : MonoBehaviour
             var path = SceneUtility.GetScenePathByBuildIndex(i);
             names.Add(Path.GetFileNameWithoutExtension(path));
         }
-        Debug.Log("[TLM] ScenesInBuild: " + string.Join(", ", names));
+        // Debug.Log("[TLM] ScenesInBuild: " + string.Join(", ", names));
     }
 }
