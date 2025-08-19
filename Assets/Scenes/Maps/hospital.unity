@@ -1155,6 +1155,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2535932803218792798, guid: 1c6eb7a3e31098f45ba27e40fc0c32c3, type: 3}
+      propertyPath: hoverClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c3e7e22d1c94464fb69612b63e5fc6a, type: 3}
+    - target: {fileID: 2535932803218792798, guid: 1c6eb7a3e31098f45ba27e40fc0c32c3, type: 3}
       propertyPath: outlineObj
       value: 
       objectReference: {fileID: 1620450402}
@@ -1643,9 +1647,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 396525546}
     m_Modifications:
+    - target: {fileID: 5464167177221322023, guid: 669919e5c36d12c4ab81bf3bca0ccb82, type: 3}
+      propertyPath: m_text
+      value: "\uC544\uB378\uB77C\uC774\uD2B8 \uBCD1\uC6D0."
+      objectReference: {fileID: 0}
     - target: {fileID: 7353406658820284086, guid: 669919e5c36d12c4ab81bf3bca0ccb82, type: 3}
       propertyPath: m_text
-      value: "\uC9C4\uC608\uC778 "
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8731525123086510102, guid: 669919e5c36d12c4ab81bf3bca0ccb82, type: 3}
       propertyPath: m_Pivot.x

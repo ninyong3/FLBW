@@ -50,7 +50,7 @@ public class DBManager_DialogOnly : MonoBehaviour
             return;
         }
 
-        // ★ 게으른 초기화(부트스트랩이 너무 빨리 호출돼도 안전)
+        // 게으른 초기화(부트스트랩이 너무 빨리 호출돼도 안전)
         if (parser == null)
             parser = GetComponent<DialogueParser_DialogOnly>() ?? gameObject.AddComponent<DialogueParser_DialogOnly>();
 

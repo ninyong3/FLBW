@@ -159,7 +159,7 @@ public class MapBubblePlacer : MonoBehaviour
         CacheBtnStyle(btn);
 
         RefreshButtonState(btn, sceneKey);
-        Debug.Log($"[MBP] Wire '{btn.name}' key='{sceneKey}' pers={btn.onClick.GetPersistentEventCount()}");
+//        Debug.Log($"[MBP] Wire '{btn.name}' key='{sceneKey}' pers={btn.onClick.GetPersistentEventCount()}");
     }
 
     System.Collections.IEnumerator LateWireAndRefresh()
@@ -216,7 +216,7 @@ public class MapBubblePlacer : MonoBehaviour
             if (outlineGO != null && _originalOutlineColor.TryGetValue(outlineGO, out var orig2))
                 TrySetOutlineColor(outlineGO, orig2);
 
-            Debug.Log($"[MBP] Refresh '{sceneKey}' => ENABLED (main-exception)");
+//            Debug.Log($"[MBP] Refresh '{sceneKey}' => ENABLED (main-exception)");
             return; // 더 이상 차단 로직 적용하지 않음
         }
 
@@ -268,8 +268,8 @@ public class MapBubblePlacer : MonoBehaviour
                 TrySetOutlineColor(outGO, origOk);
         }
 
-        Debug.Log($"[MBP] Refresh '{sceneKey}' => {(disabled ? "DISABLED" : "ENABLED")} ({reason}), " +
-                  $"totalVisits={reg.GetTotalVisitsToday()}, thisVisits={reg.GetVisitCount(sceneKey)}");
+        // Debug.Log($"[MBP] Refresh '{sceneKey}' => {(disabled ? "DISABLED" : "ENABLED")} ({reason}), " +
+        //           $"totalVisits={reg.GetTotalVisitsToday()}, thisVisits={reg.GetVisitCount(sceneKey)}");
     }
 
     // ---------- 클릭 처리 ----------
