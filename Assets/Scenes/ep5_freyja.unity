@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f10c26bd04d464469fe397bbf5012b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogFileName: Freyja_Main04_revised
+  dialogFileName: Freyja_Main05_revised
 --- !u!114 &427825276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8015,7 +8015,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: -4435605285099390769, guid: 06b93b9f1baf2044e8d19ed246595805, type: 3}
   - {fileID: 21300000, guid: 82b92237fa98d1a40971c6523f7bb1d1, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: b5bf232c042e98d4d97f9a003848cffa, type: 3}
   - {fileID: 21300000, guid: fbf95910ea43e6f478d9f1b50ff97ae9, type: 3}
   - {fileID: 0}
   - {fileID: 0}
@@ -8913,6 +8913,7 @@ MonoBehaviour:
   Autoimage: {fileID: 844044330}
   Log: {fileID: 646013969}
   Allsystem: {fileID: 1022866233}
+  test1: 
 --- !u!4 &2097732747
 Transform:
   m_ObjectHideFlags: 0
