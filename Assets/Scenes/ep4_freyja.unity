@@ -8015,7 +8015,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 21300000, guid: 465557736c8d81748929d1ef796d8380, type: 3}
   - {fileID: 21300000, guid: c01efe5f51ff57545982737b8eb1f03b, type: 3}
-  - {fileID: 21300000, guid: 8e445fb97270eec45ba5489483c56ab1, type: 3}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -8913,7 +8913,6 @@ MonoBehaviour:
   Autoimage: {fileID: 844044330}
   Log: {fileID: 646013969}
   Allsystem: {fileID: 1022866233}
-  test1: 
 --- !u!4 &2097732747
 Transform:
   m_ObjectHideFlags: 0

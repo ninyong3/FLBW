@@ -1846,6 +1846,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: ruCsvSequence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: jinCsvSequence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
       propertyPath: 'ruCsvSequence.Array.data[0]'
       value: hospital_Ru_0
       objectReference: {fileID: 0}
@@ -1854,12 +1862,28 @@ PrefabInstance:
       value: hospital_Ru_1
       objectReference: {fileID: 0}
     - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'ruCsvSequence.Array.data[2]'
+      value: hospital_Ru_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: freyjaCsvSequence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'jinCsvSequence.Array.data[2]'
+      value: hospital_Jin_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
       propertyPath: 'freyjaCsvSequence.Array.data[0]'
       value: hospital_Freyja_0
       objectReference: {fileID: 0}
     - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
       propertyPath: 'freyjaCsvSequence.Array.data[1]'
       value: hospital_Freyja_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 899540174142820904, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
+      propertyPath: 'freyjaCsvSequence.Array.data[2]'
+      value: hospital_Freyja_2
       objectReference: {fileID: 0}
     - target: {fileID: 1119709004444970068, guid: d7c4b9d1c2578e0499cc0a65a7431040, type: 3}
       propertyPath: m_LocalPosition.x

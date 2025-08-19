@@ -172,7 +172,7 @@ public class SceneMusicTrigger : MonoBehaviour
         _fallbackSrc.volume = 1f;
         _fallbackSrc.Play();
 
-        Debug.Log("[SceneMusicTrigger] Played via fallback AudioSource (MusicManager not found).");
+//        Debug.Log("[SceneMusicTrigger] Played via fallback AudioSource (MusicManager not found).");
     }
 
     // ====== 유틸 ======

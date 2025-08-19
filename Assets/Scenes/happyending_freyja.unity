@@ -3510,7 +3510,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 438622478}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8015,7 +8015,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: -4435605285099390769, guid: 06b93b9f1baf2044e8d19ed246595805, type: 3}
   - {fileID: 21300000, guid: 82b92237fa98d1a40971c6523f7bb1d1, type: 3}
-  - {fileID: 21300000, guid: f2c234046e9f2b94ab7f5b2ca74489b3, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: a8b000e3958aaf04caec4931908297ef, type: 3}
   - {fileID: 21300000, guid: fbf95910ea43e6f478d9f1b50ff97ae9, type: 3}
   - {fileID: 0}
@@ -8913,7 +8913,6 @@ MonoBehaviour:
   Autoimage: {fileID: 844044330}
   Log: {fileID: 646013969}
   Allsystem: {fileID: 1022866233}
-  test1: 
 --- !u!4 &2097732747
 Transform:
   m_ObjectHideFlags: 0

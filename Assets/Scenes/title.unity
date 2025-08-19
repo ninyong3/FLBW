@@ -470,6 +470,94 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[1].sceneKey
+      value: convenience_store
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[2].bubbleId
+      value: bubble_Jin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[2].sceneKey
+      value: concert_hall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[3].sceneKey
+      value: village
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[4].bubbleId
+      value: bubble_Jin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[4].sceneKey
+      value: church
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[5].sceneKey
+      value: beach
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[6].sceneKey
+      value: hospital
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[7].sceneKey
+      value: convenience_store
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[8].bubbleId
+      value: bubble_Ru
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[8].sceneKey
+      value: village
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[9].bubbleId
+      value: bubble_Ru
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[9].sceneKey
+      value: concert_hall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[10].sceneKey
+      value: forest_road
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[11].sceneKey
+      value: village
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[12].bubbleId
+      value: bubble_Freyja
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[12].sceneKey
+      value: concert_hall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[13].bubbleId
+      value: bubble_Freyja
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[13].sceneKey
+      value: hospital
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[14].bubbleId
+      value: bubble_Freyja
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179767675532669821, guid: 3afea7446fc87fd43958a454e9ae1c7e, type: 3}
+      propertyPath: allowedPairs.Array.data[14].sceneKey
+      value: convenience_store
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -523,6 +611,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 147f16fd201e66547bf97d5f03b9731a, type: 3}
   - {fileID: 8300000, guid: 5447d12c58d8e5946a6947ad2fcc6e5e, type: 3}
   - {fileID: 8300000, guid: 284208c924fe773479f731f4d8fac5c4, type: 3}
+  - {fileID: 8300000, guid: 51ca9bc1d5cd93e4d8f321e24b33a90f, type: 3}
+  - {fileID: 8300000, guid: d30048d2b56108444ba083150df548f7, type: 3}
+  - {fileID: 8300000, guid: bbc5e779123b641458209785dd40aad9, type: 3}
   debugLog: 1
 --- !u!4 &218084400
 Transform:
@@ -2823,6 +2914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapSceneName: Map
   currentHeroineBubbleId: 
+  verbose: 1
 --- !u!1 &1691582119
 GameObject:
   m_ObjectHideFlags: 0

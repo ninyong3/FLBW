@@ -6,62 +6,85 @@ public class MapGateAsync : MonoBehaviour
 {
     public static MapGateAsync Instance { get; private set; }
     public string mapSceneName = "Map";
-    public string currentHeroineBubbleId = "bubble_Ru";
 
+    [Tooltip("현재 선택된 히로인 버블ID(읽기 참조용)")]
+    public string currentHeroineBubbleId = BubbleIds.Ru; // 초기값
 
+    public bool verbose = true;
 
     void Awake()
     {
         if (Instance != null && Instance != this)
         {
-
-            // Instance.currentHeroineBubbleId = currentHeroineBubbleId;
+            if (verbose)
+                Debug.Log($"[GATE] Duplicate. keep existing='{Instance.currentHeroineBubbleId}', drop this='{currentHeroineBubbleId}'");
             Destroy(gameObject);
             return;
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log($"[MapGateAsync] Awake current={currentHeroineBubbleId}");
+        if (verbose) Debug.Log($"[GATE] Awake current={currentHeroineBubbleId}");
     }
 
-    public void OpenMapAsync()
-    {
-        StartCoroutine(Load());
-    }
+    public void OpenMapAsync() => StartCoroutine(Load());
 
     IEnumerator Load()
     {
-        // 히로인 ID를 DayManager에 반영
-        var dm = FindFirstObjectByType<DayManager>();
-        if (dm != null)
-            dm.currentHeroineBubbleId = currentHeroineBubbleId;
-
-        //  Day 계산
+        // Day 계산
         int day = 1;
+        var dm = FindFirstObjectByType<DayManager>();
         if (dm != null) day = Mathf.Max(1, dm.currentDay);
         else if (GameManager.instance != null) day = Mathf.Max(1, GameManager.instance.dayCount);
 
-
-
-         // GameManager의 selectedHeroine 값 받아오기
+        // 전역 선택 인덱스 읽기
         int heroineIndex = (GameManager.instance != null) ? GameManager.instance.selectedHeroine : 0;
-        Debug.Log($"[MapGateAsync] 선택된 히로인 인덱스: {heroineIndex}");
+        if (verbose) Debug.Log($"[GATE] selectedHeroine idx={heroineIndex}");
 
-        // heroineIndex에 따라 currentHeroineBubbleId 바꾸기 (예시)
-        switch (heroineIndex)
+        // 인덱스 → 버블ID (소문자 표준화)
+        currentHeroineBubbleId = BubbleIds.Normalize(MapSelectedHeroineToBubbleId(heroineIndex));
+        if (dm != null) dm.currentHeroineBubbleId = currentHeroineBubbleId;
+
+        if (verbose) Debug.Log($"[GATE] BeginDay: day={day}, current={currentHeroineBubbleId}");
+
+        // 오늘 배치 생성(여기서만 호출)
+        var reg = SimpleBubbleRegistry.Instance;
+        if (reg != null)
         {
-            case 1: currentHeroineBubbleId = "bubble_Jin"; break;
-            case 2: currentHeroineBubbleId = "bubble_Freyja"; break;
-            case 3: currentHeroineBubbleId = "bubble_Ru"; break;
-            default: currentHeroineBubbleId = "bubble_Ru"; break;
+            reg.BeginDay(day, currentHeroineBubbleId, "MapGateAsync.Load()");
+            if (verbose)
+            {
+                var snap = reg.GetTodaySnapshot();
+                var list = new System.Text.StringBuilder();
+                foreach (var kv in snap) list.Append($"[{kv.Key},{kv.Value}] ");
+                Debug.Log($"[MBP] snapshot = {list}");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("[GATE] SimpleBubbleRegistry.Instance = null");
         }
 
-
-        //  비동기 로드
-        var op = SceneManager.LoadSceneAsync(mapSceneName);
-        while (!op.isDone) yield return null;
+        // 맵 로드
+        if (Application.CanStreamedLevelBeLoaded(mapSceneName))
+        {
+            Debug.Log($"[GATE] LoadScene '{mapSceneName}' with current={currentHeroineBubbleId}");
+            var op = SceneManager.LoadSceneAsync(mapSceneName);
+            while (!op.isDone) yield return null;
+        }
+        else
+        {
+            Debug.LogWarning($"[GATE] Scene not found: '{mapSceneName}'");
+        }
     }
-    
 
-    
+    static string MapSelectedHeroineToBubbleId(int heroineIndex)
+    {
+        switch (heroineIndex)
+        {
+            case 1: return BubbleIds.Jin;
+            case 2: return BubbleIds.Freyja;
+            case 3: return BubbleIds.Ru;
+            default: return BubbleIds.Ru;
+        }
+    }
 }

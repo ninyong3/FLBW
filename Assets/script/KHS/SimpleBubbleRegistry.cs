@@ -67,9 +67,8 @@ public class SimpleBubbleRegistry : MonoBehaviour
         {
             if (actAsProxyWhenDuplicate)
             {
-                // ★ 파괴하지 않고 프록시로 전환 (에러 안 찍음)
-                proxyRuntime = true;                  // 이 컴포넌트는 호출을 Instance로 포워딩
-                // DontDestroyOnLoad 호출하지 않음(씬과 함께 사라지게)
+                // ★ 파괴하지 않고 프록시로 전환
+                proxyRuntime = true;
                 Debug.Log("[REG] Duplicate acting as proxy (keep " + Instance.name + ")");
                 return;
             }
@@ -88,7 +87,7 @@ public class SimpleBubbleRegistry : MonoBehaviour
 
     void OnValidate() => RebuildAllowedMap();
 
-    // ======== Public API (필요 시 프록시 포워딩) ========
+    // ======== Public API ========
 
     public void ResetVisitsForNewDay()
     {
@@ -106,7 +105,7 @@ public class SimpleBubbleRegistry : MonoBehaviour
 
         bool sameDay = (currentDay == day);
 
-        // 같은 Day라도 todayMap이 비어 있으면 재배정 허용(로드/타이틀 복귀 보정)
+        // 같은 Day인데 이미 배정되어 있으면 무시
         if (sameDay && todayMap.Count > 0)
         {
             Debug.Log($"[REG] BeginDay ignored (same day and already assigned). caller='{callerTag}', day={day}");
@@ -255,7 +254,7 @@ public class SimpleBubbleRegistry : MonoBehaviour
         }
     }
 
-    // (선택) 타이틀 복귀용 — 원하면 타이틀로 가기 직전에 한 줄 호출
+    // (선택) 타이틀 복귀용
     public void ResetForTitle()
     {
         if (proxyRuntime && Instance != null && Instance != this) { Instance.ResetForTitle(); return; }
@@ -264,4 +263,44 @@ public class SimpleBubbleRegistry : MonoBehaviour
         currentDay = int.MinValue;
         Debug.Log("[REG] ResetForTitle: cleared todayMap/visits and reset currentDay");
     }
+    // SimpleBubbleRegistry 클래스 안에 추가
+public bool TryReassignFromDisabledScene(string disabledSceneKey, string callerTag = "Reassign")
+{
+    if (string.IsNullOrEmpty(disabledSceneKey)) return false;
+
+    string from = NormalizeKey(disabledSceneKey);
+
+    // 오늘 배정된 버블이 없으면 재배치 불가
+    if (!todayMap.TryGetValue(from, out var bubbleIdLower)) return false;
+
+    // 이 버블이 갈 수 있는 후보(sceneKey) 리스트
+    if (!allowedMap.TryGetValue(bubbleIdLower, out var candidates) || candidates.Count == 0)
+        return false;
+
+    // 오늘 이미 사용 중인 장소(중복 방지)
+    var usedScenes = new HashSet<string>(todayMap.Keys, StringComparer.OrdinalIgnoreCase);
+    usedScenes.Remove(from); // 자기 자리 비워둠
+
+    // 사용 중이 아닌 후보로 이동
+    string target = null;
+    foreach (var c in candidates)
+    {
+        var k = NormalizeKey(c);
+        if (k == from) continue;
+        if (!usedScenes.Contains(k)) { target = k; break; }
+    }
+
+    if (string.IsNullOrEmpty(target))
+    {
+        Debug.Log($"[REG] Reassign failed: no free target for {bubbleIdLower} from '{from}'");
+        return false; // 덮어쓰기 정책 원하면 여기서 todayMap[target]=... 로 바꿀 수 있음
+    }
+
+    todayMap.Remove(from);
+    todayMap[target] = bubbleIdLower;
+
+    Debug.Log($"[REG] Reassign {bubbleIdLower}: {from} -> {target} (caller={callerTag})");
+    return true;
+}
+
 }
