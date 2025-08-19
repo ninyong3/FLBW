@@ -8019,7 +8019,7 @@ MonoBehaviour:
   - {fileID: -4435605285099390769, guid: 06b93b9f1baf2044e8d19ed246595805, type: 3}
   - {fileID: 21300000, guid: d1de0bea8d123bb4c8c710b79a5698b5, type: 3}
   - {fileID: 21300000, guid: bd05eff4476e7e44ca11c591b6de4bcd, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 1fa265a24644a56448cdb7d9e8166949, type: 3}
   - {fileID: 21300000, guid: 2ba49edf54e2d51458345f9e48cb6c96, type: 3}
   playerNameInputField: {fileID: 1146961659}
   Writeplayername: {fileID: 1282897123}
@@ -8913,6 +8913,7 @@ MonoBehaviour:
   Autoimage: {fileID: 844044330}
   Log: {fileID: 646013969}
   Allsystem: {fileID: 1022866233}
+  test1: 
 --- !u!4 &2097732747
 Transform:
   m_ObjectHideFlags: 0

@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f10c26bd04d464469fe397bbf5012b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogFileName: Freyja_Main03_revised
+  dialogFileName: bad_ending
 --- !u!114 &427825276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8013,11 +8013,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb43a409523516647b5e7a17ae83fca7, type: 3}
   backgroundList:
   - {fileID: 0}
+  - {fileID: 21300000, guid: 23df6afffebf4e44ea22f8ebc329b9f1, type: 3}
+  - {fileID: 21300000, guid: c04e1ff68de0db048b9f1ffe9cab4273, type: 3}
+  - {fileID: 21300000, guid: fbf95910ea43e6f478d9f1b50ff97ae9, type: 3}
   - {fileID: -4435605285099390769, guid: 06b93b9f1baf2044e8d19ed246595805, type: 3}
-  - {fileID: 21300000, guid: 82b92237fa98d1a40971c6523f7bb1d1, type: 3}
-  - {fileID: 21300000, guid: 428f785c12f08ca4f8365d5c0ce5c55f, type: 3}
-  - {fileID: 21300000, guid: 4bfc50b9c890c9f4d936ec125700c971, type: 3}
-  - {fileID: 21300000, guid: 561b39a30d72cbc41abb0ecfca315aa5, type: 3}
+  - {fileID: 21300000, guid: a8b000e3958aaf04caec4931908297ef, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 21300000, guid: 2ba49edf54e2d51458345f9e48cb6c96, type: 3}

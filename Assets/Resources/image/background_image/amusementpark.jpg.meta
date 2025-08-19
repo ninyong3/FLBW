@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4cd7301a1110d6941898818b1fdef38d
+guid: b5bf232c042e98d4d97f9a003848cffa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5543121749991305430
-    second: arrow_outline_0
+      213: -8346739675538226159
+    second: amusementpark_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -111,7 +111,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WindowsStoreApps
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow_outline_0
+      name: amusementpark_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1022
+        width: 4160
+        height: 2340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2fc6091320e213b0800000000000000
-      internalID: -5543121749991305430
+      spriteID: 11482eeec7c6a2c80800000000000000
+      internalID: -8346739675538226159
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      arrow_outline_0: -5543121749991305430
+      amusementpark_0: -8346739675538226159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

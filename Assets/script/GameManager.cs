@@ -100,6 +100,12 @@ public class GameManager : MonoBehaviour
                 messageCountCheckList[dayCount / 5 - 1] = true;
             }
         }
+        if (relationship_level < -1)
+        {
+            dialogCount = 1;
+            relationship_level = 0;
+            SceneManager.LoadScene("badending");
+        }
     }
 
     void Awake()
