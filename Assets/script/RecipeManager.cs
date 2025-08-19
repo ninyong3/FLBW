@@ -178,6 +178,9 @@ public class RecipeManager : MonoBehaviour
 
             RemoverecipeUI();
             StartCoroutine(TimeDelay(10.0f));
+
+            GameManager.instance.dayCount++;
+            GameManager.instance.relationship_level++;
             SceneManager.LoadScene("main");
         }
         else
