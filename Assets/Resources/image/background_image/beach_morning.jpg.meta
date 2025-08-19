@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 232ae4a2e59f6f141883f7d634a3d30f
+guid: 4d586eaf1d624ee46beba3c5d55e5826
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3965769916778701681
-    second: home&convenientstore_night_0
+      213: 7086374365760479569
+    second: beach_morning_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 79, y: 134, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: home&convenientstore_night_0
+      name: beach_morning_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 127
-        width: 3172
-        height: 1785
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8c9971b541c6f8c0800000000000000
-      internalID: -3965769916778701681
+      spriteID: 1516690c0fbd75260800000000000000
+      internalID: 7086374365760479569
       vertices: []
       indices: 
       edges: []
@@ -152,7 +152,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      home&convenientstore_night_0: -3965769916778701681
+      beach_morning_0: 7086374365760479569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

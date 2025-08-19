@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.IO;
 using UnityEngine.UI;
+using System;
 public class SystemManager : MonoBehaviour
 {
     [SerializeField] GameObject dialog;
@@ -218,8 +219,9 @@ public class SystemManager : MonoBehaviour
     {
         Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(1920f, -4.4107e-06f);
     }
+    public string test1;
     public void test()
     {
-        SceneManager.LoadScene("ep2_ru");
+        SceneManager.LoadScene(test1);
     }
 }

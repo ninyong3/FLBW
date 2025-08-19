@@ -60,6 +60,15 @@ EditorBuildSettings:
     path: Assets/Scenes/ep2_ru.unity
     guid: f7bf2e4fbf9fb00419e12c7f0549a3e0
   - enabled: 1
+    path: Assets/Scenes/ep3_ru.unity
+    guid: fcb6fcc92108d5e4898dc492cb11c23c
+  - enabled: 1
+    path: Assets/Scenes/ep4_ru.unity
+    guid: 77c2c7f1d1cc9f747b6bf0a4e4fd7e0e
+  - enabled: 1
+    path: Assets/Scenes/happyending_ru.unity
+    guid: 4584b25654bc76e428cea1641f067f32
+  - enabled: 1
     path: Assets/Scenes/config.unity
     guid: f6ce77a703eb014499edbe2a5518e5f2
   - enabled: 1
