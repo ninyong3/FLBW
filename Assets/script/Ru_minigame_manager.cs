@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Ru_minigame_manager : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class Ru_minigame_manager : MonoBehaviour
 
         // 게임 종료 연출
         Time.timeScale = slowTime;
+        GameManager.instance.dayCount++;
+        GameManager.instance.relationship_level++;
+        SceneManager.LoadScene("main");
 
         if (messageText != null)
         {

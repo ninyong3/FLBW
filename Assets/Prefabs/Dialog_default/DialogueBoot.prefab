@@ -48,9 +48,9 @@ MonoBehaviour:
   - hospital_Jin_0
   - hospital_Jin_1
   freyjaCsvSequence:
+  - hospital_Freyja_0
+  - hospital_Freyja_0
+  ruCsvSequence:
   - hospital_Ru_0
   - hospital_Ru_1
-  ruCsvSequence:
-  - hospital_Freyja_0
-  - hospital_Freyja_1
   persistSequenceThisSession: 1
