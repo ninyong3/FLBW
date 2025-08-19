@@ -511,6 +511,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 74d39c535b2510347a86bfea3193cbcb, type: 3}
   - {fileID: 8300000, guid: 9d8cb590070113d48abca8b1456ab728, type: 3}
   - {fileID: 8300000, guid: 2c17bb49811aae343bfb0c964b938131, type: 3}
+  - {fileID: 8300000, guid: 4fb84d561a0b88845adf5f9b56d9926f, type: 3}
+  - {fileID: 8300000, guid: 7aacaa3641ad27342b104e2a1270415c, type: 3}
+  - {fileID: 8300000, guid: 7b741a20ce89e984e8987b624186cd1d, type: 3}
+  - {fileID: 8300000, guid: e1be2b5e6ef74544fb00cc486461ec1e, type: 3}
+  - {fileID: 8300000, guid: 5fdd2ee1a06a42e4993522e0dbeef421, type: 3}
+  - {fileID: 8300000, guid: d2d4eb7ba1fd54f4db09b098bf6ff861, type: 3}
+  - {fileID: 8300000, guid: 63de3df7458a0cf47b603bbcadcd0867, type: 3}
+  - {fileID: 8300000, guid: 5bf6d14cf89f3c64d9e2db3a9cda4a59, type: 3}
+  - {fileID: 8300000, guid: a245e8cd60757ca489d281a62d6e7ec2, type: 3}
+  - {fileID: 8300000, guid: 147f16fd201e66547bf97d5f03b9731a, type: 3}
+  - {fileID: 8300000, guid: 5447d12c58d8e5946a6947ad2fcc6e5e, type: 3}
+  - {fileID: 8300000, guid: 284208c924fe773479f731f4d8fac5c4, type: 3}
   debugLog: 1
 --- !u!4 &218084400
 Transform:
@@ -2239,7 +2251,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1146047753}
   clips:
+  - {fileID: 8300000, guid: 450aac4d65fb83e46b5fb6607ff22018, type: 3}
   - {fileID: 8300000, guid: 7d2a09517974e7c4f9a632e37da61539, type: 3}
+  - {fileID: 8300000, guid: 43eaa33161e282b41ad1838e968ebe03, type: 3}
+  - {fileID: 8300000, guid: e219bd9330c60744d9d9cb4295356d88, type: 3}
+  - {fileID: 8300000, guid: 5d5a227558f3d9148adfb187a2569389, type: 3}
+  - {fileID: 8300000, guid: fd87e2739ca0cc7449a202c4cd723911, type: 3}
+  - {fileID: 8300000, guid: 7164139cfda621f4295b26f54f120aa0, type: 3}
+  - {fileID: 8300000, guid: c4eecdca78c034348bbdd57af01a02f3, type: 3}
+  - {fileID: 8300000, guid: 5b9fd66bca7339441b78cf6ba8d67f87, type: 3}
+  - {fileID: 8300000, guid: 05253da1f839333429600d4157fb6967, type: 3}
+  - {fileID: 8300000, guid: a3f9e5a35ed83164496aef1ad4e44613, type: 3}
+  - {fileID: 8300000, guid: bdcadae226d1e234193814cde00376e7, type: 3}
+  - {fileID: 8300000, guid: e7eab5ee21603e34cba8db70a93e58a5, type: 3}
   defaultFade: 0.35
   debugLog: 1
 --- !u!4 &1146047755
