@@ -80,7 +80,8 @@ public class SystemManager : MonoBehaviour
     }
     public void SkipDayClickYes() // 스킵 경고창에서 네를 눌렀을 시 작동하는 함수
     {
-        GameManager.instance.dayCount++; // 다음 일자로 넘기기
+        if(GameManager.instance.dayCount < 30)
+            GameManager.instance.dayCount++; // 다음 일자로 넘기기
         GameManager.instance.dialogCount = 1;
         if (SceneManager.GetActiveScene().name != "main")
             SceneManager.LoadScene("main");
@@ -218,10 +219,5 @@ public class SystemManager : MonoBehaviour
     public void LogCloseSystem()
     {
         Log.GetComponent<RectTransform>().anchoredPosition = new Vector2(1920f, -4.4107e-06f);
-    }
-    public string test1;
-    public void test()
-    {
-        SceneManager.LoadScene(test1);
     }
 }
