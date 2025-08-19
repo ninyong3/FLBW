@@ -64,9 +64,34 @@ public class MessengerManager : MonoBehaviour
                 if(tempMessage.index != "-")
                 {
                     GameManager.instance.leftMessageCount--;
+                    GameManager.instance.messageCount++;
                     SceneManager.LoadScene(tempMessage.index);
                 }
             }    
+        }
+        else if (selectedHeroineIndex == 2)
+        {
+            if (messageParser.freyjaMessageDic.TryGetValue(messagecnt, out tempMessage))
+            {
+                if (tempMessage.index != "-")
+                {
+                    GameManager.instance.leftMessageCount--;
+                    GameManager.instance.messageCount++;
+                    SceneManager.LoadScene(tempMessage.index);
+                }
+            }
+        }
+        else if (selectedHeroineIndex == 3)
+        {
+            if (messageParser.ruMessageDic.TryGetValue(messagecnt, out tempMessage))
+            {
+                if (tempMessage.index != "-")
+                {
+                    GameManager.instance.leftMessageCount--;
+                    GameManager.instance.messageCount++;
+                    SceneManager.LoadScene(tempMessage.index);
+                }
+            }
         }
         clickFlag = true;
     }
@@ -108,12 +133,15 @@ public class MessengerManager : MonoBehaviour
                 }
                 else
                 {
-                    GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
-                    GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
-                    PlayerChatGo.GetComponentInChildren<Message>().clickCheck=true;
-                    Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
-                    chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변경
-                    clickFlag = false;
+                    if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_jinyein" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_jinyein" && tempMessage.index != "normalending")
+                    {
+                        GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                        GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                        PlayerChatGo.GetComponentInChildren<Message>().clickCheck = true;
+                        Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변경
+                        clickFlag = false;
+                    }
                 }
             }
             StartCoroutine(SpawnMessage());
@@ -122,20 +150,106 @@ public class MessengerManager : MonoBehaviour
     public void SelectFreyjaMessage() // 프레이야 메세지 확인 시 작동하는 함수
     {
         if (selectedHeroineIndex != 2)
-        { 
-            foreach(Transform child in chatContentRect)
+        {
+            foreach (Transform child in chatContentRect)
                 Destroy(child.gameObject);
             StopAllCoroutines();
             characterName.text = "프레이야 레가토";
             selectedHeroineIndex = 2;
+            MessageParser messageParser = FindFirstObjectByType<MessageParser>();
+            MessageData tempMessage;
+            for (int i = 1; i < messagecnt; i++)
+            {
+                GameManager.instance.messageCount = messagecnt;
+                tempMessage = messageParser.freyjaMessageDic[i];
+                if (tempMessage.name != "Player")
+                {
+                    GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
+                    GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
+                    Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                    chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                    Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
+                    characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
+                    if (tempMessage.index != "s")
+                    {
+                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                        color.a = 0;
+                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                    }
+                    else
+                    {
+                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                        color.a = 255;
+                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                    }
+                }
+                else
+                {
+                    if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_freyja" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_freyja" && tempMessage.index != "normalending")
+                    {
+                        GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                        GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                        PlayerChatGo.GetComponentInChildren<Message>().clickCheck = true;
+                        Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변경
+                        clickFlag = false;
+                    }
+                }
+            }
             StartCoroutine(SpawnMessage());
         }
     }
     public void SelectRuMessage() // 루 메세지 확인 시 작동하는 함수
     {
-        characterName.text = "루";
-        selectedHeroineIndex = 3;
-        StartCoroutine(SpawnMessage());
+        if (selectedHeroineIndex != 3)
+        {
+            foreach (Transform child in chatContentRect)
+                Destroy(child.gameObject);
+            StopAllCoroutines();
+            characterName.text = "루";
+            selectedHeroineIndex = 3;
+            MessageParser messageParser = FindFirstObjectByType<MessageParser>();
+            MessageData tempMessage;
+            for (int i = 1; i < messagecnt; i++)
+            {
+                GameManager.instance.messageCount = messagecnt;
+                tempMessage = messageParser.ruMessageDic[i];
+                if (tempMessage.name != "Player")
+                {
+                    GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
+                    GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
+                    Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                    chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                    Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
+                    characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
+                    if (tempMessage.index != "s")
+                    {
+                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                        color.a = 0;
+                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                    }
+                    else
+                    {
+                        Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                        color.a = 255;
+                        characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                    }
+                }
+                else
+                {
+                    if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_ru" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_ru" && tempMessage.index != "normalending")
+                    {
+                        GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                        GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                        PlayerChatGo.GetComponentInChildren<Message>().clickCheck = true;
+                        Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변경
+                        clickFlag = false;
+                    }
+                }
+            }
+            StartCoroutine(SpawnMessage());
+        }
     }
     IEnumerator SpawnMessage()
     {
@@ -171,12 +285,99 @@ public class MessengerManager : MonoBehaviour
                     }
                     else
                     {
-                        GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
-                        GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
-                        Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_jinyein" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_jinyein" && tempMessage.index != "normalending")
+                        {
+                            GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                            GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                            Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                            chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                            yield return new WaitUntil(() => clickFlag);
+                            clickFlag = false;
+                        }
+                    }
+                    yield return new WaitForSeconds(1f);
+                    messagecnt++;
+                }
+            }
+            else if (selectedHeroineIndex == 2)
+            {
+                while (messageParser.freyjaMessageDic.TryGetValue(messagecnt, out tempMessage))
+                {
+                    GameManager.instance.messageCount = messagecnt;
+                    if (tempMessage.name != "Player")
+                    {
+                        GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
+                        GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
+                        Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
                         chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
-                        yield return new WaitUntil(() => clickFlag);
-                        clickFlag = false;
+                        Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
+                        characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
+                        if (tempMessage.index != "s")
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 0;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                        }
+                        else
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 255;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                        }
+                    }
+                    else
+                    {
+                        if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_freyja" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_freyja" && tempMessage.index != "normalending")
+                        {
+                            GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                            GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                            Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                            chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                            yield return new WaitUntil(() => clickFlag);
+                            clickFlag = false;
+                        }
+                    }
+                    yield return new WaitForSeconds(1f);
+                    messagecnt++;
+                }
+            }
+            else if (selectedHeroineIndex == 3)
+            {
+                while (messageParser.ruMessageDic.TryGetValue(messagecnt, out tempMessage))
+                {
+                    GameManager.instance.messageCount = messagecnt;
+                    if (tempMessage.name != "Player")
+                    {
+                        GameObject heroineChatPrefab = Resources.Load<GameObject>("Leftmessagecontrol"); // 프리펩 받아옴
+                        GameObject heroineChatGo = GameObject.Instantiate(heroineChatPrefab, chatContentRect); // 자식으로 만들기&클론 생성
+                        Transform chatText = heroineChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                        chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                        Transform characterProfileImage = heroineChatGo.transform.Find("CharacterProfile"); // 프리펩의 캐릭터 프로필 이미지 찾기
+                        characterProfileImage.gameObject.GetComponent<Image>().sprite = characterProfileImageList[selectedHeroineIndex - 1];
+                        if (tempMessage.index != "s")
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 0;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 숨기기
+                        }
+                        else
+                        {
+                            Color color = characterProfileImage.gameObject.GetComponent<Image>().color;
+                            color.a = 255;
+                            characterProfileImage.gameObject.GetComponent<Image>().color = color; //프로필이미지 보이기
+                        }
+                    }
+                    else
+                    {
+                        if (tempMessage.index == "normalending" && GameManager.instance.relationship_level < 3 || tempMessage.index == "happyending_ru" && GameManager.instance.relationship_level > 2 || tempMessage.index != "happyending_ru" && tempMessage.index != "normalending")
+                        {
+                            GameObject PlayerChatPrefab = Resources.Load<GameObject>("Rightmessagecontrol");
+                            GameObject PlayerChatGo = GameObject.Instantiate(PlayerChatPrefab, chatContentRect);
+                            Transform chatText = PlayerChatGo.transform.Find("Chatimage").Find("Chattext"); // 프리펩의 텍스트 찾기
+                            chatText.GetComponent<TextMeshProUGUI>().text = tempMessage.messageText; // 텍스트 내용 변환
+                            yield return new WaitUntil(() => clickFlag);
+                            clickFlag = false;
+                        }
                     }
                     yield return new WaitForSeconds(1f);
                     messagecnt++;

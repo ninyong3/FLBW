@@ -11,15 +11,13 @@ public class MessageParser : MonoBehaviour
     {
         MessageData[] messageDatas = Parse(fileNameList[0]);
         for (int i = 0; i < messageDatas.Length; i++)
-        {
             jinyeinMessageDic.Add(i + 1, messageDatas[i]);
-        }
-        /*messageDatas = Parse(fileNameList[1]);
+        messageDatas = Parse(fileNameList[1]);
         for (int i = 0; i < messageDatas.Length; i++)
             freyjaMessageDic.Add(i + 1, messageDatas[i]);
         messageDatas = Parse(fileNameList[2]);
         for (int i = 0; i < messageDatas.Length; i++)
-            ruMessageDic.Add(i + 1, messageDatas[i]);*/
+            ruMessageDic.Add(i + 1, messageDatas[i]);
 
     }
     void Update()

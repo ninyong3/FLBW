@@ -11,3 +11,41 @@ Jin Yein,-,아직 몸 안 좋으시면
 Jin Yein,-,저희 병원으로 와주세요!
 Jin Yein,-,3층 진료실로 오시면 돼요!
 Player,ep1_jinyein,에피소드 1로 가기
+Jin Yein,s,저기…
+Jin Yein,-,시간… 괜찮으신가요?
+Player,-,괜찮아요
+Player,-,무슨 일이세요?
+Jin Yein,s,이야기하고 싶은 게 있어서요
+Jin Yein,-,병원 근처 산책로로 와주세요
+Player,ep2_jinyein,에피소드 2로 가기
+Jin Yein,s,오늘은 날씨가 좋네요!
+Jin Yein,-,산책 가실래요?
+Player,-,방에서 쉬고 있긴 했는데…
+Player,-,요즘은 자주 연락해주시네요?
+Jin Yein,s,왜요...?
+Jin Yein,-,자주 연락하시니까 싫으세요…?
+Player,-,아뇨! 좋아요!
+Jin Yein,s,ㅎㅎ 주소 보냈어요
+Jin Yein,-,~~시 !!동 …더보기
+Player,ep3_jinyein,에피소드 3으로 가기
+Jin Yein,s,지금 시간 괜찮으세요?
+Player,-,괜찮아요!
+Player,-,무슨 일이세요?
+Jin Yein,s,그냥… 갑자기 통화하고 싶어져서요
+Player,-,갑자기요?
+Jin Yein,s,"네, 갑자기"
+Jin Yein,-,그냥… 아무 이유 없이요
+Jin Yein,-,가끔씩은 이럴 때도 있는거죠!
+Player,ep4_jinyein,에피소드 4로 가기
+Jin Yein,s,혹시 오늘 시간 비세요?
+Jin Yein,-,비시면…
+Jin Yein,-,같이 놀이공원 가실래요?
+Player,-,오늘은 일 안가세요?
+Jin Yein,s,네! 오늘은 쉬는 날이거든요
+Player,-,놀이공원 좋아요!
+Player,-,저도 오늘은 왠지…
+Player,-,놀이공원에 가고 싶은 기분?
+Jin Yein,-,ㅎㅎ 입구에서 봐요!
+Player,ep5_jinyein,에피소드 5로 가기
+Player,normalending,노말 엔딩
+Player,happyending_jinyein,진예인 해피엔딩
