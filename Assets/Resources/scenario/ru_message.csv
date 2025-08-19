@@ -1,0 +1,58 @@
+﻿Character,Index,text
+Ru,s,야!
+Ru,-,야!
+Player,-,왜?
+Ru,s,바로 보라고!
+Player,-,웬일이야?
+Player,-,며칠만에 연락이네
+Ru,s,같이 일하던 직원이 그만둬서
+Ru,-,너무 바빴어
+Player,-,어디서 일하는데?
+Ru,s,편의점!
+Player,-,그래서 왜 연락했어?
+Ru,s,너 편의점 알바 안 해볼래?
+Player,-,어...?
+Ru,s,아무튼! 당장 와!
+Player,ep1_ru,에피소드 1으로 가기
+Ru,s,야
+Player,-,왜?
+Player,-,나 오늘은 출근하는 날 아닌데?
+Ru,s,아니 그게 아니라…
+Ru,-,안 심심해?
+Player,-,응?
+Ru,s,나 너무 심심해!
+Ru,-,그러니까…
+Ru,-,무조건 나랑 놀아줘!
+Player,ep2_ru,에피소드 2로 가기
+Ru,s,오늘 뭐해?
+Player,-,오늘?
+Player,-,쉬는 날
+Ru,s,그럼 나 좀 도와줘!
+Ru,-,물류가 너무 많이 들어왔어!
+Player,-,그래도…
+Player,-,혼자 해야하는 거 아냐?
+Ru,s,너랑… 같이 하고 싶어서…
+Ru,-,아무튼!
+Ru,-,오는 걸로 안다?
+Player,ep3_ru,에피소드 3으로 가기
+Ru,s,뭐해?
+Player,-,왜?
+Player,-,물류 정리?
+Ru,s,아니!
+Ru,-,오늘 날씨가 되게 좋잖아
+Ru,-,해변 가자!
+Ru,-,수영복도 챙겨와!
+Player,ep4_ru,에피소드 4로 가기
+Ru,s,야
+Ru,-,야
+Ru,-,야!!
+Player,-,?
+Ru,s,지금 시간 돼?
+Player,-,방금 일어났는데…?
+Ru,s,왜 아직까지 자고 있는 거야!
+Ru,-,놀이공원 가자!
+Ru,-,준비하고 나와!
+Player,-,으...응
+Player,ep5_ru,에피소드 5로 가기
+Player,normalending,노말 엔딩
+Player,happyending_ru,루 해피엔딩
