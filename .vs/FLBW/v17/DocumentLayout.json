@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\jinyein_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\jinyein_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\JinyeinQuizData\\QuizDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:Assets\\script\\JinyeinQuizData\\QuizDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\minigameescapemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ru_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|c:\\users\\\uBBFC\uC900\uD638\\desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\flbw\\assets\\script\\freyja_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\freyja_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\freyja_minigame_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\dialogueparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2B2D7B0-8037-2B9D-EC55-0AFAAF03B2BA}|Assembly-CSharp.csproj|C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\assets\\script\\saveloadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,32 +111,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ru_minigame_manager.cs",
-              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Ru_minigame_manager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\Ru_minigame_manager.cs",
-              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Ru_minigame_manager.cs",
-              "RelativeToolTip": "Assets\\script\\Ru_minigame_manager.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvykAAAAnAAAA",
+              "Title": "QuizDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\JinyeinQuizData\\QuizDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\JinyeinQuizData\\QuizDatabase.cs",
+              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\JinyeinQuizData\\QuizDatabase.cs",
+              "RelativeToolTip": "Assets\\script\\JinyeinQuizData\\QuizDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T18:43:20.046Z",
+              "WhenOpened": "2025-08-19T04:01:41.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MiniGameEscapeManager.cs",
-              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\MiniGameEscapeManager.cs",
-              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
-              "RelativeToolTip": "Assets\\script\\MiniGameEscapeManager.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDsAAAAoAAAA",
+              "Title": "Jinyein_Minigame_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Jinyein_Minigame_Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\Jinyein_Minigame_Manager.cs",
+              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Jinyein_Minigame_Manager.cs",
+              "RelativeToolTip": "Assets\\script\\Jinyein_Minigame_Manager.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAYwJ0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T18:13:18.672Z",
+              "WhenOpened": "2025-08-19T02:29:09.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Freyja_minigame_manager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Freyja_minigame_manager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\Freyja_minigame_manager.cs",
@@ -136,12 +144,11 @@
               "RelativeToolTip": "Assets\\script\\Freyja_minigame_manager.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAmwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T16:45:29.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T16:45:29.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SaveLoadManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\SaveLoadManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\SaveLoadManager.cs",
@@ -153,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "SaveData.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\SaveData.cs",
               "RelativeDocumentMoniker": "Assets\\script\\SaveData.cs",
@@ -165,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "DBManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\DBManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\DBManager.cs",
@@ -177,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "DialogueParser.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\Resources\\DialogueParser.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\DialogueParser.cs",
@@ -189,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\GameManager.cs",
@@ -197,12 +204,11 @@
               "RelativeToolTip": "Assets\\script\\GameManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T16:45:26.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T16:45:26.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "RecipeManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\RecipeManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\RecipeManager.cs",
@@ -210,24 +216,47 @@
               "RelativeToolTip": "Assets\\script\\RecipeManager.cs",
               "ViewState": "AQIAAKAAAAAAAAAAAAAiwLYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T16:45:26.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T16:45:26.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "DialogManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\DialogManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\DialogManager.cs",
               "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\DialogManager.cs",
               "RelativeToolTip": "Assets\\script\\DialogManager.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwEEAAABSAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVFhH7dNNKwRxHMDxz9KSmvIClBMXJ2qS9uQ4Oct6OEmSm7fh4MhJOcqWvAEvgN2T9mIPcmAuIjmTcdBsnobFYTfmc5tf/Wt\u002B3/kPuVzuvyu8HZxcnCSwcbQBanENPDw\u002BgHAgBLvl3Vdnb\u002B5uEijtlEBjrVH4bJ7qevnQDs23qV/WE5jdnwXjA\u002BNgcXQR9Pf2g9PrU1AeK7/aMNx\u002BLvOVnu4eXpTonALLB8sJxHcxqExXQBAE7\u002B7JR7K\u002BddY81fYCzReoxlXVuCoaikRDkSAICq1u/xttL9DcMNwKE1gaXQKrpdWWtv87f8HC3kIC94/3oDJXaalAKuu2Z81TnVPg\u002BPw4gfn9eRANR2BmZAYUu4ugflUHKxMr3yqUpXMKpA4bhwls1jbB2e0Z6Cv2gcnBSbA\u002Btf7u7E\u002B0vUAul8s9Af9Ce77GeRqYAAAAAElFTkSuQmCC",
+              "ViewState": "AQIAAEgCAAAAAAAAAAAYwHACAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T16:45:26.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "MiniGameEscapeManager.cs",
+              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\MiniGameEscapeManager.cs",
+              "RelativeToolTip": "Assets\\script\\MiniGameEscapeManager.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T18:13:18.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ru_minigame_manager.cs",
+              "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Ru_minigame_manager.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\Ru_minigame_manager.cs",
+              "ToolTip": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Ru_minigame_manager.cs",
+              "RelativeToolTip": "Assets\\script\\Ru_minigame_manager.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvykAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T18:43:20.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "SystemManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\SystemManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\SystemManager.cs",
@@ -239,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PersistentData.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\PersistentData.cs",
               "RelativeDocumentMoniker": "Assets\\script\\PersistentData.cs",
@@ -251,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "TitleManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\TitleManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\TitleManager.cs",
@@ -263,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "KewordManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\KewordManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\KewordManager.cs",
@@ -275,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "MessageData.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\MessageData.cs",
               "RelativeDocumentMoniker": "Assets\\script\\MessageData.cs",
@@ -287,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ConfigManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\ConfigManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\ConfigManager.cs",
@@ -299,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FoodItem.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\FoodItem.cs",
               "RelativeDocumentMoniker": "Assets\\script\\FoodItem.cs",
@@ -311,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "TextDisplay.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\TextDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\script\\TextDisplay.cs",
@@ -323,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "RecipUIManager.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\RecipUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\RecipUIManager.cs",
@@ -335,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "PlayerInteraction.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\PlayerInteraction.cs",
               "RelativeDocumentMoniker": "Assets\\script\\PlayerInteraction.cs",
@@ -347,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CookerItem.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\CookerItem.cs",
               "RelativeDocumentMoniker": "Assets\\script\\CookerItem.cs",
@@ -359,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\\uBBFC\uC900\uD638\\Desktop\\\uD310\uB3C4\uB77C\uD050\uBE0C\\FLBW\\Assets\\script\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\script\\Player.cs",
