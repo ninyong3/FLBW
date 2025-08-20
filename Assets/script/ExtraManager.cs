@@ -50,6 +50,48 @@ public class ExtraManager : MonoBehaviour
             if(persistentData.endingClearCheck[i])
                 ExtraObjects[cnt].GetComponent <Image>().sprite = ExtraSprites[cnt];
         }
+        if (persistentData.endingClearCheck[0])
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                cnt++;
+                ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+            }
+        }
+        if (persistentData.endingClearCheck[2])
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                cnt++;
+                ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+            }
+        }
+        if(persistentData.endingClearCheck[1])
+        {
+            for(int i=0;i<5;i++)
+            {
+                cnt++;
+                ExtraObjects[cnt].GetComponent<Image>().sprite= ExtraSprites[cnt];
+            }
+        }
+        cnt++;
+        if (persistentData.episodeClearCheck[0, 5])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+        cnt++;
+        if (persistentData.episodeClearCheck[1, 5])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+        cnt++;
+        if (persistentData.episodeClearCheck[2, 5])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+        cnt++;
+        if (persistentData.endingClearCheck[0])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+        cnt++;
+        if (persistentData.endingClearCheck[1])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
+        cnt++;
+        if (persistentData.endingClearCheck[2])
+            ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
         for (int i = 0; i < 4; i++)
             ExtraScenes[i].SetActive(false);
     }
