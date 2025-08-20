@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ExtraManager : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class ExtraManager : MonoBehaviour
     [SerializeField] List<Sprite> ExtraSprites;
     [SerializeField] List<GameObject> ExtraObjects;
     [SerializeField] List<GameObject> ExtraScenes;
+    int episodepage = 1;
+    int cgpage = 1;
+    [SerializeField] TextMeshProUGUI pagetext;
+    [SerializeField] GameObject nextbutton;
+    [SerializeField] GameObject prevbutton;
+    [SerializeField] GameObject nextbutton2;
+    [SerializeField] GameObject prevbutton2;
     void Start()
     {
         persistentData = new PersistentData();
@@ -42,12 +50,92 @@ public class ExtraManager : MonoBehaviour
             if(persistentData.endingClearCheck[i])
                 ExtraObjects[cnt].GetComponent <Image>().sprite = ExtraSprites[cnt];
         }
-      //  if (persistentData.endingClearCheck[0])
-         
+        for (int i = 0; i < 4; i++)
+            ExtraScenes[i].SetActive(false);
     }
     void Update()
     {
-        
+        pagetext.text = "Page " + episodepage;
+        if (episodepage == 1)
+        {
+            prevbutton.SetActive(false);
+            nextbutton.SetActive(true);
+            for(int i=0;i<4;i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 4; i < 16; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (episodepage == 2)
+        {
+            prevbutton.SetActive(true);
+            nextbutton.SetActive(true);
+            for (int i = 4; i < 8; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 8; i < 16; i++)
+                ExtraObjects[i].SetActive(false);
+            for(int i=0;i<4;i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (episodepage == 3)
+        {
+            prevbutton.SetActive(true);
+            nextbutton.SetActive(true);
+            for (int i = 8; i < 12; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 12; i < 16; i++)
+                ExtraObjects[i].SetActive(false);
+            for (int i = 0; i < 8; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (episodepage == 4)
+        {
+            prevbutton.SetActive(true);
+            nextbutton.SetActive(false);
+            for (int i = 12; i < 16; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 0; i < 12; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        if (cgpage == 1)
+        {
+            prevbutton2.SetActive(false);
+            nextbutton2.SetActive(true);
+            for (int i = 21; i < 31; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 31; i < 52; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (cgpage == 2)
+        {
+            prevbutton2.SetActive(true);
+            nextbutton2.SetActive(true);
+            for (int i = 31; i < 41; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 21; i < 31; i++)
+                ExtraObjects[i].SetActive(false);
+            for (int i = 41; i < 52; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (cgpage == 3)
+        {
+            prevbutton.SetActive(true);
+            nextbutton.SetActive(true);
+            for (int i = 41; i < 46; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 21; i < 41; i++)
+                ExtraObjects[i].SetActive(false);
+            for (int i = 46; i < 52; i++)
+                ExtraObjects[i].SetActive(false);
+        }
+        else if (cgpage == 4)
+        {
+            prevbutton.SetActive(true);
+            nextbutton.SetActive(false);
+            for (int i = 21; i < 46; i++)
+                ExtraObjects[i].SetActive(true);
+            for (int i = 46; i < 52; i++)
+                ExtraObjects[i].SetActive(false);
+        }
     }
     public void EpisodeShow()
     {
@@ -101,6 +189,26 @@ public class ExtraManager : MonoBehaviour
     {
         if (persistentData.endingClearCheck[2])
             SceneManager.LoadScene("happyending_ru");
+    }
+    public void ExtraClose()
+    {
+        SceneManager.LoadScene("main");
+    } 
+    public void NextPage()
+    {
+        episodepage++;
+    }
+    public void PreviousPage()
+    {
+        episodepage--;
+    }
+    public void NextPage2()
+    {
+        cgpage++;
+    }
+    public void PreviousPage2()
+    {
+        cgpage--;
     }
 
 }
