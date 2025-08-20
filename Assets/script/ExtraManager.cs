@@ -174,9 +174,9 @@ public class ExtraManager : MonoBehaviour
             prevbutton.SetActive(true);
             nextbutton.SetActive(false);
             for (int i = 21; i < 46; i++)
-                ExtraObjects[i].SetActive(true);
-            for (int i = 46; i < 52; i++)
                 ExtraObjects[i].SetActive(false);
+            for (int i = 46; i < 52; i++)
+                ExtraObjects[i].SetActive(true);
         }
     }
     public void EpisodeShow()
@@ -234,7 +234,7 @@ public class ExtraManager : MonoBehaviour
     }
     public void ExtraClose()
     {
-        SceneManager.LoadScene("main");
+        SceneManager.LoadScene("title");
     } 
     public void NextPage()
     {
