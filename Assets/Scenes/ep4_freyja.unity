@@ -8013,9 +8013,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb43a409523516647b5e7a17ae83fca7, type: 3}
   backgroundList:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 465557736c8d81748929d1ef796d8380, type: 3}
-  - {fileID: 21300000, guid: c01efe5f51ff57545982737b8eb1f03b, type: 3}
-  - {fileID: 0}
+  - {fileID: -4435605285099390769, guid: 06b93b9f1baf2044e8d19ed246595805, type: 3}
+  - {fileID: 21300000, guid: 82b92237fa98d1a40971c6523f7bb1d1, type: 3}
+  - {fileID: 21300000, guid: 8e445fb97270eec45ba5489483c56ab1, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
