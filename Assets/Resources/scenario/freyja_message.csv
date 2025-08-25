@@ -1,0 +1,49 @@
+﻿Character,Index,text
+Player,-,저기…
+Freyja,s,누구?
+Player,-,횡단보도 근처에서
+Player,-,구해주셨던 사람인데요…
+Freyja,s,아
+Freyja,-,기억나
+Freyja,-,전생자?
+Player,ep1_freyja,에피소드 1로 가기
+Freyja,s,나야
+Player,-,무슨 일이야?
+Freyja,s,시간 있으면
+Freyja,-,공연장으로 와줘
+Freyja,-,리코더도 늘었는지 볼 겸
+Player,ep2_freyja,에피소드 2로 가기
+Freyja,s,혹시…
+Freyja,-,오늘 저녁에… 바빠?
+Player,-,아니?
+Player,-,저녁에는 안 바빠
+Freyja,s,내가 제1바이올린의 악장으로
+Freyja,-,참여하는 공연 표가
+Freyja,-,남았...거든
+Player,-,오 좋아!
+Player,-,언제까지 가면 돼?
+Freyja,s,5시
+Player,ep3_freyja,에피소드 3으로 가기
+Freyja,s,요즘…
+Freyja,-,많이 바쁜가?
+Player,-,…왜?
+Player,-,설마… 리코더 검사?
+Freyja,s,ㅋㅋ 아냐
+Freyja,-,리코더 말고도…
+Freyja,-,할 거 많지?
+Freyja,-,혹시…
+Freyja,-,시간 남으면…
+Freyja,-,같이 숲길 걷자
+Player,ep4_freyja,에피소드 4로 가기
+Freyja,s,혹시…
+Freyja,-,오늘… 같이 놀이공원…
+Freyja,-,갈래?
+Player,-,놀이공원?
+Freyja,s,공연도 없고…
+Freyja,-,심심해서…
+Player,-,그래
+Player,-,가자
+Freyja,s,그럼… 2시간 뒤에
+Player,ep5_freyja,에피소드 5로 가기
+Player,normalending,노말 엔딩
+Player,happyending_freyja,프레이야 해피엔딩

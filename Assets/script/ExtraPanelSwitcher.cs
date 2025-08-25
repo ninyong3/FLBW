@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class ExtraPanelSwitcher : MonoBehaviour
 {
     [Header("메인 패널 (첫 화면)")]
-    [SerializeField] private GameObject mainPanel;
+    [SerializeField] private GameObject mainPanel; 
 
     [Header("탭별 패널 (Episode, Ending, CG, Info 순서)")]
-    [SerializeField] private GameObject episodePanel;
-    [SerializeField] private GameObject endingPanel;
-    [SerializeField] private GameObject cgPanel;
-    [SerializeField] private GameObject infoPanel;
+    [SerializeField] private GameObject episodePanel;   
+    [SerializeField] private GameObject endingPanel;    
+    [SerializeField] private GameObject cgPanel;        
+    [SerializeField] private GameObject infoPanel;      
 
     [Header("선택: 탭 버튼들 (순서 동일)")]
     [SerializeField] private Button episodeBtn;
@@ -22,21 +22,19 @@ public class ExtraPanelSwitcher : MonoBehaviour
 
     void Start()
     {
-        // 버튼 리스너 등록
-        if (episodeBtn) episodeBtn.onClick.AddListener(ShowEpisode);
-        if (endingBtn)  endingBtn.onClick.AddListener(ShowEnding);
-        if (cgBtn)      cgBtn.onClick.AddListener(ShowCG);
-        if (infoBtn)    infoBtn.onClick.AddListener(ShowInfo);
-
-        // 시작 화면
+        // 씬 시작 시: 메인만 true, 나머지 false
         ShowMain();
+        if (episodeBtn) episodeBtn.onClick.AddListener(ShowEpisode);
+        if (endingBtn) endingBtn.onClick.AddListener(ShowEnding);
+        if (cgBtn) cgBtn.onClick.AddListener(ShowCG);
+        if (infoBtn) infoBtn.onClick.AddListener(ShowInfo);
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if (mainPanel != null && mainPanel.activeInHierarchy)
+            if(mainPanel != null && mainPanel.activeInHierarchy) 
             {
                 SceneManager.LoadScene("title");
             }
@@ -46,50 +44,49 @@ public class ExtraPanelSwitcher : MonoBehaviour
             }
         }
     }
-
     public void ShowMain()
     {
-        SetActiveSafe(mainPanel,  true);
-        SetActiveSafe(episodePanel,false);
+        SetActiveSafe(mainPanel, true);
+        SetActiveSafe(episodePanel, false);
         SetActiveSafe(endingPanel, false);
-        SetActiveSafe(cgPanel,     false);
-        SetActiveSafe(infoPanel,   false);
+        SetActiveSafe(cgPanel, false);
+        SetActiveSafe(infoPanel, false);
     }
 
     public void ShowEpisode()
     {
-        SetActiveSafe(mainPanel,  false);
-        SetActiveSafe(episodePanel,true);
+        SetActiveSafe(mainPanel, false);
+        SetActiveSafe(episodePanel, true);
         SetActiveSafe(endingPanel, false);
-        SetActiveSafe(cgPanel,     false);
-        SetActiveSafe(infoPanel,   false);
+        SetActiveSafe(cgPanel, false);
+        SetActiveSafe(infoPanel, false);
     }
 
     public void ShowEnding()
     {
-        SetActiveSafe(mainPanel,  false);
-        SetActiveSafe(episodePanel,false);
+        SetActiveSafe(mainPanel, false);
+        SetActiveSafe(episodePanel, false);
         SetActiveSafe(endingPanel, true);
-        SetActiveSafe(cgPanel,     false);
-        SetActiveSafe(infoPanel,   false);
+        SetActiveSafe(cgPanel, false);
+        SetActiveSafe(infoPanel, false);
     }
 
     public void ShowCG()
     {
-        SetActiveSafe(mainPanel,  false);
-        SetActiveSafe(episodePanel,false);
+        SetActiveSafe(mainPanel, false);
+        SetActiveSafe(episodePanel, false);
         SetActiveSafe(endingPanel, false);
-        SetActiveSafe(cgPanel,     true);
-        SetActiveSafe(infoPanel,   false);
+        SetActiveSafe(cgPanel, true);
+        SetActiveSafe(infoPanel, false);
     }
 
     public void ShowInfo()
     {
-        SetActiveSafe(mainPanel,  false);
-        SetActiveSafe(episodePanel,false);
+        SetActiveSafe(mainPanel, false);
+        SetActiveSafe(episodePanel, false);
         SetActiveSafe(endingPanel, false);
-        SetActiveSafe(cgPanel,     false);
-        SetActiveSafe(infoPanel,   true);
+        SetActiveSafe(cgPanel, false);
+        SetActiveSafe(infoPanel, true);
     }
 
     private void SetActiveSafe(GameObject go, bool on)
