@@ -22,6 +22,9 @@ public class SceneMusicTrigger : MonoBehaviour
 
     void Start()
     {
+        // SceneMusicTrigger.cs → 씬 입장 처리(예: Start/Bootstrap에서)
+        SfxRegistry_Int.I?.StopAll();         // ★ 이전 씬에서 남은 SFX 싹 정리
+        BgmRegistry_Int.I?.Stop(stopFadeSeconds); // 기존에 하던 BGM 정리와 함께
         StartCoroutine(BootstrapAndPlay());
     }
 

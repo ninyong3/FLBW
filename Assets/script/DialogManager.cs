@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections;
 using NUnit.Framework;
 using UnityEditor;
+using System.Diagnostics;
 
 public class DialogManager : MonoBehaviour
 {
@@ -73,6 +74,24 @@ public class DialogManager : MonoBehaviour
         Dialogue tempDialog;
         if (DBManager.instance.dialogueDic.TryGetValue(dialogCnt, out tempDialog))
         {
+            // ★ 줄 시작 시 SFX/BGM 처리
+            if (tempDialog.BGMIndex >= 0)
+            {
+                UnityEngine.Debug.Log($"[DialogManager] 요청된 BGM index={tempDialog.BGMIndex}");
+
+                BgmRegistry_Int.I?.PlayByIndex(tempDialog.BGMIndex);
+            }
+
+            // 이전 줄 효과음 정리
+            SfxRegistry_Int.I?.StopAll();
+
+            if (tempDialog.SFXIndex >= 0)
+            {
+                UnityEngine.Debug.Log($"[DialogManager] 요청된 SFX index={tempDialog.SFXIndex}");
+
+                SfxRegistry_Int.I?.PlayByIndex(tempDialog.SFXIndex);
+            }
+
             if (GameManager.instance.userChoice == tempDialog.choiceIndex || GameManager.instance.userChoice == null || tempDialog.choiceline == "-" || tempDialog.choiceIndex == "t")
             {
                 GameManager.instance.dialogCount = dialogCnt;

@@ -1,58 +1,80 @@
-    using System.Collections.Generic;
-    using UnityEngine;
-    using System.Collections;
-    public class SfxRegistry_Int : MonoBehaviour
+using UnityEngine;
+// Debug 모호성 방지
+using Debug = UnityEngine.Debug;
+
+public class SfxRegistry_Int : MonoBehaviour
+{
+    public static SfxRegistry_Int I { get; private set; }
+
+    [Header("SFX 재생에 사용할 AudioSource (없으면 자동 생성)")]
+    public AudioSource source;
+
+    [Header("CSV SFX 인덱스 순서와 동일")]
+    public AudioClip[] clips;
+
+    [Range(0f, 1f)] public float defaultVolume = 1f;
+    public bool debugLog = true;
+
+    void Awake()
     {
-        public static SfxRegistry_Int I { get; private set; }
+        if (I != null && I != this) { Destroy(gameObject); return; }
+        I = this;
+        DontDestroyOnLoad(gameObject);
 
-        [Header("2D AudioSource (SpatialBlend=0)")]
-        public AudioSource sfxSource;
-
-        [Header("CSV Sound Effect 인덱스와 동일한 순서로 배치")]
-        public List<AudioClip> clips = new(); // 0,1,2,...
-
-        void Awake()
+        if (source == null)
         {
-            if (I != null) { Destroy(gameObject); return; }
-            I = this;
-            DontDestroyOnLoad(gameObject);
-
-            if (sfxSource == null)
-            {
-                sfxSource = gameObject.AddComponent<AudioSource>();
-                sfxSource.playOnAwake = false;
-                sfxSource.loop = false;
-                sfxSource.spatialBlend = 0f;
-                sfxSource.volume = 1f;
-            }
+            source = gameObject.AddComponent<AudioSource>();
         }
 
-        public bool debugLog = true;
-        public void StopAll() {
-        if (sfxSource != null) sfxSource.Stop();   // PlayOneShot 포함, 해당 소스에서 나가는 소리 전부 정지
+        // 2D 단발 기본 세팅
+        source.playOnAwake = false;
+        source.loop = false;
+        source.spatialBlend = 0f;          // 2D
+        source.ignoreListenerPause = true;
+        source.volume = defaultVolume;
+
+        if (debugLog) Debug.Log("[SFX] Awake() ready");
     }
-    public void PlayByIndex(int index, float volume = 1f, float pitch = 1f)
+
+    /// <summary>
+    /// 줄 시작에서 호출: 이전 줄 SFX를 끊고 새 인덱스를 재생
+    /// (PlayOneShot이 아닌 clip+Play를 사용해 Stop()이 즉시 먹도록)
+    /// </summary>
+    public void PlayByIndex(int index, float? volume = null)
     {
-        if (index < 0) return;
-        if (index >= clips.Count || clips[index] == null) {
-            if (debugLog) Debug.LogWarning($"[SFX] invalid index {index}");
+        if (index < 0 || clips == null || index >= clips.Length)
+        {
+            if (debugLog) Debug.LogWarning($"[SFX] invalid index={index}");
             return;
         }
 
         var clip = clips[index];
-        if (debugLog) Debug.Log($"[SFX] Play idx={index}, clip={clip.name}, vol={volume}, pitch={pitch}, t={Time.time:F2}");
+        if (clip == null)
+        {
+            if (debugLog) Debug.LogWarning($"[SFX] null clip at index={index}");
+            return;
+        }
 
-        sfxSource.pitch = pitch;
-        sfxSource.PlayOneShot(clip, Mathf.Clamp01(volume));
+        // 이전 줄에서 재생 중이던 효과음 강제 정지
+        if (source.isPlaying) source.Stop();
 
-        // (선택) 재생 상태 확인 코루틴
-        StartCoroutine(CheckIsPlaying());
+        // 한 줄용(비루프) 재생 → Stop()이 바로 먹힘
+        source.loop = false;
+        source.clip = clip;
+        source.time = 0f;
+        source.volume = Mathf.Clamp01(volume ?? defaultVolume);
+        source.mute = false;
+        source.Play();
+
+        if (debugLog) Debug.Log($"[SFX] ▶ idx={index}, clip={clip.name}");
     }
 
-    IEnumerator CheckIsPlaying() {
-        // PlayOneShot은 한 프레임 뒤 isPlaying이 true가 됨
-        yield return null;
-        Debug.Log($"[SFX] sfxSource.isPlaying = {sfxSource.isPlaying}");
+    /// <summary>
+    /// 현재 AudioSource에서 재생 중인 SFX를 즉시 정지
+    /// </summary>
+    public void StopAll()
+    {
+        if (debugLog) Debug.Log("[SFX] StopAll()");
+        if (source != null) source.Stop();
     }
-
-    }
+}
