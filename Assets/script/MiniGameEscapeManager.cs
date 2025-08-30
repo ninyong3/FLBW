@@ -3,23 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MiniGameEscapeManager : MonoBehaviour
 {
-    public static MiniGameEscapeManager Instance { get; private set; }
 
     [SerializeField] GameObject escPanel;          // ESC 메뉴 패널
     [SerializeField] GameObject quitConfirmPanel;  // 종료 확인 패널
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     void Start()
     {

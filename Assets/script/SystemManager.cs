@@ -84,7 +84,12 @@ public class SystemManager : MonoBehaviour
             GameManager.instance.dayCount++; // 다음 일자로 넘기기
         GameManager.instance.dialogCount = 1;
         if (SceneManager.GetActiveScene().name != "main")
-            SceneManager.LoadScene("main");
+        {
+            if (SceneManager.GetActiveScene().name[0] == 'h' || SceneManager.GetActiveScene().name == "badending" || SceneManager.GetActiveScene().name == "normalending")
+                SceneManager.LoadScene("title");
+            else
+                SceneManager.LoadScene("main");
+        }
         Skipwarningimage.SetActive(false); // 스킵 경고창 닫기
     }
     public void SkipDayClickNo() // 스킵 경고창에서 아니오를 눌렀을 시 작동하는 함수
