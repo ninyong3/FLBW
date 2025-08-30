@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0eb71e7cb9b8547be7201759c68317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxSource: {fileID: 218084401}
+  source: {fileID: 0}
   clips:
   - {fileID: 8300000, guid: a85ecd6f9b983bf4caeac1c0963ef789, type: 3}
   - {fileID: 8300000, guid: 74d39c535b2510347a86bfea3193cbcb, type: 3}
@@ -614,6 +614,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 51ca9bc1d5cd93e4d8f321e24b33a90f, type: 3}
   - {fileID: 8300000, guid: d30048d2b56108444ba083150df548f7, type: 3}
   - {fileID: 8300000, guid: bbc5e779123b641458209785dd40aad9, type: 3}
+  defaultVolume: 1
   debugLog: 1
 --- !u!4 &218084400
 Transform:
@@ -937,6 +938,8 @@ MonoBehaviour:
   messageCountCheckList: 000000000000
   userChoice: 
   IsLoading: 0
+  PersistentData:
+    endingClearCheck: 0000000000
 --- !u!4 &296032984
 Transform:
   m_ObjectHideFlags: 0
@@ -2198,6 +2201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ddd0aabfb2f7ad4db3f78fb5d1ff867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jinyeinStar: {fileID: 1691582121}
+  freyjaStar: {fileID: 16466092}
+  ruStar: {fileID: 1961129235}
 --- !u!4 &1099982016
 Transform:
   m_ObjectHideFlags: 0

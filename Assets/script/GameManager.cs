@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     public List<bool> messageCountCheckList=new List<bool>();
     public string userChoice;
     public bool IsLoading;
-    PersistentData persistentData;
+    public PersistentData PersistentData;
 
     // === 디버그: selectedHeroine 변화 감지용
     private int _prevSelectedHeroine = 0;
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         else
         {
             string jsonString=File.ReadAllText(persistentSaveJsonPath);
-            persistentData=JsonConvert.DeserializeObject<PersistentData>(jsonString);
+            PersistentData=JsonConvert.DeserializeObject<PersistentData>(jsonString);
         }
 
         Debug.Log($"[GM] Start: selectedHeroine={selectedHeroine}, dayCount={dayCount}");
@@ -165,7 +165,18 @@ public class GameManager : MonoBehaviour
 
     public void ClearCheck(int checkIndex, int index1, int index2)
     {
-        // ... (원본 유지)
+        if (checkIndex == 1)
+            PersistentData.episodeClearCheck[index1, index2] = true;
+        else
+            PersistentData.endingClearCheck[index1] = true;
+        string saveToJsonData = JsonConvert.SerializeObject(PersistentData, Formatting.Indented);
+        string saveJsonFolderPath = Path.Combine(UnityEngine.Application.persistentDataPath, "persistentSaveData");
+        if (!Directory.Exists(saveJsonFolderPath))
+        {
+            Directory.CreateDirectory(saveJsonFolderPath);
+        }
+        string persistentSaveJsonPath = Path.Combine(saveJsonFolderPath, "persistentData.json");
+        File.WriteAllText(persistentSaveJsonPath, saveToJsonData);
     }
 
     private void OnEnable()

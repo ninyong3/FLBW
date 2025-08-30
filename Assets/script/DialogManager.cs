@@ -32,8 +32,11 @@ public class DialogManager : MonoBehaviour
     [SerializeField] List<TextMeshProUGUI> choiceText;
     bool playerNameSelect=true;
     List<GameObject> logLineList=new List<GameObject>();
+    int startRelationship;
+    int choiceDialogCnt;
     void Start()
     {
+        startRelationship = GameManager.instance.relationship_level;
         ChoiceButton.SetActive(false);
         character2.sprite = null;
         Color tempColor = character2.color;
@@ -235,6 +238,7 @@ public class DialogManager : MonoBehaviour
                 if (tempDialog.choiceIndex == "s")
                 {
                     GameManager.instance.userChoice = null;
+                    choiceDialogCnt = dialogCnt;
                     yield return StartCoroutine(WaitForChoice());
                 }
             }
@@ -474,6 +478,8 @@ public class DialogManager : MonoBehaviour
             logLineList.RemoveAt(i);
             Destroy(delete);
         }
+        if (selectedLogIndex <= choiceDialogCnt)
+            GameManager.instance.relationship_level = startRelationship;
         dialogCnt = selectedLogIndex;
         gotoNext=false;
         StartCoroutine(PrintText());

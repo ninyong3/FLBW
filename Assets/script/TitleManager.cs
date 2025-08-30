@@ -1,10 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class TitleManager : MonoBehaviour
 {
+    [SerializeField] Image jinyeinStar;
+    [SerializeField] Image freyjaStar;
+    [SerializeField] Image ruStar;
     void Start()
     {
-        
+        if(GameManager.instance.PersistentData.endingClearCheck[0] == false)
+            jinyeinStar.color = Color.white;
+        if (GameManager.instance.PersistentData.endingClearCheck[1] == false)
+            freyjaStar.color = Color.white;
+        if (GameManager.instance.PersistentData.endingClearCheck[2] == false)
+            ruStar.color = Color.white;
+
     }
     void Update()
     {

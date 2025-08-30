@@ -58,6 +58,11 @@ public class ExtraManager : MonoBehaviour
                 ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
             }
         }
+        else
+        {
+            for (int i = 0; i < 10; i++)
+                cnt++;
+        }
         if (persistentData.endingClearCheck[2])
         {
             for (int i = 0; i < 10; i++)
@@ -66,13 +71,23 @@ public class ExtraManager : MonoBehaviour
                 ExtraObjects[cnt].GetComponent<Image>().sprite = ExtraSprites[cnt];
             }
         }
-        if(persistentData.endingClearCheck[1])
+        else
+        {
+            for (int i = 0; i < 10; i++)
+                cnt++;
+        }
+        if (persistentData.endingClearCheck[1])
         {
             for(int i=0;i<5;i++)
             {
                 cnt++;
                 ExtraObjects[cnt].GetComponent<Image>().sprite= ExtraSprites[cnt];
             }
+        }
+        else
+        {
+            for (int i = 0; i < 5; i++)
+                cnt++;
         }
         cnt++;
         if (persistentData.episodeClearCheck[0, 5])
@@ -160,8 +175,8 @@ public class ExtraManager : MonoBehaviour
         }
         else if (cgpage == 3)
         {
-            prevbutton.SetActive(true);
-            nextbutton.SetActive(true);
+            prevbutton2.SetActive(true);
+            nextbutton2.SetActive(true);
             for (int i = 41; i < 46; i++)
                 ExtraObjects[i].SetActive(true);
             for (int i = 21; i < 41; i++)
@@ -171,8 +186,8 @@ public class ExtraManager : MonoBehaviour
         }
         else if (cgpage == 4)
         {
-            prevbutton.SetActive(true);
-            nextbutton.SetActive(false);
+            prevbutton2.SetActive(true);
+            nextbutton2.SetActive(false);
             for (int i = 21; i < 46; i++)
                 ExtraObjects[i].SetActive(false);
             for (int i = 46; i < 52; i++)
